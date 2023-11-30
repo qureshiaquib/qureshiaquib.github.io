@@ -57,12 +57,12 @@ You can use access policy on Keyvault as well, it’s supported.
 
 Versions of the certificate can be uploaded from keyvault certificate blade and looks like below.
 
-![a](https://github.com/qureshiaquib/qureshiaquib.github.io/blob/main/assets/30112023/Picture4.jpg)
+![a](/assets/30112023/Picture4.jpg)
 
 If you’re renewing certificates and wanted to see if certificates are getting pulled down properly or not you can check error logs located here.
 C:\ProgramData\Guestconfig\extension_logs\Microsoft.Azure.Keyvault.keyvaultforwindows
 
-![a](https://github.com/qureshiaquib/qureshiaquib.github.io/blob/main/assets/30112023/Picture5.jpg)
+![a](/assets/30112023/Picture5.jpg)
 
 If you’re running Azure VM similar thing can be achieved
 [click here](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows)
