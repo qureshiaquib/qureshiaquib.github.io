@@ -44,16 +44,16 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
 ```
 For auto renewal of certificate, we’ll need to enable IIS Rebind.
 
-![a](https://github.com/qureshiaquib/qureshiaquib.github.io/blob/main/assets/30112023/Picture1.jpg)
+![a](/assets/30112023/Picture1.jpg)
 
 This is how Arc VM Extension looks like when it’s enabled.
 
-![a](https://github.com/qureshiaquib/qureshiaquib.github.io/blob/main/assets/30112023/Picture2.jpg)
+![a](/assets/30112023/Picture2.jpg)
 
 Assigning permission to Arc server to fetch the certificate from keyvault.
 You can use access policy on Keyvault as well, it’s supported.
 
-![a](https://github.com/qureshiaquib/qureshiaquib.github.io/blob/main/assets/30112023/Picture3.jpg)
+![a](/assets/30112023/Picture3.jpg)
 
 Versions of the certificate can be uploaded from keyvault certificate blade and looks like below.
 
