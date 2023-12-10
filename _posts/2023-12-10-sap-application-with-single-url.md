@@ -26,3 +26,5 @@ I am using dummy IIS where I am hosting website, but you can replace this with S
 
 The following diagram shows the overview of the architecture:
 
+![a](/assets/10122023/Picture1.jpg)
+
