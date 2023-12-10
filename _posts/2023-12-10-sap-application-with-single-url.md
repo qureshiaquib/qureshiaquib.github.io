@@ -1,5 +1,5 @@
 ---
-title: "Using Traffic Manager and Application Gateway to Access SAP Applications with Single FQDN and Different Ports"
+title: "Using Traffic Manager and Application Gateway to access multiple SAP applications with single FQDN and different ports"
 date: 2023-12-9 12:00:00 -500
 categories: [tech]
 tags: [SAP on Azure,azure Application Gateway,Azure Traffic Manager]
