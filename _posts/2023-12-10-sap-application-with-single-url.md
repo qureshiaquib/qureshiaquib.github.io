@@ -25,6 +25,7 @@ In this article I’ll share the setup of traffic manager and application gatewa
 I am using dummy IIS server where I have hosted my website, but you can replace this with SAP Web Dispatcher in your setup and host the Web dispatcher behind application gateway.
 
 The following diagram shows the overview of the architecture:
+
 ![a](/assets/10122023/Picture1.jpg)
 
 
@@ -34,44 +35,47 @@ Below are the bindings in IIS. This is just a demo setup of the website. Actual 
 ![a](/assets/10122023/Picture2.jpg)
 
 Similarly, the screenshot below shows another website. The same can be hosted on a separate webserver as well.
-![a](/assets/10122023/Picture3.jpg)
 
+![a](/assets/10122023/Picture3.jpg)
 
 #### Application Gateway Settings: 
 Let us check the frontend IP of the application gateway.
+
 ![a](/assets/10122023/Picture4.jpg)
 
 Now let us look at the listener settings.
+
 ![a](/assets/10122023/Picture5.jpg)
 
 Simple multi site listener in application gateway for both the websites. The difference between both the listeners is the ports. 8443 and 4443.
+
 ![a](/assets/10122023/Picture6.jpg)
 
 ![a](/assets/10122023/Picture7.jpg)
 
 Now backend setting
+
 ![a](/assets/10122023/Picture8.jpg)
 
 ![a](/assets/10122023/Picture9.jpg)
 
-
 The only change is the hostname I am translating to s4.azurequreshi.com instead of webdisp.azurequreshi.com as my website in the back end hosted on s4.azurequreshi.com.
 
 Same setting can be seen for the 2nd http setting.
+
 ![a](/assets/10122023/Picture10.jpg)
 
-
 Here is how the health probe looks like.
+
 ![a](/assets/10122023/Picture11.jpg)
 
-
 Now the rule configuration. No tweak very simple basic rules.
+
 ![a](/assets/10122023/Picture12.jpg)
 
-
 And the backend setting.
-![a](/assets/10122023/Picture13.jpg)
 
+![a](/assets/10122023/Picture13.jpg)
 
 I have kept only the single IP as of now, but you can have two backend pools for two different websites. One pool for S4 and Another for EWM. Also, you can associate the backend pool with their respective rules in application gateway.
 
@@ -84,6 +88,7 @@ Web server can be shutdown, or you can replicate it via Azure Site Recovery.
 Once the above settings are done you may proceed with Traffic manager configuration.
 
 As this is an active passive DR hence, we will need to configure priority-based routing in traffic manager. 
+
 ![a](/assets/10122023/Picture14.jpg)
 
 ![a](/assets/10122023/Picture15.jpg)
@@ -91,6 +96,7 @@ As this is an active passive DR hence, we will need to configure priority-based 
 ![a](/assets/10122023/Picture16.jpg)
 
 A look at the health probe of the traffic manager.
+
 ![a](/assets/10122023/Picture17.jpg)
 
 
@@ -98,12 +104,14 @@ With this setting traffic manager will only send the traffic to DC – central I
 
 Last step is to set the CNAME of your URL to traffic manager.
 When you do nslookup you’ll find 
+
 ![a](/assets/10122023/Picture18.jpg)
 
 ![a](/assets/10122023/Picture19.jpg)
 
 
 This is how the website would open, this is not specific screenshot of SAP S4 and EWM but this app gateway and traffic manager setting would be same.
+
 ![a](/assets/10122023/Picture20.jpg)
 
 
