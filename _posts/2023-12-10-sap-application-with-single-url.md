@@ -9,6 +9,7 @@ In this blog, I will demonstrate how to use Traffic Manager and Application Gate
 This is a common scenario for SAP customers who have multiple SAP servers behind a web dispatcher that acts as a proxy. 
 By using Traffic Manager and Application Gateway, you can achieve high availability, load balancing, and URL routing for your SAP applications.
 You can also simplify the end user experience by using the same FQDN for accessing different SAP applications on different ports.
+In addition in the event of a disaster, or a DR Drill, users should seemlessly be redirected to the DR region without any manual intervention.
 
 To illustrate this scenario, I will use Azure VM running Windows Server 2019 and IIS as the backend servers (assume this is web dispatcher).
 One VM will host the S4 application on port 8443 and the same VM will host the EWM application on port 4443.
