@@ -1,7 +1,7 @@
 ---
 title: "Simplify certificate management of on-premises IIS server with Azure Arc and Azure Key Vault VM extension"
 date: 2023-11-22 12:00:00 -500
-categories: [tech]
+categories: [tech-blog]
 tags: [azure keyvault vault,azure arc,hybrid,server,azure,on-premises,certificate]
 ---
 
