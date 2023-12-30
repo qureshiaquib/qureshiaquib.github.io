@@ -5,8 +5,9 @@ categories: [Azure Shorts]
 tags: [Windows Server, Patching, Update, Less Downtime]
 ---
 
-This is the first post tailored towards folks who're interested in learning quick tips.
-I'm planning to create separate category for such post and you can find that by visiting category section.
+This is the first post tailored for folks who're interested in learning quick tips related to Azure.
+I'm naming it Azure Shorts, which can be read within less than 5 minutes.
+I'm planning to create a separate category for such post and you can find that by visiting category section.
 
 Post :
 
