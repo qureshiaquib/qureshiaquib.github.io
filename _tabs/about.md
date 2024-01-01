@@ -15,7 +15,7 @@ This blog is a compilation of random things that I’ve learned and feel essenti
 
 In this blog I share two category of post. First one namely tech-blog which is for Azure Admin/Architects with detailed walkthrough of the topic. 
 
-The second type of post is Azure Shorts. This is for folks who're interested in learning quick tips that can help them improve their daily tasks as an Architect/Administrator.
+The second type of post is Azure Shorts. This is for folks who're interested in learning quick tips that can help them improve their existing azure deployments.
 Expect frequency of this type of post more than a complete tech-blog.
 If you know something more about specific shorts which I post I invite you to comment on the post so others can benefit from your insights!
 
