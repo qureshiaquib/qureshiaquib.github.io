@@ -6,7 +6,7 @@ tags: [Patching, Update, Less Downtime,Azure Edition, Windows Server, Azure Depl
 ---
 
 This is the first post tailored for folks who're interested in learning quick tips related to Azure.
-I'm naming it Azure Shorts, which can be read within less than 5 minutes.
+I'm naming it Azure Shorts, which can be read in less than 5 minutes.
 I'm planning to create a separate category for such post and you can find that by visiting category section.
 
 Post :

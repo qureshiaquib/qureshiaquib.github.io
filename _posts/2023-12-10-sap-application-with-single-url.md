@@ -121,3 +121,4 @@ This is how the website would open, this is not specific screenshot of SAP S4 an
 
 Thanks Nishant Roy for reviewing the work and sharing the requirement which was the inspiration for writing this blog post.
 
+Happy Learning!
