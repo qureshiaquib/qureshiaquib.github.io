@@ -26,6 +26,6 @@ Azure Keyvault Premium provides keys which are stored in HSM and are
 FIPS 140-2 Level 3 compliant.
 
 {: .prompt-tip }
->Secrets and certificates in premium tier utilize software for storing. It can't be hardware protected.
+>Secrets and certificates in premium tier utilize software for storing. Only keys can be hardware protected.
 
 Happy Learning!
