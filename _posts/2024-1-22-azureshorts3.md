@@ -15,7 +15,8 @@ This usually happens if you've spiky workload like DB server.
 Now, in order to keep track whether your VM is throttling the disk IOPS and Throughput you can check few metrics which are available at VM level. We don't have to rely on MS Support for this.
 
 Goto VM Blade and then click on Metrics 
-## VM IOPS Capping metrics 
+
+## VM capping metrics 
 * VM Cached IOPS consumed Percentage
 * VM Cached Bandwidth consumed Percentage
 * VM Uncached IOPS consumed Percentage
@@ -29,7 +30,7 @@ If the chart shows limits which is close to 100% that means you're likely hittin
 As previously mentioned a disk can also throttle your IOPS/Throughput based on the SKU you've choosen.
 This is especially for premium SSD v1 type disk. As v2 IOPS can be scaled separately than the disk space.
 
-## Disk IOPS capping metrics 
+## Disk capping metrics 
 * Data Disk IOPS consumed Percentage
 * Data Disk Bandwidth Consumed Percentage
 
