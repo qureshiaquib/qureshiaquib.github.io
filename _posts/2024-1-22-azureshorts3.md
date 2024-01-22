@@ -5,14 +5,16 @@ categories: [Azure Shorts]
 tags: [disk IOPS, disk Throughput, Azure VM IOPS limits, Throughput limits, VM capping limit, VM SKU documentation, workload planning, VM throttling, metrics, Cached IOPS, Cached Bandwidth, Uncached IOPS, Uncached Bandwidth, Premium SSD v1, Data Disk IOPS, Data Disk Bandwidth]
 ---
 
-I've come across multiple scenarios where IOPS and Throughput of disks were unappropriate.
+I've come across multiple scenarios where VM workload was running slow and upon raising support case it highlighted that VM is blocking disk to reach higher IOPS and Throughput.
 As you know every disk has different throughput/IOPS limits based on the SKU and tier you choose. Similarly every Azure VM has got capping limit which can be checked from Azure VM SKU documentation.
 
-Even though you've got disk with higher IOPS and throughput but with smaller VM SKU which has low limit can actually limit those numbers. So you need to plan the workload accordingly.
-This usually happens if you've not studied your workload.
+Even though you've got disk with higher IOPS and throughput but with smaller VM SKU which has lower limit can actually limit workload and disk to reach those high numbers which then impact your workload.
+So you need to plan the workload accordingly by assessing your IOPS/Throughput need not only CPU/Memory.
+This usually happens if you've spiky workload like DB server.
 
 Now, in order to keep track whether your VM is throttling the disk IOPS and Throughput you can check few metrics which are available at VM level. We don't have to rely on MS Support for this.
 
+Goto VM Blade and then click on Metrics 
 ## VM IOPS Capping metrics 
 * VM Cached IOPS consumed Percentage
 * VM Cached Bandwidth consumed Percentage
