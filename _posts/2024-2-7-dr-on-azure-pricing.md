@@ -57,19 +57,19 @@ Consider lean DB size, depending upon the CPU and Memory it takes for DBs to pro
 
 You can cover this as part of Reserved Instance to lower the cost.
 
-## DR Drill (App and DR both)
+## DR Drill (App and DB both)
 You would want to run DR Drill just to see if your DR is functional. Considering DR Drill of 2 days half yearly would result in 96 hours of uptime for VMs. You would like to consider Production App VM and full-size DB for 96 hours per year. Consider premium disk cost for that many number of days.
 Azure pricing calculator shows per month price, you may want to divide and find per day cost and then do the multiplication into number of days you run the DR Drill.
 
 > Reserved Instanced purchased for running source VM won't be applied to VMs running in target region.
-> This is because RI is a regional construct. Savings plan can span region.
+This is because RI is a regional construct. Savings plan can span region.
 {: .prompt-tip }
 
 ## VNET peering
 
 In the previous bandwidth section, it was for App VM replication via ASR but when you replicate DB it’ll be VNET Peering cost between two regions which is applicable, and you may want to consider that.
 
->First region would be full replication of DB size and hence cost would be higher. But once full replication completes it'll be >incremental/ transactional replication which happens. same is applicable for ASR.
+>First time it would be full replication of entire DB and hence cost would be higher. But once full replication completes it'll be incremental/ transactional replication which happens. Same full/incremental replication is applicable for ASR bandwidth size also.
 {: .prompt-info }
 
 ![a](/assets/07022024/Picture6.jpg)
