@@ -61,7 +61,7 @@ You can cover this as part of Reserved Instance to lower the cost.
 You would want to run DR Drill just to see if your DR is functional. Considering DR Drill of 2 days half yearly would result in 96 hours of uptime for VMs. You would like to consider Production App VM and full-size DB for 96 hours per year. Consider premium disk cost for that many number of days.
 Azure pricing calculator shows per month price, you may want to divide and find per day cost and then do the multiplication into number of days you run the DR Drill.
 
-> Reserved Instanced purchased for running source VM won't be applied to VMs running in target region.
+> Reserved Instanced purchased for running source VM won't be applied to VMs running in target(DR) region.
 This is because RI is a regional construct. Savings plan can span region.
 {: .prompt-tip }
 
