@@ -29,7 +29,7 @@ Along with above If you’re using third party NVA then you’ll need to factor 
 
 Below architecture diagram shows how backup traffic flows through Firewall.
 
-![a](/assets/16022024/Picture1.jpg)
+![a](/assets/16022024/picture1.jpg)
 
 1 – Management traffic with Azure Backup Service\
 2- Data path for backup\
@@ -42,9 +42,9 @@ When we enable Azure Backup there are two types of traffic. First is management 
 
 You must be aware about Service Endpoints feature. Which basically is available for multiple PaaS services. This feature is available for Storage account too. So when we enable Service Endpoint on a Subnet, VMs where backup is initiated would connect to backup management plane over internet and follow the UDR. Which basically takes the management plane traffic to hit firewall. Once that is done and actual backup starts the data transfer over to *.blob.core.windows.net happens over service endpoint and this doesn’t traverse through firewall. The data traffic is bypassed. The reason is we’ll have service endpoint applicable for entire resources present in the subnet which tells that this is known traffic and doesn’t fall under the 0.0.0.0/0 traffic. You can validate this by going to NIC of the VM and checking the effective route.
 
-![a](/assets/16022024/Picture2.jpg)
+![a](/assets/16022024/picture2.jpg)
 
-![a](/assets/16022024/Picture3.jpg)
+![a](/assets/16022024/picture3.jpg)
 
 1 – Management traffic with Azure Backup Service\
 2- Data path for backup
