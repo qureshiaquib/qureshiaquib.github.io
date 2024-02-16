@@ -23,7 +23,7 @@ Applicable to SQL or HANA on Azure VMs this streaming backup means there would b
 
 ### Backup Data via Firewall
 
-Assume you’ve gone with public communication of Azure Backup for stream aware backup (SQL or HANA) as you’re using firewall appliance the UDR route of 0.0.0.0/0 applies to the backup traffic. Which results in all the backup data to be passed through the firewall. When you’ve large data to be backed up or have multiple SQL and HANA DBs your data path would be first from spoke VNET to Hub VNET over VNET peering. And then from firewall outbound over to public IP. The traffic stays within Microsoft backbone but Firewall processing charge applies and so do VNET peering charges.
+Assume you’ve gone with public communication of Azure Backup for stream aware backup (SQL or HANA) as you’re using firewall appliance the UDR route of 0.0.0.0/0 applies to the backup traffic. Which results in all the backup data to be passed through the firewall. When you’ve large data to be backed up or have multiple SQL and HANA DBs your data path would be first from spoke VNET to Hub VNET over VNET peering. And then from firewall outbound over to public IP. The traffic stays within Microsoft backbone but Firewall processing charge applies and so do VNET peering charges. 
 
 Along with above If you’re using third party NVA then you’ll need to factor the licensing basis on the throughput it handles and because of Backup traffic FW license cost also blows up.
 
