@@ -88,8 +88,10 @@ Delete the by going to delegations
 
 ![a](/assets/06032024/picture16.jpg)
 
-You as a customer can also delete delegation of service provide.
+You as a customer can also delete delegation of service provider.
 
 ![a](/assets/06032024/picture17.jpg)
 
-Conclusion: I trust this guide helps you in configuring Azure Lighthouse and navigating the complexities of managing multi-tenant organizations from a single console
+Conclusion: I trust this guide helps you in configuring Azure Lighthouse and navigating the complexities of managing multi-tenant organizations from a single console.
+
+Happy Learning!
