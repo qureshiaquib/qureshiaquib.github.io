@@ -6,7 +6,9 @@ tags: [Azure Lighthouse, multi-tenant, Azure management, enterprise, Azure AD te
 ---
 
 One of my customer asked, we’ve multiple Azure AD Tenants in our Enterprise enrollments and subscriptions associated with those. We wanted a simpler way to manage subscription from single Azure Portal and doesn’t want to switch between different directories to see the resources.
-I’ve seen Azure Partners utilizing this and few of partners are unaware of Azure Lighthouse as a solution. The same solution can be used by Azure customers who have multiple Azure AD tenants in their environment. Having multiple tenants can be because of multiple reasons. 
+I’ve seen Azure Partners utilizing this and few of partners are unaware of Azure Lighthouse as a solution. The same solution can be used by Azure customers who have multiple Azure AD tenants in their environment. All of below can be accomplished with no additional cost, yes Azure LightHouse is free.
+
+Having multiple tenants can be because of multiple reasons. 
 
 * It can be because of a group company managing Azure for multiple child firms who wanted to have separate Azure AD tenant for them.
 * Because of multiple mergers and acquisitions they’ve got multiple tenants.
