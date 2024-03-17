@@ -2,7 +2,7 @@
 title: "Effortless Azure Governance: Implementing Azure Lighthouse for Simplified Multi-Tenant Administration"
 date: 2024-3-6 12:00:00 +500
 categories: [tech-blog]
-tags: [Azure Lighthouse, multi-tenant, Azure management, enterprise, Azure AD tenants, subscription management, Azure Portal, resource groups, ARM templates, service provider, customer, deployment, governance, collaboration, efficiency, seamless management, operations, administration, unified management, Azure governance, Azure operations, Azure administration, multi-tenant environments]
+tags: [Azure Lighthouse]
 ---
 
 One of my customer asked, we’ve multiple Azure AD Tenants in our Enterprise enrollments and subscriptions associated with those. We wanted a simpler way to manage subscription from single Azure Portal and doesn’t want to switch between different directories to see the resources.

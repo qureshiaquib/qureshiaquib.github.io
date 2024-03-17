@@ -2,7 +2,7 @@
 title: "Azure SQL Managed Instance: What you need to know"
 date: 2023-12-22 12:00:00 +500
 categories: [tech-blog]
-tags: [Azure SQL Managed Instance, PaaS Offering, Azure SQL Connection Types, Maintenance Window for SQL MI, Advance Notifications for SQL MI Maintenance, Setting Alerts for SQL MI, Azure Monitor Logs for SQL MI, SQL MI Failover Group, FOG Endpoint for SQL MI, Lock Down Azure SQL MI, Service Endpoint Policies, SQL Audit Alerts, SQL MI Management Operations, Read Replica in Business-Critical Tier, Azure Defender for SQL,Azure SQL MI,DB,Beginners]
+tags: [Azure SQL Managed Instance]
 ---
 
 I have come across multiple instances where customer is exploring SQL PaaS instance for the first time.

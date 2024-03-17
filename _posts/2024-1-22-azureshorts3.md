@@ -2,7 +2,7 @@
 title: "Azure Shorts #3: Optimizing Azure Workloads: Unraveling Disk IOPS and Throughput Challenges for Peak Performance"
 date: 2024-1-22 12:00:00 +500
 categories: [Azure Shorts]
-tags: [disk IOPS, disk Throughput, Azure VM IOPS limits, Throughput limits, VM capping limit, VM SKU documentation, workload planning, VM throttling, metrics, Cached IOPS, Cached Bandwidth, Uncached IOPS, Uncached Bandwidth, Premium SSD v1, Data Disk IOPS, Data Disk Bandwidth]
+tags: [Azure Disk]
 ---
 
 I've come across multiple scenarios where VM workload was running slow and upon raising support case it highlighted that VM is blocking disk to reach higher IOPS and Throughput.

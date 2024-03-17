@@ -2,7 +2,7 @@
 title: "Azure Backup Traffic Flow: Public Endpoints and Firewall Considerations"
 date: 2024-2-16 12:00:00 +500
 categories: [tech-blog]
-tags: [Azure Backup, Public Endpoint, Traffic Flow, Networking, Firewall Configuration, NVA, Data Transfer, Azure Blob Storage, VM Backup, Streaming Backup, Azure Fabric, Azure Firewall, Third-party Firewall, Management Plane, App-consistent Snapshot, DB Backup, Incremental Backup, Transactional Backup, Private Endpoint, Service Endpoint, Service Endpoint Policies, Data Exfiltration Protection, Bypass NVA for backup traffic, Bypass NVA]
+tags: [Azure Backup]
 ---
 
 ## Scenario

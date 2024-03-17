@@ -2,7 +2,7 @@
 title: "Demystifying Disaster Recovery Costs with ASR: A Comprehensive Guide"
 date: 2024-2-7 12:00:00 +500
 categories: [tech-blog]
-tags: [Disaster Recovery, ASR, Azure Site Recovery, DR Solutions, Cost Analysis, Pricing, Pre-sales, Architect, Cloud Computing, Infrastructure as a Service (IaaS), PaaS Components, Redundancy, Networking Services, Application Gateway, Load Balancer, Firewall, SQL Database, Data Replication, Bandwidth Cost, Cache Storage, Snapshot Cost, Database Replication, Lean DB Size, DR Drill, VNET Peering, VPN Gateway, Express Route, Firewall Configuration, Traffic Manager]
+tags: [Azure Site Recovery]
 ---
 
 I’ve come across multiple times when architects and sales team are designing DR solutions with ASR and wonder what would be the cost that they need to factor or share with customer. Finding cost is an integral part of the solution which we make. But it can only be extracted once you understand all the moving parts which makes DR as a solution.

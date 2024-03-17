@@ -2,7 +2,7 @@
 title: "Azure Shorts #5: Reserved Instances Explained: Optimizing Cloud Costs for Your Workloads"
 date: 2024-2-26 12:00:00 +500
 categories: [Azure Shorts]
-tags: [Reserved Instances, RI benefit, Cloud cost optimization, Cloud savings, Cloud computing, Cloud cost efficiency, Savings plans, Compute resources, PayG rate, Cloud cost management, Cloud cost control, Cloud pricing, Reserved Instance utilization, Cloud workload optimization]
+tags: [Reserved Instance]
 ---
 
 ## Introduction:

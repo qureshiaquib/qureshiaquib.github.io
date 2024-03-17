@@ -2,7 +2,7 @@
 title: "Azure Shorts #4: Application Gateway Basic vs MultiSite listener"
 date: 2024-2-1 12:00:00 +500
 categories: [Azure Shorts]
-tags: [listener, multi-site listener, basic listener, App GW, V2 SKU, rule priority, HTTP header, FQDN, wildcard listener, parent domain, website, APIs, configuration, domain, host header, request, processing order, use case, type basic, ports, customer, deployment, configuration, site, hostname section, matching, request validation, specific use case]
+tags: [Azure Application Gateway]
 ---
 
 I've come across instances where customer had depoyed basic listener and then tried deploying multi-site listener and saw their website/APIs were not working. While most of us go ahead with multi-site configuration, I wanted to discuss about Basic vs Multi-site listener information quickly.

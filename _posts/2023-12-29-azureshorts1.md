@@ -2,7 +2,7 @@
 title: "Azure Shorts #1: Windows Server Azure Edition"
 date: 2023-12-29 12:00:00 +500
 categories: [Azure Shorts]
-tags: [Patching, Update, Less Downtime,Azure Edition, Windows Server, Azure Deployment, Downtime Reduction, Security Patching, Production Environment, Windows Server Azure Edition]
+tags: [Azure VM]
 ---
 
 This is the first post tailored for folks who're interested in learning quick tips related to Azure.

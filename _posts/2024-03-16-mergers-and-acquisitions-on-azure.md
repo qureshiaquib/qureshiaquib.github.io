@@ -2,7 +2,7 @@
 title: "Mergers, Acquisitions and Movements in Azure"
 date: 2024-3-16 12:00:00 +500
 categories: [tech-blog]
-tags: [Azure migration strategies, Azure integration best practices, Mergers and acquisitions in Azure, Azure subscription movement, Azure Enterprise Agreement hierarchy, Technical and non-technical Azure migration, Azure AD tenant management, Managing Azure resources post-merger, Azure subscription transfer, Azure resource deployment, Azure billing consolidation, Azure Active Directory (Azure AD) management, Azure RBAC (Role-Based Access Control), Azure subscription types, EA, CSP, PAYG, Azure resource optimization, Azure tenant consolidation]
+tags: [Azure Enterprise Agreement]
 ---
 
 Mergers and Acquisitions are common but I’ve seen architects, sales and account teams sometimes find it difficult when we get queries about how the movement of Azure Subscription happens when both the organizations are using Azure. This can be within the same Azure AD Tenant or between Azure AD tenant move. Because couple of us sometimes are involved after subscription are in place already.

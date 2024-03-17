@@ -2,7 +2,7 @@
 title: "Using Traffic Manager and Application Gateway to access multiple SAP applications with single FQDN and different ports"
 date: 2023-12-9 12:00:00 -500
 categories: [tech-blog]
-tags: [SAP on Azure,azure Application Gateway,Azure Traffic Manager,Traffic Manager, Application Gateway, SAP applications, FQDN, load balancing, URL routing, high availability, DR Drill, Azure VM, Windows Server 2019]
+tags: [SAP on Azure]
 ---
 
 In this blog, I will demonstrate how to use Traffic Manager and Application Gateway to access multiple SAP applications with a single FQDN but with different ports. 
