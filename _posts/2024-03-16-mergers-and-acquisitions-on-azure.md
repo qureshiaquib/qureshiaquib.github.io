@@ -98,9 +98,10 @@ This approach is less adopted because of many of us are unaware of this method, 
 ### Move MCA-Enterprise subscription to EA:
 *(type:NonTechnicalMigration)*
 This is uncommon approach as MCA is the future.
-But you can move from MCA-E to EA enrolment by raising request with the MS Governance team. You’ll need to provide justification and then they can execute this move. This is entirely backend move without any downtime.
+But you can move from MCA-Enterprise to EA enrolment by raising request with the MS Governance team. To connect with MS Governance team you'll need to reach out to your Account team. You’ll need to provide justification to governance support team and then they can execute this move. This is entirely backend move without any downtime.
 
 These are the major types of subscriptions, I’ve covered most of the types that are common in India. I hope above content is useful and helps you in smooth migration.
+
 
 Here are a few useful links from fellow colleagues:
 
