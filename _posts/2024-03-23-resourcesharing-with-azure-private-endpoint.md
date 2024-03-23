@@ -10,7 +10,7 @@ I’ve come across a scenario where one of my customer using Azure SQL DB wanted
 You can have more than one private endpoint for any type of resource. For example, you can configure Azure SQL DB private endpoint in the Contoso network. Similarly, you can create one more private endpoint for the same resource in Fabrikam’s VNET.
 When you’re configuring a PE, you’re basically bringing the PaaS service to Fabrikam’s VNET.
 
-![a](/assets/23032024/picture1.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/23032024/picture1.jpg)
 
 ## There are multiple benefits to using this:
 

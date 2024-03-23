@@ -44,25 +44,25 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
 ```
 For auto renewal of certificate, we’ll need to enable IIS Rebind.
 
-![a](/assets/30112023/Picture1.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture1.jpg)
 
 This is how Arc VM Extension looks like when it’s enabled.
 
-![a](/assets/30112023/Picture2.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture2.jpg)
 
 Assigning permission to Arc server to fetch the certificate from keyvault.
 You can use access policy on Keyvault as well, it’s supported.
 
-![a](/assets/30112023/Picture3.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture3.jpg)
 
 Versions of the certificate can be uploaded from keyvault certificate blade and looks like below.
 
-![a](/assets/30112023/Picture4.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture4.jpg)
 
 If you’re renewing certificates and wanted to see if certificates are getting pulled down properly or not you can check error logs located here.
 C:\ProgramData\Guestconfig\extension_logs\Microsoft.Azure.Keyvault.keyvaultforwindows
 
-![a](/assets/30112023/Picture5.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture5.jpg)
 
 If you’re running Azure VM similar thing can be achieved
 [click here](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows)

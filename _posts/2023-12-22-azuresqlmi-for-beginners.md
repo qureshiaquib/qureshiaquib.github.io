@@ -15,7 +15,7 @@ I thought of collecting few basics in a single place as a ready reckoner.
 There are two modes of connectivity when we use Azure SQL, redirect and proxy.
 When you connect to DB via proxy method we always connect through gateway and that act as proxy. This adds additional latency and lowers throughput. When we select redirect connection method, we skip the proxy gateway. Keep in mind we have to open additional ports 1433, and 11000-11999.
 
-![a](/assets/22122023/Picture1.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/22122023/Picture1.jpg)
 
 [https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connection-types-overview?view=azuresql](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connection-types-overview?view=azuresql)
 
@@ -28,7 +28,7 @@ There might be times when there is a short disconnection and we don’t want tha
 
 By default, patching window is set to 5 PM to 8 AM every day. But some customers would like to change this setting to perform the maintenance over the weekend. This update involves all the components maintenance. If you are using a redirect method of connection, then the maintenance for gateways will not impact your connection as you are already bypassing gateway.
 
-![a](/assets/22122023/Picture2.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/22122023/Picture2.jpg)
 
 [https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window?view=azuresql](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window?view=azuresql)
 
@@ -47,7 +47,7 @@ Also, if you need more metrics for alerts then you can enable diagnostics logs w
 
 [https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing-configureview=azuresql#set-up-auditing-for-your-server-to-event-hubs-or-azure-monitor-logs](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing-configure?view=azuresql#set-up-auditing-for-your-server-to-event-hubs-or-azure-monitor-logs)
 
-![a](/assets/22122023/Picture3.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/22122023/Picture3.jpg)
 
 You cannot get the memory here as it will always be more than 80%.
 We’ve good documentation on how to determine the memory that is needed for your SQL DB.
