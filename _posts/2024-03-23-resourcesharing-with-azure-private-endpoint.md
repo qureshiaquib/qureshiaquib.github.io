@@ -1,6 +1,6 @@
 ---
 title: "Enhancing Azure Connectivity: Sharing PaaS instance across customer tenants on Azure"
-date: 2024-3-25 12:00:00 +500
+date: 2024-3-23 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Private Endpoint]
 ---
