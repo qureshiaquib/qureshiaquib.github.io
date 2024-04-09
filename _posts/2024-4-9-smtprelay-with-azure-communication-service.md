@@ -61,16 +61,18 @@ Once the Role is created we’ll need to assign this to service principal
 
 ## Test SMTP Relay via Powershell
 That’s all, now you’ll need to find out the sender email. Which is default DoNotReply@domain.com
-> Note: You can add custom sender email by sending couple of emails from the default email address and then raising support case.
-support engineer can help you change the tier to higher which will allow you to add more custom email address.
-{: .prompt-tip }
 
 ![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture10-1.jpg)
 ![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture10-2.jpg)
 
+> Note: As you can see in the screenshot Add button is greyed out.
+You can add custom sender email by sending couple of emails from the default email address and then raising support case.
+support engineer can help you change the tier to higher which will allow you to add more custom email address.
+{: .prompt-tip }
+
 You’ll need credentials to authenticate to the service. 
 
-* Username is "<Azure Communication Services Resource name>.<Entra Application ID>.<Entra Tenant ID>" 
+* Username is \< Azure Communication Services Resource name>. \< Entra Application ID>. \< Entra Tenant ID>
 * Password is the client secret which you’ve generated.
 * Port that we’ll need to use is 587
 * SMTP server address is smtp.azurecomm.net
