@@ -16,7 +16,7 @@ timezone: Asia/Kolkata
 
 title: Azure Doctor # the main title
 
-tagline: Learn Azure, For Beginners and Experts # it will display as the sub-title
+tagline: Prescribing Cloud Solutions # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   This blog is created to share the learnings from field related to Azure.
