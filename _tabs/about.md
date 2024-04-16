@@ -20,7 +20,7 @@ In this blog I share two category of post.
 
 
 >Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us.
-click below link to submit your emails.
+click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
 {: .prompt-tip }
 
