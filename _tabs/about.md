@@ -6,19 +6,23 @@ order: 4
 
 Hi,
 
-This is Aquib and welcome to my site Azure Doctor!
+My name is Aquib and welcome to Azure Doctor!
 
-I work as Cloud Architect at Microsoft.
+I work as Cloud Architect at Microsoft. Have been in technology for more than a decade.
 My job is to assist Enterprises to help them Architect, Configure, and Optimize their Microsoft Azure solutions.
 
-This blog is a compilation of random things that I’ve learned and feel essential to refer back to in the future.
-
-In this blog I share two category of post. First one namely tech-blog which is for Azure Admin/Architects with detailed walkthrough of the topic. 
-
-The second type of post is Azure Shorts. This is for folks who're interested in learning quick tips that can help them improve their existing azure deployments.
-Expect frequency of this type of post more than a complete tech-blog.
-If you know something more about specific shorts which I post I invite you to comment on the post so others can benefit from your insights!
-
+This blog is a compilation of things that I’ve learned and feel essential to refer back to in the future.
 This is my small way to help the community.
 
-Happy Learning!!
+In this blog I share two category of post. 
+* **Tech Blog** which is for Azure Admin/Architects with detailed walkthrough of the topic. 
+* **Azure Shorts** This is for folks who're interested in learning quick tips that can help them improve their existing azure deployments.
+
+
+>Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us.
+click below link to submit your emails.
+[https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
+{: .prompt-tip }
+
+
+Thank you for visiting Azure Doctor. If you find a post helpful, feel free to share it with your colleagues and don’t hesitate to contribute your own insights in the comments. **Happy learning**
