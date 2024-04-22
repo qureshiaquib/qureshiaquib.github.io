@@ -71,3 +71,8 @@ Cert Rebind in IIS
 [click here](https://learn.microsoft.com/en-us/iis/get-started/whats-new-in-iis-85/certificate-rebind-in-iis85)
 
 Happy Learning!
+
+>Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
+click the link to submit your email.
+[https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
+{: .prompt-tip }

@@ -33,3 +33,9 @@ So this exposes your own application with PLS and PE and eliminate the need of V
 I hope above scenario help you to design more complex architecture leveraging private endpoint capabilities.
 
 Happy Learning!
+
+
+>Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
+click the link to submit your email.
+[https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
+{: .prompt-tip }

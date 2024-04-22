@@ -85,3 +85,8 @@ Now you can use any third party application to send email via the above paramete
 Conclusion: I trust this guide helps you in configuring SMTP relay and send emails from your custom or third party application without any change to the application/code.
 
 Happy Learning!
+
+>Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
+click the link to submit your email.
+[https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
+{: .prompt-tip }

@@ -19,7 +19,7 @@ In this blog I share two category of post.
 * **Azure Shorts** This is for folks who're interested in learning quick tips that can help them improve their existing azure deployments.
 
 
->Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us.
+>Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
 {: .prompt-tip }
