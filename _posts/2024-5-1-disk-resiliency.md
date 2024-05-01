@@ -25,8 +25,7 @@ If you don’t need zonal resilience but want to achieve zonal isolation, then c
 
 ## ZRS Disk Scenario
 
-If you choose a ZRS disk, the data is synchronously replicated across all three AZs in a region, making the disk resilient to a zone down scenario. So, if the same AZ as the above scenario 1 were to go down, your application wouldn’t go down because of the disk.
-Please note that VMs can still go down if the zone hosting the VM compute is down, but in this section, we’re majorly focusing on Disk resiliency! You always have the option to deallocate the VM or create a new VM in a healthy zone.
+If you choose a ZRS disk, the data is synchronously replicated across all three AZs in a region, making the disk resilient to a zone down scenario. So, if the same AZ as the above scenario 1 were to go down, your application wouldn’t go down because of the disk. Please note that VMs can still go down if the zone hosting the VM compute is down, but in this section, we’re majorly focusing on Disk resiliency! You always have the option to deallocate the VM or create a new VM in a healthy zone.
 
 ![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/picture3.jpg)
 
