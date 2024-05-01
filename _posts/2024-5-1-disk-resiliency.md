@@ -52,7 +52,6 @@ You can opt for private preview, check out the link below.
 [https://azure.microsoft.com/en-in/updates/private-preview-force-detach-zone-redundant-disks-during-zone-outage/](https://azure.microsoft.com/en-in/updates/private-preview-force-detach-zone-redundant-disks-during-zone-outage/)
 
 I hope this information helps you in designing more resilient architecture.
-
 Special thanks to Bea Vincent from Azure Disk team in validating the content.
 
 Happy Learning!
