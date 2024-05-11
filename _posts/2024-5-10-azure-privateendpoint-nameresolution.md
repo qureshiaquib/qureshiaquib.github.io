@@ -34,8 +34,8 @@ Advantage: MS generally recommend to have ADPR because you don’t have to manag
 ### 2. Create conditional forwarder without storing it in Active Directory:
 Another approach is, when you’re creating a conditional forwarder in on-premises DNS servers – do not store that in the Active Directory. Due to this, the same won’t be replicated to DNS server on Azure. Which avoids the conflicts.
 
-There is a catch with this approach. If you’ve 20 domain controllers with integrated DNS then you’ll have to manually create conditional forwarder in each DNS server. You can script this via Powershell.
-Please note, this need to be done everytime you create a new type of private endpoint for example if you were using blob storage and then started using SQL PaaS Database then you get a new FQDN. Same need to be created once again on each DNS server via Powershell script. Or if your organization allows you do add all well known private endpoint FQDNs beforehand all at once then you can do this.
+However, there is a catch with this approach. If you’ve 20 domain controllers with integrated DNS then you’ll have to manually create conditional forwarder in each DNS server. You can script this via Powershell.
+Please note, this needs to be done every time you create a new type of private endpoint for example if you were using blob storage and then started using SQL PaaS Database then you get a new FQDN. Same need to be created once again on each DNS server via Powershell script. Or if your organization allows you do add all well known private endpoint FQDNs beforehand all at once then you can do this.
 
 For PowerShell script, you can use below link and the author has created a script which you can run and quickly create conditional forwarders.
 
@@ -44,7 +44,7 @@ For PowerShell script, you can use below link and the author has created a scrip
 
 ### 3. Create a separate active directory partition:
 
-In this solution you’ll need to create a separate active directory partition. Store the conditional forwarder in that partition. You’ll only need to join on-premises DNS Servers in that partition. Leaving behind the DNS Server which is hosted on Azure. Which will eventually not replicate the conditional forwarder to Azure hosted DNS Servers hence conflict won’t occur.
+In this solution, you'll need to create a separate Active Directory partition. Store the conditional forwarder in that partition. You’ll only need to join on-premises DNS Servers in that partition. Leaving out the DNS server hosted on Azure. Which will eventually not replicate the conditional forwarder to Azure hosted DNS Servers hence conflict won’t occur.
 
 Please note, If you already have created conditional forwarder and then think about going with this solution, there is a bug in Active directory DNS. You’ll need to delete and re-create all your conditional forwarder in on-premises DNS Servers.
 
