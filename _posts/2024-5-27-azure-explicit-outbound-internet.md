@@ -25,7 +25,7 @@ You can use below options and transition to explicit outbound internet communica
 
 ## Azure NAT Gateway
 
-This is simplest and recommended option by Microsoft. The process is to deploy a NAT gateway. NAT GW doesn’t require any VNET. You’ll need to associate this to at least one subnet so that outbound traffic from that subnet would go via the NAT gateway service. NAT gateway would have static Public IP controller by you or even static Public IP Prefix.
+This is simplest and recommended option by Microsoft. The process is to deploy a NAT gateway. NAT GW doesn’t require any VNET. You’ll need to associate this to at least one subnet so that outbound traffic from that subnet would go via the NAT gateway service. NAT gateway would have static Public IP controlled by you or even static Public IP Prefix.
 
 ![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/picture1.jpg)
 
