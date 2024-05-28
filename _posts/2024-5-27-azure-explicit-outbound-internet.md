@@ -8,12 +8,12 @@ As you may have read the announcement regarding the retirement of the default in
 
 [https://azure.microsoft.com/en-us/updates/default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access/](https://azure.microsoft.com/en-us/updates/default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access/)
 
-So after 30th of September 2025 your default internet access on Azure VM would cease to work. Customers aware of the impact have already started transitioning to explicit outbound method to get to the internet for their workloads.
+So after 30th of September 2025 your default internet access on new Azure VM which you create would cease to work. Customers aware of the impact have already started transitioning to explicit outbound method to get to the internet for their workloads.
 If you're still unsure about what this change entails, its impact, and the solutions you can use, this blog is for you.
 
-* **Scenario**: You have bunch of VMs running in a VNET. You do not have any User defined route assigned to your subnet, and also you do not have any routes which sends 0.0.0.0/0 traffic to internet. In this scenario if your VMs tries to reach out to internet this is still possible. (If you do not have any internet bound block rule in your NSG) Internet on your VMs will use dynamic IPs provided by Azure. This will cease to function on 30th of September 2025.
+* **Scenario**: You have bunch of VMs running in a VNET. You do not have any User defined route assigned to your subnet, and also you do not have any routes which sends 0.0.0.0/0 traffic to internet. In this scenario if your VMs tries to reach out to internet this is still possible. (If you do not have any internet bound block rule in your NSG) Internet on your VMs will use dynamic IPs provided by Azure. This will cease to function on 30th of September 2025 for new VMs which you create and no impact to existing VMs.
 
-    I believe internet outbound by default without you controlling the IPs was a risky scenario anyway. 
+    I believe internet outbound by default without you controlling the IPs was a risky scenario anyway. Hence I recommend you to use below approach so you have consistent behaviour for outbound internet connection.
 
 * **Solution**:
 You can use below options and transition to explicit outbound internet communication instead of relying on Azure provided dynamic public IPs.
