@@ -27,8 +27,8 @@ Keep in mind that whatever usable space you get after configuring RAID, you’ll
 To calculate the usable storage you can get from your AVS host, you can use the website mentioned below.
 The example is of AV36P. which has 2 Disk groups with 3 capacity disk each of 3.2 TB.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture2.jpg)
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture3.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture2.jpg){: w="400" h="1000" }
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture3.jpg){: w="400" h="1000" }
 
 
 Based on observations, you’ll get anywhere between 10 – 13 TB of usable space per node.
@@ -73,7 +73,7 @@ In addition to ANF, Microsoft offers a first-party solution to meet storage need
 
 Elastic SAN would be exposed as a VMFS datastore.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture6.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture6.jpg){: w="500" h="900" }
 
 
 Elastic SAN by default comes in a premium SKU. You can purchase a base SKU in TBs, which increases IOPS and throughput. However, if your throughput and IOPS requirements are sufficient with the base SKU, you can add additional storage, which is cheaper and doesn’t increase IOPS and throughput.
