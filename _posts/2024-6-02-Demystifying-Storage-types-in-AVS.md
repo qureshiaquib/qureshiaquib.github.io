@@ -19,7 +19,7 @@ The size will be based on the RAID configuration you do.
 
 FTT indicates the number of nodes a cluster can withstand failure and still retain your data without any loss. The higher the FTT rate, the higher the minimum host requirement will be.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture1.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture1.jpg)
 
 
 Keep in mind that whatever usable space you get after configuring RAID, you’ll need to keep 25% free space in vSAN as slack space. This is for host failure, updates, and vSAN policy changes. You should maintain 25% free space to meet SLA requirements.
@@ -27,14 +27,14 @@ Keep in mind that whatever usable space you get after configuring RAID, you’ll
 To calculate the usable storage you can get from your AVS host, you can use the website mentioned below.
 The example is of AV36P. which has 2 Disk groups with 3 capacity disk each of 3.2 TB.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture2.jpg)
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture3.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture2.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture3.jpg)
 
 
 Based on observations, you’ll get anywhere between 10 – 13 TB of usable space per node.
 Capacity disks with AVS nodes can be found in screenshot below.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture4.png)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture4.png)
 
 These are split into two disk groups.
 
@@ -52,7 +52,7 @@ Data transfer between AVS and ANF is free of cost as it’s connected via the in
 
 The diagram below shows the connectivity mechanism.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture5.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture5.jpg)
 
 
 As AVS is deployed in a specific zone, you’ll need to ensure ANF is also deployed in the same zone to achieve a low latency connection for datastores. This can be achieved with the availability zone volume group placement feature, which places ANF in a specific zone.
@@ -73,19 +73,19 @@ In addition to ANF, Microsoft offers a first-party solution to meet storage need
 
 Elastic SAN would be exposed as a VMFS datastore.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture6.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture6.jpg)
 
 
 Elastic SAN by default comes in a premium SKU. You can purchase a base SKU in TBs, which increases IOPS and throughput. However, if your throughput and IOPS requirements are sufficient with the base SKU, you can add additional storage, which is cheaper and doesn’t increase IOPS and throughput.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture7.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture7.jpg)
 
 
 As shown in the screenshot above, the base size increases IOPS and throughput, while additional capacity, which is cheaper, doesn’t commit to any IOPS/Throughput.
 
 Elastic SAN is fully integrated into the AVS blade on the Azure portal. You can create datastores from the same blade, making it easier to map and extend datastores.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture8.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture8.jpg)
 
 We've covered the Storage options in AVS architecture. I hope this will help you in sizing AVS for any new opportunity.
 
