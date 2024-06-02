@@ -3,6 +3,7 @@ title: "Simplify certificate management of on-premises IIS server with Azure Arc
 date: 2023-11-22 12:00:00 -500
 categories: [tech-blog]
 tags: [Azure Arc]
+pin: true
 ---
 
 One common question which I’ve come across is certificate management for web servers. Usually when servers are hosted on Azure there are ways like storing certificates and secrets in Azure Key vault is a viable solution. I’ve come across customers who’re running servers in hybrid and few servers would still remain on-premises because of dependencies. For these web servers managing certificates is a costly affair. Common practice which I’ve seen is admin sharing the certificate with application team on some file share. This creates few problems

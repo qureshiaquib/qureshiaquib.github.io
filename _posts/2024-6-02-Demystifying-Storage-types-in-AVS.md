@@ -85,7 +85,7 @@ As shown in the screenshot above, the base size increases IOPS and throughput, w
 
 Elastic SAN is fully integrated into the AVS blade on the Azure portal. You can create datastores from the same blade, making it easier to map and extend datastores.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/Picture8.jpg)
+![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/picture8.jpg)
 
 We've covered the Storage options in AVS architecture. I hope this will help you in sizing AVS for any new opportunity.
 
