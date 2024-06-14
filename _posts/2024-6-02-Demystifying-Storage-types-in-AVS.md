@@ -67,7 +67,7 @@ This tool is currently in preview and free.
 > While AFS also provides the NFS protocol, it is currently not supported as a datastore.
 {: .prompt-tip }
 
-## Azure Elastic SAN with AVS:
+## Azure Elastic SAN with AVS
 
 In addition to ANF, Microsoft offers a first-party solution to meet storage needs: Elastic SAN. It is cheaper than Azure NetApp Files and scalable. Elastic SAN can be used to provide datastores to AVS. We’ll get iSCSI LUNs that can be mapped to AVS, and then VMs can be created in that datastore.
 
