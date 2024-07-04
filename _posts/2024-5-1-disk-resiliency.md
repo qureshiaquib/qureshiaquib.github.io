@@ -1,5 +1,5 @@
 ---
-title: "ZRS Disk : Disk consideration while building infra resiliency"
+title: "ZRS Disk: Disk consideration while building infra resiliency"
 date: 2024-5-01 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure ZRS Disk]

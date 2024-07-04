@@ -1,5 +1,5 @@
 ---
-title: "Effortless Azure Governance: Implementing Azure Lighthouse for Simplified Multi-Tenant Administration"
+title: "Azure Lighthouse for Simplified Multi-Tenant Administration"
 date: 2024-3-6 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Lighthouse]

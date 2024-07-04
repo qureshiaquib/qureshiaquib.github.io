@@ -1,5 +1,5 @@
 ---
-title: "Demystifying Disaster Recovery Costs with ASR: A Comprehensive Guide"
+title: "Demystifying DR Costs with ASR: A Comprehensive Guide"
 date: 2024-2-7 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Site Recovery]

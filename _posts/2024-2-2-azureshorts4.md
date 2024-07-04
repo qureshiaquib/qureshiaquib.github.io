@@ -1,5 +1,5 @@
 ---
-title: "Azure Shorts #4: Application Gateway Basic vs MultiSite listener"
+title: "Application Gateway Basic vs MultiSite listener"
 date: 2024-2-1 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure Application Gateway]

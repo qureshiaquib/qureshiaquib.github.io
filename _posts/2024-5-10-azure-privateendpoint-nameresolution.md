@@ -1,5 +1,5 @@
 ---
-title: "Strategies for On-Premise Name Resolution in Azure Private Endpoint Deployments"
+title: "On-Prem Techniques for Azure Private Endpoint Deployment"
 date: 2024-5-11 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Private Endpoint Name Resolution]

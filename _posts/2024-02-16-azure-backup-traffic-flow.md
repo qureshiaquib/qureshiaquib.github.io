@@ -1,5 +1,5 @@
 ---
-title: "Azure Backup Traffic Flow: Public Endpoints and Firewall Considerations"
+title: "How does Azure Backup Traffic Flow works?"
 date: 2024-2-16 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Backup]

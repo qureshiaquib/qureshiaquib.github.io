@@ -1,5 +1,5 @@
 ---
-title: "Azure Shorts #5: Reserved Instances Explained: Optimizing Cloud Costs for Your Workloads"
+title: "Reserved Instances Explained"
 date: 2024-2-26 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Reserved Instance]

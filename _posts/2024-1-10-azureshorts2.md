@@ -1,5 +1,5 @@
 ---
-title: "Azure Shorts #2: Azure Key Vault & HSM: Which one is best for your encryption needs?"
+title: "Azure Key Vault vs HSM: Which one is best for you?"
 date: 2024-1-10 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure HSM]

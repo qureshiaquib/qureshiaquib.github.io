@@ -1,5 +1,5 @@
 ---
-title: "Azure Shorts #1: Windows Server Azure Edition"
+title: "Windows Server Azure Edition"
 date: 2023-12-29 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure VM]

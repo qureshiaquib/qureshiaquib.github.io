@@ -1,5 +1,5 @@
 ---
-title: "Access Azure File Share from Remote sites via Entra ID joined devices"
+title: "Access Azure File from Remote sites via Entra ID join device"
 date: 2024-6-14 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure File Share]

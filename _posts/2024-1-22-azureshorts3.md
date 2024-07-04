@@ -1,5 +1,5 @@
 ---
-title: "Azure Shorts #3: Optimizing Azure Workloads: Unraveling Disk IOPS and Throughput Challenges for Peak Performance"
+title: "Unraveling Disk IOPS and Throughput Challenges"
 date: 2024-1-22 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure Disk]
