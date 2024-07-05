@@ -3,7 +3,7 @@ title: "Azure Retires Default VM Outbound Access: How to Transition"
 date: 2024-5-27 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Explicit Outbound Internet]
-description: "Discover key strategies for securing Azure VM internet access post-retirement. Options include NAT Gateway, Azure Firewall, Instance Level Public IP, and Load Balancer"
+description: "Discover key strategies for securing Azure VM internet access post-retirement. Options include NAT Gateway, Azure Firewall, Instance Level Public IP, and LB"
 ---
 As you may have read the announcement regarding the retirement of the default internet access, If not please go through it here. 
 
