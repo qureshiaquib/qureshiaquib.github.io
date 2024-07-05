@@ -3,6 +3,7 @@ title: "Can Reserved Instances be applied to two running VMs?"
 date: 2024-2-26 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Reserved Instance]
+description: "Learn how Azure Reserved Instance (RI) benefits apply to multiple VMs at the same time or serially. know whether RI is applicable to your VM scenario"
 ---
 
 ## Introduction:

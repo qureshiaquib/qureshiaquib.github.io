@@ -3,6 +3,7 @@ title: "Demystifying DR Costs with ASR: A Comprehensive Guide"
 date: 2024-2-7 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Site Recovery]
+description: "Discover Azure Site Recovery (ASR) costs for IaaS DR solutions, covering licensing, disk replication, bandwidth, and all related cost"
 ---
 
 I’ve come across multiple times when architects and sales team are designing DR solutions with ASR and wonder what would be the cost that they need to factor or share with customer. Finding cost is an integral part of the solution which we make. But it can only be extracted once you understand all the moving parts which makes DR as a solution.

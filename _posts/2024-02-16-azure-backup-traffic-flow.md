@@ -3,6 +3,7 @@ title: "How to Streamline Azure Backup Traffic with Service Endpoint"
 date: 2024-2-16 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Backup]
+description: "Learn how Azure Backup data flows through firewalls, and also when does it skip firewall and go directly to Azure Storage with help of service endpoint"
 ---
 
 ## Scenario

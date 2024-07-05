@@ -3,6 +3,7 @@ title: "How Windows Server Azure Edition Minimizes Downtime"
 date: 2023-12-29 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure VM]
+description: "Discover Windows Server Azure Edition benefits, apply security patches without reboots to minimize downtime and enhance production efficiency"
 ---
 
 This is the first post tailored for folks who're interested in learning quick tips related to Azure.

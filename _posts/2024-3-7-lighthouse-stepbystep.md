@@ -3,6 +3,7 @@ title: "Azure Lighthouse for Simplified Multi-Tenant Administration"
 date: 2024-3-6 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Lighthouse]
+description: "Discover Azure Lighthouse for managing multiple Azure AD tenants from a unified portal. Learn how to set up Azure Lighthouse for easy subscription management"
 ---
 
 One of my customer asked, we’ve multiple Azure AD Tenants in our Enterprise enrollments and subscriptions associated with those. We wanted a simpler way to manage subscription from single Azure Portal and doesn’t want to switch between different directories to see the resources.

@@ -3,6 +3,7 @@ title: "Enhance your Azure Observability with Azure Workbook"
 date: 2024-4-22 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure Workbook]
+description: "Discover pre-built Azure workbooks for enhanced monitoring across azure services like Firewall, Defender for Cloud, and Azure Arc from public repositories"
 ---
 
 This Doctor Shorts is a collection of workbooks. If you’re a partner who has deployed some solution for your customer, observability is key to your project. Workbooks can help you provide value to your customer not only by deploying the solution but also by providing monitoring capabilities. You can create your own workbook by writing ARG and KQL queries, but why reinvent the wheel when it’s already done by the PG? There are plenty of places where workbooks are available: Azure PG Github Repo, personal GitHub repos, and some are available in learn documentation, etc. All the links below will help you with JSON format workbooks, which you can import directly into your workbook and utilize them. Within less than 10 minutes, you’re up and running!

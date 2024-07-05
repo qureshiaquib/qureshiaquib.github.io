@@ -3,6 +3,7 @@ title: "Access Azure File from Remote sites via Entra ID join device"
 date: 2024-6-14 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure File Share]
+description: "Learn how to integrate Azure File share with Entra ID Kerberos authentication, simplifying file access across remote sites without joining machine to AD Domain"
 ---
 
 * **Scenario**: I've come across a scenario where a customer had remote sites with File Servers, no Domain controller on site, and no connectivity with the Hub site where the domain controller was hosted. Users used to access the file server locally.

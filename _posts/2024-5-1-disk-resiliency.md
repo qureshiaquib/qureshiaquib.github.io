@@ -3,6 +3,7 @@ title: "ZRS Disk: Disk consideration while building infra resiliency"
 date: 2024-5-01 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure ZRS Disk]
+description: "Explore Azure ZRS Disk and VM resilience strategies: utilize zonal VMs for isolated workloads, and leverage ZRS disks for synchronous replication across AZs"
 ---
 
 Before we deep-dive into Azure ZRS Disk and VM resiliency scenarios, the recommendation from Microsoft is to always choose high availability options for App and DB servers. This may lead you to deploy more than one VM, which can be hosted in Availability Zone or using Availability Set for fault isolation to minimize downtime and attaining higher SLA.

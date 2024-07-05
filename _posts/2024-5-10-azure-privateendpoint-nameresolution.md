@@ -3,6 +3,7 @@ title: "On-Prem DNS Changes for Azure Private Endpoint Deployment"
 date: 2024-5-11 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Private Endpoint Name Resolution]
+description: "Optimize Azure private endpoint DNS: Use Azure DNS Private Resolver, avoid AD replication conflicts, or create separate AD partitions for better management"
 ---
 
 * **Scenario**: In a private endpoint scenario where a customer wants to connect to the private endpoint from an on-premises network, they’ll need to first resolve the FQDN to IP address. Typically, I’ve seen implementation partners create a conditional forwarder with the FQDN of the PaaS service and then point that to the private IP address of a DNS server which is hosted on Azure. Then next step is from DNS server hosted on Azure, same type of conditional forwarder point to Azure wire server IP 168.63.129.16 which helps resolve the private endpoint IP.

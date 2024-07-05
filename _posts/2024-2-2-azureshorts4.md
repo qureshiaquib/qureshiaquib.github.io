@@ -3,6 +3,7 @@ title: "Basic and MultiSite listener in Azure Application Gateway"
 date: 2024-2-1 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure Application Gateway]
+description: "Understand the differences between Basic and Multi-site listeners in Azure Application Gateway. Learn how listener types affect website and API functionality"
 ---
 
 I've come across instances where customer had depoyed basic listener and then tried deploying multi-site listener and saw their website/APIs were not working. While most of us go ahead with multi-site configuration, I wanted to discuss about Basic vs Multi-site listener information quickly.

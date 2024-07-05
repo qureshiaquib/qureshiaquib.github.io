@@ -3,6 +3,7 @@ title: "Send emails via SMTP relay with Azure Communication Service"
 date: 2024-4-09 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Communication Service]
+description: "Learn how to set up SMTP relay using Azure Communication Service for seamless email sending from Azure-hosted applications without modifying code"
 ---
 
 We’ve come across multiple cases where customers want to send emails from Applications migrated to Azure through some kind of SMTP service. Though we’ve seen customers opting for O365 for SMTP relay, this can create issues due to throttling limitations in Office Service.

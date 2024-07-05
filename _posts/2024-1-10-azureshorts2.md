@@ -3,6 +3,7 @@ title: "Azure Key Vault vs HSM: Which one is best for you?"
 date: 2024-1-10 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure HSM]
+description: "In this blog post Azure Doctor explains how many types of HSM are there on Azure, This will help you decide which service to use for keys and secrets"
 ---
 
 This post is for customers who are trying to explore key management solutions on Azure. As there are different options Azure KeyVault Standard/Premium, Azure Managed HSM / Managed HSM pools, Dedicated HSM.

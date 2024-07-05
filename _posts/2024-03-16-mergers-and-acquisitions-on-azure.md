@@ -3,6 +3,7 @@ title: "How to Handle Mergers, Acquisitions and Movements in Azure"
 date: 2024-3-16 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Enterprise Agreement]
+description: "Explore Azure subscription migrations. Learn about non-technical and technical migrations between Azure AD tenants and EA enrollments and CSP to EA subscription"
 ---
 
 Mergers and Acquisitions are common but I’ve seen architects, sales and account teams sometimes find it difficult when we get queries about how the movement of Azure Subscription happens when both the organizations are using Azure. This can be within the same Azure AD Tenant or between Azure AD tenant move. Because couple of us sometimes are involved after subscription are in place already.

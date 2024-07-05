@@ -3,6 +3,7 @@ title: "Demystifying Storage types in Azure VMware solution"
 date: 2024-6-02 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure VMware solution - storage]
+description: "Explore Azure VMware Solution (AVS) storage options: vSAN for local NVMe SSDs, Azure NetApp Files for NFS shares, and Elastic SAN for scalable iSCSI LUNs"
 ---
 
 When performing a lift and shift migration, you’ll encounter different types of destinations on Azure.

@@ -3,6 +3,7 @@ title: "How to Change Your onmicrosoft.com Domain in Entra ID"
 date: 2024-6-30 12:00:00 +500
 categories: [tech-blog]
 tags: [Entra ID]
+description: "Learn how to add and manage additional onmicrosoft.com domains in Entra ID for Azure subscriptions, ensuring flexibility in domain naming and user management"
 ---
 
 * **Scenario**: There can be many reasons why you would want to change your Entra ID domain name. A few are mentioned below:

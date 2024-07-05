@@ -3,6 +3,7 @@ title: "How to Configure Azure SQL Managed Instance for Beginners"
 date: 2023-12-22 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure SQL Managed Instance]
+description: "This blog is for beginners who wanted to learn Azure SQL managed instance and learn how to quickly configure the service with best practices"
 ---
 
 I have come across multiple instances where customer is exploring SQL PaaS instance for the first time.
