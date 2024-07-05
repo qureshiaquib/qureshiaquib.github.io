@@ -19,7 +19,7 @@ title: Azure Doctor # the main title
 tagline: Prescribing Cloud Solutions # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  This blog is created to share the learnings from field related to Azure.
+  This blog covers Azure architecture best practices and field insights from Microsoft Azure Architects, focusing on optimal cloud deployments and powerful tips.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
