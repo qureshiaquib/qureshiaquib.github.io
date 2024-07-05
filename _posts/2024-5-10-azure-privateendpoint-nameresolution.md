@@ -1,5 +1,5 @@
 ---
-title: "On-Prem Techniques for Azure Private Endpoint Deployment"
+title: "On-Prem DNS Changes for Azure Private Endpoint Deployment"
 date: 2024-5-11 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Private Endpoint Name Resolution]

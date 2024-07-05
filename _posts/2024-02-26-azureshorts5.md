@@ -1,5 +1,5 @@
 ---
-title: "Reserved Instances Explained"
+title: "Can Reserved Instances be applied to two running VMs?"
 date: 2024-2-26 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Reserved Instance]

@@ -1,5 +1,5 @@
 ---
-title: "Windows Server Azure Edition"
+title: "How Windows Server Azure Edition Minimizes Downtime"
 date: 2023-12-29 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure VM]

@@ -1,5 +1,5 @@
 ---
-title: "Azure SQL Managed Instance: What you need to know"
+title: "How to Configure Azure SQL Managed Instance for Beginners"
 date: 2023-12-22 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure SQL Managed Instance]

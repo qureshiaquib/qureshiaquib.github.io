@@ -1,5 +1,5 @@
 ---
-title: "Enhance Observability with Azure Workbook"
+title: "Enhance your Azure Observability with Azure Workbook"
 date: 2024-4-22 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure Workbook]

@@ -1,5 +1,5 @@
 ---
-title: "Mergers, Acquisitions and Movements in Azure"
+title: "How to Handle Mergers, Acquisitions and Movements in Azure"
 date: 2024-3-16 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Enterprise Agreement]

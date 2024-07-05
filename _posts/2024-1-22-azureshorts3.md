@@ -1,5 +1,5 @@
 ---
-title: "Unraveling Disk IOPS and Throughput Challenges"
+title: "How to Improve Azure VM Performance: Managing Disk IOPS"
 date: 2024-1-22 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure Disk]
