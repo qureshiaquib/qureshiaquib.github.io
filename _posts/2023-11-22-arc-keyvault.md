@@ -46,25 +46,25 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
 ```
 For auto renewal of certificate, we’ll need to enable IIS Rebind.
 
-![Auto Rebind in IIS Server](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture1.jpg)
+![Auto Rebind in IIS Server](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/auto-rebind-in-iis-server.jpg)
 
 This is how Arc VM Extension looks like when it’s enabled.
 
-![Arc VM Extension on Azure Portal](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture2.jpg)
+![Arc VM Extension on Azure Portal](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/arc-vm-extension.jpg)
 
 Assigning permission to Arc server to fetch the certificate from keyvault.
 You can use access policy on Keyvault as well, it’s supported.
 
-![Permissions on KeyVault to fetch Certificate](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture3.jpg)
+![Permissions on KeyVault to fetch Certificate](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/permissions-on-keyvault.jpg)
 
 Versions of the certificate can be uploaded from keyvault certificate blade and looks like below.
 
-![Certificate renewed in KeyVault](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture4.jpg)
+![renewed Certificate in KeyVault](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/renewed-certificate-in-keyvault.jpg)
 
 If you’re renewing certificates and wanted to see if certificates are getting pulled down properly or not you can check error logs located here.
 C:\ProgramData\Guestconfig\extension_logs\Microsoft.Azure.Keyvault.keyvaultforwindows
 
-![Logs for keyvault extension](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/Picture5.jpg)
+![Logs for keyvault extension](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/logs-for-keyvault-extension.jpg)
 
 If you’re running Azure VM similar thing can be achieved
 [click here](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows)
