@@ -28,56 +28,56 @@ I am using dummy IIS server where I have hosted my website, but you can replace 
 
 The following diagram shows the overview of the architecture:
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture1.jpg)
+![Azure architecture diagram with traffic manager and application gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/azure-architecture-traffic-manager.jpg)
 
 
 So, let us start with the actual server which is hosting the website.
 Below are the bindings in IIS. This is just a demo setup of the website. Actual SAP App would be different. The intention here is to highlight the website that is hosted on 4443 on a hostname which is s4.azurequreshi.com
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture2.jpg)
+![Picture of website configuration in IIS server](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/iis-server-website-configuration.jpg)
 
 Similarly, the screenshot below shows another website. The same can be hosted on a separate webserver as well.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture3.jpg)
+![Another picture of website configuration in IIS Server](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/iis-server-another-website-configuration.jpg)
 
 ## Application Gateway Settings: 
 ### Let us check the frontend IP of the application gateway.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture4.jpg)
+![Frontend IP of application gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/frontend-ip-application-gateway.jpg)
 
 ### Now let us look at the listener settings.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture5.jpg)
+![Listener configuration of application gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/listener-configuration-application-gateway.jpg)
 
 Simple multi site listener in application gateway for both the websites. The difference between both the listeners is the ports. 8443 and 4443.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture6.jpg)
+![Listener port details in app gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/listener-port-details-application-gateway.jpg)
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture7.jpg)
+![Another port details in application gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/another-port-details-application-gateway.jpg)
 
 ### Now backend setting
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture8.jpg)
+![Backend health setting in application gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/backend-health-application-gateway.jpg)
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture9.jpg)
+![Another backend health setting in application gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/another-backend-health-application-gateway.jpg)
 
 The only change is the hostname I am translating to s4.azurequreshi.com instead of webdisp.azurequreshi.com as my website in the back end hosted on s4.azurequreshi.com.
 
 ### Same setting can be seen for the 2nd http setting.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture10.jpg)
+![Changed backend setting in app gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/changed-backend-setting-application-gateway.jpg)
 
 ### Here is how the health probe looks like.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture11.jpg)
+![Health probe settings in application gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/health-probe-application-gateway.jpg)
 
 ### Now the rule configuration. No tweak very simple basic rules.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture12.jpg)
+![Basic rule configuration in app gateway backend pool](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/basic-rule-configuration-application-gateway.jpg)
 
 ### And the backend setting.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture13.jpg)
+![Backend setting in app gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/backend-setting-application-gateway.jpg)
 
 I have kept only the single IP as of now, but you can have two backend pools for two different websites. One pool for S4 and Another for EWM. Also, you can associate the backend pool with their respective rules in application gateway.
 
@@ -92,15 +92,15 @@ Once the above settings are done you may proceed with Traffic manager configurat
 ## Traffic Manager
 As this is an active passive DR hence, we will need to configure priority-based routing in traffic manager. 
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture14.jpg)
+![Priority based configuration in Traffic Manager](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/priority-based-traffic-manager.jpg)
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture15.jpg)
+![Primary endpoint in Traffic Manager](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/primary-endpoint-traffic-manager.jpg)
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture16.jpg)
+![Secondary endpoint in Traffic Manager](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/secondary-endpoint-traffic-manager.jpg)
 
 ### A look at the health probe of the traffic manager.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture17.jpg)
+![Health probe settings in Traffic Manager](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/health-probe-traffic-manager.jpg)
 
 
 With this setting traffic manager will only send the traffic to DC – central India. Once the endpoint becomes degraded then the traffic manager will provide DR IP Address to clients.
@@ -108,17 +108,17 @@ With this setting traffic manager will only send the traffic to DC – central I
 Last step is to set the CNAME of your URL to traffic manager.
 When you do nslookup you’ll find 
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture18.jpg)
+![CMD window showing the pointing of website to Traffic Manager](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/cmd-window-pointing-traffic-manager.jpg)
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture19.jpg)
+![Showing cname pointing to Traffic Manager](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/cname-pointing-traffic-manager.jpg)
 
 ## Result
 This is how the website would open, this is not specific screenshot of SAP S4 and EWM but this app gateway and traffic manager setting would be same.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture20.jpg)
+![Expected results in a web browser](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/expected-results-web-browser.jpg)
 
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/Picture21.jpg)
+![Showing another website in the web browser](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10122023/another-website-web-browser.jpg)
 
 Thanks Nishant Roy for reviewing the work and sharing the requirement which was the inspiration for writing this blog post.
 
