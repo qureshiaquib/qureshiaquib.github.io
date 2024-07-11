@@ -30,7 +30,7 @@ Along with above If you’re using third party NVA then you’ll need to factor 
 
 Below architecture diagram shows how backup traffic flows through Firewall.
 
-![Azure backup traffic Flow Architecture diagram](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16022024/azure-backup-traffic-flow-architecture-diagram.jpg)
+![Azure backup traffic flow architecture diagram](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16022024/azure-backup-traffic-flow-architecture-diagram.jpg)
 
 1 – Management traffic with Azure Backup Service\
 2- Data path for backup\
