@@ -23,13 +23,13 @@ Mostly it will be Azure to Azure DR scenario. Previously we used to use ASR for 
 ASR Recovery services vault gets created in DR region hence you'll need to select DR region while fetching the price.
 I've seen folks selecting DC region. which is misleading.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/Picture1.jpg)
+![ASR cost in azure pricing calculator](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/asr-cost-azure-pricing-calculator.jpg)
 
 ## ASR Disk
 
 When ASR is used to replicate VMs from source to target region it does block level replication of the disk. So, there wouldn’t be any VMs involved, it’ll be disk which gets created in DR region. Disk is present in customer’s subscription hence disk cost needs to be factored. If you’ve premium disk on source region then you can replicate it to standard SSD or standard HDD as well. This disk cost would be of target region.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/Picture2.jpg)
+![Disk cost in Azure pricing calculator](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/disk-cost-azure-pricing-calculator.jpg)
 
 ## ASR Bandwidth cost in DC Region
 
@@ -37,19 +37,19 @@ When disk is replicated via ASR service there is data replication which happens 
 
 Bandwidth cost is Internet bandwidth from DC region as anything going outside the region is egress and cost is involved. As inbound on DR region is free hence no cost there. For the first time the initial replication would be the entire data which gets replicated and after that it’ll be incremental data replication. So, what would be the size? It’ll be the data change rate which happens every day with compression of 50%. We can factor 3-5% of the total data which gets replicated with 50% compression.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/Picture3.jpg)
+![Bandwidth cost in for ASR](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/bandwidth-cost-asr.jpg)
 
 ## Cache storage
 
 Before incremental data gets into the disk snapshot, first data goes into a temporary cache storage account in blob present in source region and then from there ASR service picks it up and replicates to target region into disk snapshot. This data is stored temporarily and wouldn’t hold entire replicated data in blob. So, consider the data change rate of the entire data that you’re replicating. For example, if you’re replicating 1 TB of managed disk then concurrently if your data change rate is 5% then that much amount of data would stay in the blob storage. Which means 51GB per month. 
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/Picture4.jpg)
+![Cache blob storage cost for DR](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/cache-storage-cost-dr.jpg)
 
 ## Snapshot
 
 Once disk is created in DR, ASR retains almost 15 days of data which customer can select as RPO. You can consider 10GB for standard SSD and 20GB for premium SSD as the snapshot size. It depends upon the data change rate and the retention of the RPO.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/Picture5.jpg)
+![Snapshot required for incremental replication](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/snapshot-required-incremental-replication.jpg)
 
 ## Database VM
 
@@ -73,7 +73,7 @@ In the previous bandwidth section, it was for App VM replication via ASR but whe
 >First time it would be full replication of entire DB and hence cost would be higher. But once full replication completes it'll be incremental/ transactional replication which happens. Same full/incremental replication is applicable for ASR bandwidth size also.
 {: .prompt-info }
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/Picture6.jpg)
+![Cost of VNET peering in DR](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/07022024/cost-vnet-peering-dr.jpg)
 
 ## Common LZ Component
 

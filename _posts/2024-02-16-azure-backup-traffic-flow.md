@@ -30,7 +30,7 @@ Along with above If you’re using third party NVA then you’ll need to factor 
 
 Below architecture diagram shows how backup traffic flows through Firewall.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16022024/picture1.jpg)
+![Azure backup traffic Flow Architecture diagram](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16022024/azure-backup-traffic-flow-architecture-diagram.jpg)
 
 1 – Management traffic with Azure Backup Service\
 2- Data path for backup\
@@ -43,9 +43,9 @@ When we enable Azure Backup there are two types of traffic. First is management 
 
 You must be aware about Service Endpoints feature. Which basically is available for multiple PaaS services. This feature is available for Storage account too. So when we enable Service Endpoint on a Subnet, VMs where backup is initiated would connect to backup management plane over internet and follow the UDR. Which basically takes the management plane traffic to hit firewall. Once that is done and actual backup starts the data transfer over to *.blob.core.windows.net happens over service endpoint and this doesn’t traverse through firewall. The data traffic is bypassed. The reason is we’ll have service endpoint applicable for entire resources present in the subnet which tells that this is known traffic and doesn’t fall under the 0.0.0.0/0 traffic. You can validate this by going to NIC of the VM and checking the effective route.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16022024/picture2.jpg)
+![Effective routes showing storage service endpoint routes](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16022024/effective-routes-showing-storage-service-endpoint.jpg)
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16022024/picture3.jpg)
+![Architecture diagram showing backup traffic via firewall and storage traffic via service endpoints](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16022024/backup-traffic-firewall-storage-endpoints-architecture.jpg)
 
 1 – Management traffic with Azure Backup Service\
 2- Data path for backup
