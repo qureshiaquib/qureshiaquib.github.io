@@ -28,7 +28,7 @@ You can use below options and transition to explicit outbound internet communica
 
 This is simplest and recommended option by Microsoft. The process is to deploy a NAT gateway. NAT GW doesn’t require any VNET. You’ll need to associate this to at least one subnet so that outbound traffic from that subnet would go via the NAT gateway service. NAT gateway would have static Public IP controlled by you or even static Public IP Prefix.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/picture1.jpg)
+![Enabling NAT gateway for subnet](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/enabling-nat-gateway-for-subnet.jpg)
 
 
 ## Azure Firewall / NGFW
@@ -38,7 +38,7 @@ For optimized cost, you can deploy Basic SKU or Standard SKU of Azure Firewall w
 
 Here's an example of Hub and Spoke architecture from Microsoft docs.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/picture2.png)
+![Azure hub and spoke architecture diagram](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/azure-hub-and-spoke-architecture-diagram.png)
 
 
 Similarly you can have third party NGFW devices like Palo Alto, Fotigate, checkpoint etc in the Hub virtual network. These will house your firewall and point all internet outbound traffic to the firewall.
@@ -48,13 +48,13 @@ Similarly you can have third party NGFW devices like Palo Alto, Fotigate, checkp
 You can assign a public IP address to a VM directly. This approach is known as instance level public IP address. which provides explicit internet outbound connection. This is mostly used by NVAs and NGFW deployment on Azure. Or you can use it for DMZ workload. Goto NIC and then ipconfig, -> Assign Public IP Address.
 This option is the least preferred approach and not recommended for regular workload as having too many public IPs in your environment increases exposure risk.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/picture3.jpg)
+![Attaching public ip on the azure vm nic](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/attaching-public-ip-on-the-azure-vm-nic.jpg)
 
 
 ## Load balancer – outbound rule
 Another approach to handle this situation is to create a standard load balancer and then create outbound rule. Note that if you only create a standard load balancer with an inbound public IP without an outbound rule, your internet will not work. You’ll need to explicitly create an outbound rule and specify the protocol and SNAT port counts for internet access to function
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/picture4.jpg)
+![Using azure external load balancer outbound rule](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27052024/using-azure-external-load-balancer-outbound-rule.jpg)
 
 Though you cannot use a load balancer for every workload, if you have a web server in a DMZ already associated with a Standard LB, you can use an outbound rule approach.
 

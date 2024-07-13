@@ -16,20 +16,20 @@ Using a Regional VM
 
 If we create a regional VM, the disk (default LRS) can land in any zone regardless of where your VM compute lands. With Compute and Disk in different zones, you experience higher latencies and have an unpredictable resiliency posture. If the zone which hosts either your disk or VM goes down, your application will go down too. The data in a default LRS disk is replicated for data durability, but you can’t see or control the zone where the disk will land within the region.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/picture1.jpg)
+![Regional VM scenario if underlying zone is down](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/regional-vm-scenario.jpg)
 
 ## Using a Zonal VM
 
 If you don’t need zonal resilience but want to achieve zonal isolation, then containing the VM in a single zone with its disk can help. When you create a VM pinned to a zone, then its disks are also created in the same zone which avoid cross zone communication and avoid an outage in a different zone from impacting your workload. Azure still replicates the data for durability, but everything is contained in the same Availability Zone.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/picture2.jpg)
+![Zonal VM scenario for disk isolation](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/zonal-vm-scenario.jpg)
 
 ## ZRS Disk Scenario
 
 If you choose a ZRS disk, the data is synchronously replicated across all three AZs in a region, making the disk resilient to a zone down scenario. So, if the same AZ as the above scenario 1 were to go down, your application wouldn’t go down because of the disk.
 Please note that VMs can still go down if the zone hosting the VM compute is down, but in this section, we’re majorly focusing on Disk resiliency! You always have the option to deallocate the VM or create a new VM in a healthy zone.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/picture3.jpg)
+![ZRS Disk for resiliency](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/zrs-disk-resiliency.jpg)
 
 ### Zone Down Scenario
 
@@ -47,7 +47,7 @@ az vm disk detach -g MyResourceGroup --vm-name MyVm --name disk_name --force-det
 
 This continues to provide zero RPO during downtime, but now your RTO is greatly reduced, allowing you to take full advantage of ZRS Disks. 
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/picture4.jpg)
+![Force detach ZRS disk](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/01052024/force-detach-zrs-disk.jpg)
 
 You can opt for private preview, check out the link below.
 

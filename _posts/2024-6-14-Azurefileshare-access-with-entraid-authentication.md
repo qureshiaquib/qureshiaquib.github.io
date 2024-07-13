@@ -20,7 +20,7 @@ The link below will take you directly to the configuration details.
 
 [https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable?tabs=azure-portal](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable?tabs=azure-portal)
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14062024/Picture1.jpg)
+![Azure architecture diagram of file share connectivity](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14062024/azure-file-share-connectivity.jpg)
 
 The list of services used in the architecture is below:
 
@@ -31,7 +31,7 @@ The list of services used in the architecture is below:
 * Domain Joined VM: This is where the Admin from an individual remote branch site would log in and set the NTFS permissions on the file share. If you have many branch sites and admins logging in simultaneously, you can use an AVD environment instead of a single VM. I'll let you decide; in this blog, I've factored in one VM to keep it simple.
 * Private Endpoint: Azure File share can be accessed publicly (via QUIC), but in our case, the customer wanted to connect privately, so we've configured a private endpoint.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14062024/Picture2.jpg)
+![Connection flow while using entra joined device to connect azure file share](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14062024/entra-device-connectivity-to-afs.jpg)
 
 The flow of the setup is as follows:
 

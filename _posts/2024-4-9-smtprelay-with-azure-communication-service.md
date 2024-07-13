@@ -16,32 +16,32 @@ Azure Communication Service supports different types of notifications, SMTP rela
 ## Create Azure Communication Service Account
 First step you’ll need to do is to create an ACS account. This is a parent service which has multiple notification services inside it(Chat,SMS, Email etc). Email communications service is one of them.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture1.jpg)
+![Create communication service account](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/create-communication-service-account.jpg)
 
 ## Create Email communication service
 We’ll have to create ECS which is the actual service that holds configuration details.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture2.jpg)
+![Create email communication service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/create-email-communication-service.jpg)
 
 ## Add a custom domain to ECS
 ECS provides Azure managed domain which look like this “GUID.azurecomm.net” this provides limited volume of email hence using custom domain is preferred.
 Once you add a custom domain, the UI provides you with TXT record which you’ll need to create in your Name server. This would take 15 minutes to verify the domain
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture3.jpg)
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture4.jpg)
+![Add custom domain to email communication service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/add-custom-domain-email-communication-service.jpg)
+![Verify custom domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/verify-custom-domain.jpg)
 
 Once domain is verified the screen looks like this, you’ll have to create SPF and DKIM records so that your email doesn’t land in junk and ownership is maintained.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture5-1.jpg)
+![Verify SPF and DKIM records for email communication](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/verify-spf-dkim-records.jpg)
 
 Once all the records are created the screen would look like this, please ignore the azure managed domain. You can only have custom domain in the account and doesn’t have to add Azure Domain explicitly.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture5-2.jpg)
+![Screen showing all records verified successfully](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/screen-all-records-verified.jpg)
 
 ## Attach custom domain to ACS Account
 Once email is validated we’ll need to attach ECS to ACS.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture6.jpg)
+![Connect Email communication service to Azure communication service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/connect-ecs-acs.jpg)
 
 ## Create and Assign custom RBAC Role for Authentication
 We’ll be using 587 port to send email which is authenticated SMTP. For authentication we have Entra ID authentication.
@@ -49,22 +49,22 @@ Create a service principal by going to Entra ID – App registration page. Regis
 We’ll need to create a custom RBAC role which has permission to send email.
 We’ll clone reader role.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture7.jpg)
+![Assigning RBAC to service principal for authentication](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/assign-rbac-service-principal-authentication.jpg)
 
 And we’ll be adding two actions which is present in Azure Communication service resource provider.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture8.jpg)
+![Actions to be added in the RBAC](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/actions-added-rbac.jpg)
 
 Once the Role is created we’ll need to assign this to service principal
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture9.jpg)
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture10.jpg)
+![Assign the role to service principal](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/assign-role-service-principal.jpg)
+![Selecting service principal in RBAC](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/selecting-service-principal-rbac.jpg)
 
 ## Test SMTP Relay via Powershell
 That’s all, now you’ll need to find out the sender email. Which is default DoNotReply@domain.com
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture10-1.jpg)
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture10-2.jpg)
+![Find the sender email used by email communication service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/find-sender-email-ecs.jpg)
+![Step2 of finding sender smtp address](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/find-sender-smtp-address.jpg)
 
 > Note: As you can see in the screenshot Add button is greyed out.
 You can add custom sender email by sending couple of emails from the default email address and then raising support case.
@@ -80,8 +80,8 @@ You’ll need credentials to authenticate to the service.
 
 Now you can use any third party application to send email via the above parameters. To showcase we can use powershell with the same parameters to send emails.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture11.jpg)
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/picture12.jpg)
+![Powershell cmdlets for test email](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/powershell-cmdlets-test-email.jpg)
+![Test email received from Azure communication service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/test-email-received-azure-communication-service.jpg)
 
 Conclusion: I trust this guide helps you in configuring SMTP relay and send emails from your custom or third party application without any change to the application/code.
 

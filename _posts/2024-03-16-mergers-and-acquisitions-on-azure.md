@@ -16,7 +16,7 @@ Below hierarchy is of Enterprise Agreement. First level would be enrollment, and
 
 Best practice is to provide work and school account rather than Microsoft Account. Think about when person leaves the organization.😊
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/picture1.jpg)
+![EA hierarchy of department accounts and subscriptions](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/ea-hierarchy-department-accounts-subscriptions.jpg)
 
 Considering all the scenarios below, migration can be classified in two main types.
 
@@ -54,7 +54,7 @@ This scenario can happen when one EA Account owner has resigned and you wanted t
 
 The same Destination Azure AD tenant checkmark you'll see on the portal and you can uncheck that if you do not want to transfer subscription to destination Azure AD.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/picture2.jpg)
+![Azure Subscription Transfer](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/azure-subscription-transfer.jpg)
 
 ### Move of Azure Subscription from one tenant to another:
 *(type:TechnicalMigration)*
@@ -73,7 +73,7 @@ As mentioned previously this step can be executed in multiple ways. I’ll let y
 #### **Approach 1(Change Directory)**:
 You can click on subscription and then click on “change directory”. Before you execute as mentioned previously your RBAC would reset, resources with managed identity support would be impacted, services which uses Azure AD for app registration would have an impact. So before you take this step assess all the type of resources one by one and then execute. You should have a solution to all the impacted resources before execution. 
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/picture3.jpg)
+![Change directory option on Subscription](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/change-directory-option-on-subscription.jpg)
 
 Below Microsoft article outlines few of the resources which gets impacted but this doesn’t cover all the resources. 
 

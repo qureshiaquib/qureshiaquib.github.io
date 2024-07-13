@@ -8,7 +8,7 @@ description: "Optimize Azure private endpoint DNS: Use Azure DNS Private Resolve
 
 * **Scenario**: In a private endpoint scenario where a customer wants to connect to the private endpoint from an on-premises network, they’ll need to first resolve the FQDN to IP address. Typically, I’ve seen implementation partners create a conditional forwarder with the FQDN of the PaaS service and then point that to the private IP address of a DNS server which is hosted on Azure. Then next step is from DNS server hosted on Azure, same type of conditional forwarder point to Azure wire server IP 168.63.129.16 which helps resolve the private endpoint IP.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/11052024/Picture1.jpg)
+![Azure architecture diagram of private endpoint name resolution from on-premises](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/11052024/private-endpoint-name-resolution.jpg)
 
 When we’ve 2-3 DNS Server in the organization, it can be easily handled.
 But considering enterprises where DNS server count is more than 15 -20 and DNS servers are placed in On-premises as well as on Cloud in a multi cloud. Then you’ll face the following challenge.
@@ -16,7 +16,7 @@ But considering enterprises where DNS server count is more than 15 -20 and DNS s
 * **Challenge**: In on-premises DNS server which is integrated with AD, the customer creates a DNS forwarder and points to DNS Server hosted on Azure. As there are many DNS Servers which are Windows Server Active Directory integrated thus the customer checks the box for “Store this conditional forwarder in Active Directory” So that they don't have to manually create the same conditional forwarder in all the DNS server. This makes life easier.
 As soon as they do this, the DNS server on Azure will also have the same conditional forwarder, and the other forwarder which points to wire server IP would cease to function.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/11052024/Picture2.jpg)
+![Storing Private endpoint DNS forwarder in Active Directory](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/11052024/storing-private-endpoint-dns-forwarder.jpg)
 
 * **Solution**: There are many options to solve this conflict. As mentioned below.
 If the customer opts for a Private DNS resolver, it is the most convenient approach and recommended approach by Microsoft. However, many won't choose a private DNS resolver and can save cost by choosing other options. There are manual activities involved in other options. 

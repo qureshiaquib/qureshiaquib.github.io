@@ -23,61 +23,61 @@ Assuming you only have Azure subscription attached to Entra ID. Please proceed a
 
 When you logon to Azure Portal and click on the gear icon you will see all the tenant you have access to. In this blog I’m focusing on aqquresh.onmicrosoft.com and will change this to demodoctor.onmicrosoft.com.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture1.jpg)
+![Settings showing the tenant name](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/azure-portal-settings.jpg)
 
 Adding another onmicrosoft.com domain can be done through Office 365 Admin portal.
 Logon to portal.office.com -> Admin -> Setting -> Domain
 you’ll see all the registered domain here.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture2.jpg)
+![M365 portal showing all domains](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/m365-all-domains.jpg)
 
 Click on the default domain and you’ll see add onmicrosoft.com domain preview highlighted.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture3.jpg)
+![Adding another onmicrosoft domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/add-onmicrosoft-domain.jpg)
 
 Before proceeding ahead with the steps, I wanted to show you the existing configuration, how it looks like. The below screenshot is of Entra ID.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture4.jpg)
+![Existing configuration before the change of domain name](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/existing-config.jpg)
 
 You can edit properties to see the UPN and change it: Here you can see the existing domains which were associated. Please ignore doctorblognew.onmicrosoft.com as it was used previously for testing.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture5.jpg)
+![Showing all the domain available in UPN dropdown](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/upn-dropdown-domains.jpg)
 
 Now go back to your default domain and click on the add new onmicrosoft domain preview link. Below screen will be opened. And it’ll allow you to add a new domain here.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture6.jpg)
+![Adding new onmicrosoft domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/add-new-domain-preview.jpg)
 
 Once you’ve successfully added the domain it’ll look like the below screen.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture7.jpg)
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture8.jpg)
+![Successfully added the domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/successfully-added-domain.jpg)
+![M365 screen showing all the domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/m365-all-domains-2.jpg)
 
 
 Now go to the new domain which you have added and you’ll get an option to make this as failback domain. Which means default domain for all the user IDs.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture9.jpg)
+![Configuring failback domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/configure-failback.jpg)
 
 Once you click and finish it’ll look like the below.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture10.jpg)
+![Successfully changed the failback domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/successfully-changed-failback.jpg)
 
 Also when you go back to any user account in the UPN drop down menu you’ll see the new domain which you’ve added. Here I see demodoctor.onmicrosoft.com
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture11.jpg)
+![UPN drop down after adding the domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/upn-dropdown-new-domain.jpg)
 
 This is how the user UI looks like once you make all the changes.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture12.jpg)
+![User screen after domain change](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/user-screen-after-change.jpg)
 
 Also goto Entra ID in Azure Portal and select the default domain to your own domain which you’ve added. If you’ve some custom domain you can ignore this step.
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture13.jpg)
+![Setting default domain to the newly added domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/set-default-domain.jpg)
 
 
 When you go back to setting menu in Azure portal you’ll see the new domain name:
 Your users won’t realize georgeazuredeployment.onmicrosoft.com / aquibazure.onmicrosoft.com
 
-![a](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/picture14.jpg)
+![Switch gear icon showing new domain](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30062024/switch-gear-new-domain.jpg)
 
 This doesn't change your tenant ID so Management group hierarchy will remain the same.
 
