@@ -17,10 +17,11 @@ It provides synchronization of identities in disconnected forest scenarios. Both
 This blog isn’t about the step-by-step setup of the AD Connect Cloud Sync tool, as the configuration is very similar to the old AD Connect tool. Also, we’ll mainly focus on the overall strategy adopted to host AVD in a single tenant and its architecture, which can be reused.
 
 ![Azure architecture diagram showing multi org VDI deployment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14072024/azure-architecture-avd-multi-org.jpg)
-_Download [visio file](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14072024/azure-architecture-multi-org.vsdx) of this architecture_
+_Download [visio file](https://github.com/qureshiaquib/qureshiaquib.github.io/raw/main/assets/14072024/azure-architecture-multi-org.vsdx) of this architecture_
 
 
 The following flow corresponds to the preceding diagram:
+
 1.	AD Connect Cloud Sync: We’ve installed AD Connect Cloud Sync tool on-premises, which supports disconnected forest – which don’t have any forest trust in between.
 here in our scenario both the Active Directory would be synchronized to single Entra ID tenant where our Azure Landing zone is configured.
 This is only done because both the companies are part of the single parent organization and also their IT team is centralized.
