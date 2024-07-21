@@ -25,12 +25,26 @@ Considering all the scenarios below, migration can be classified in two main typ
 
 ## Scenarios:
 
-### Move between two different EA Enrollment:
+Overview of Migration Types mentioned below:
+1. [Move between two different EA Enrollment](#1-move-between-two-different-ea-enrollment)\
+    1a. [First phase](#1a-first-phase)\
+    1b. [Second phase](#1b-second-phase)
+2. [Move subscriptions between EA Account within same EA Enrollment](#2-move-subscriptions-between-ea-account-within-same-ea-enrollment)
+3. [Move of Azure Subscription from one tenant to another](#3-move-of-azure-subscription-from-one-tenant-to-another)\
+    3a. [Approach 1(Change Directory](#3a-approach-1change-directory)\
+    3b. [Approach 2 (Recreate)](#3b-approach-2-recreate)\
+    3c. [Approach 3(ASR)](#3c-approach-3asr)
+4. [Move Subscription from CSP to EA](#4-move-subscription-from-csp-to-ea)
+5. [Move PAYG subscription to EA](#5-move-payg-subscription-to-ea)
+6. [Move MCA-Enterprise subscription to EA](#6-move-mca-enterprise-subscription-to-ea)
+
+
+### 1. Move between two different EA Enrollment:
 In this scenario customer has active EA enrollment and this customer has acquired another entity B who is also on Azure with active EA Enrollment. As they both are on Azure, customer A would want to take over the entity B azure deployment. Customer would want to only pay through single partner to Microsoft. Hence this need to move arises. Also, the second need can be because of Multiple Azure AD tenant and merger of resource into single Azure AD tenant so that customer can manage resources through single landing zone.
 
 In my opinion, dividing the merger into two phases is advisable. First is movement of subscription (billing only) and second phase is merging of resources in the tenant.
 
-#### **First phase**: 
+#### 1a. **First phase**: 
 *(type:NontechnicalMigration)*
 Movement of subscription from one enrollment to another enrollment can happen in the backend. This backend move doesn’t incur any downtime for the subscription resources. You’ll need to have destination EA Account handy where the source subscription would move. Customer would need to raise a support case with MS subscription management team and provide necessary approval via email. You’ll need to inform Support engineer that tenant would remain the same.
 
@@ -44,19 +58,19 @@ In our scenario, the Entity B has it’s own Azure AD tenant and Company A also 
 
 Apart from the tenant, the other thing you should keep in mind is the reserved Instance that you’ve purchased in source Enrollment. If you’re transferring subscription which has RI with a currency A and your destination EA Enrollment is purchased in different currency B then the RI would be cancelled automatically as destination EA Enrollment cannot be billed in multiple currency at the same time.
 
-#### **Second phase**:
+#### 1b. **Second phase**:
 *(type:technicalMigration)*
 Merging of resources in single Azure AD tenant. This phase is executed once the billing is migrated. As mentioned, this is technical migration where each resource need to be assessed. Tenant change can be handled in many different ways. I’ll explain that in point No. 3 in detail. 
 
-### Move subscriptions between EA Account within same EA Enrollment:
+### 2. Move subscriptions between EA Account within same EA Enrollment:
 *(type:NonTechnicalMigration)*
 This scenario can happen when one EA Account owner has resigned and you wanted to take over all the subscriptions and move to different EA Account. This step is easy and can be done through Azure Portal and you don’t need to raise any support case with MS.
 
 The same Destination Azure AD tenant checkmark you'll see on the portal and you can uncheck that if you do not want to transfer subscription to destination Azure AD.
 
-![Azure Subscription Transfer](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/azure-subscription-transfer.jpg)
+![Azure Subscription Transfer](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/azure-subscription-transfer.jpg){: w="500" h="700" }
 
-### Move of Azure Subscription from one tenant to another:
+### 3. Move of Azure Subscription from one tenant to another:
 *(type:TechnicalMigration)*
 The need to change Tenant arises because of multiple reasons, first is customer had landing zone deployed with firewall, WAF and network connectivity, Azure Policy configured along with segregation of BUs in different management groups in customer A Azure deployment. As Entity B got merged the IT team of customer A would want to manage Azure resources of Entity in similar way as they manage their current Azure Deployment.  Though we shouldn’t jump to merging of resources into single Azure AD tenant directly as there are multiple ways you can coexist both the tenant and still leverage better operations. I’m highlighting few methods below.
 
@@ -70,7 +84,7 @@ Assume the decision is made to move the resources from one tenant to another.
 
 As mentioned previously this step can be executed in multiple ways. I’ll let you decide which one you wanted to choose basis on the criticality of resources.
 
-#### **Approach 1(Change Directory)**:
+#### 3a. **Approach 1(Change Directory)**:
 You can click on subscription and then click on “change directory”. Before you execute as mentioned previously your RBAC would reset, resources with managed identity support would be impacted, services which uses Azure AD for app registration would have an impact. So before you take this step assess all the type of resources one by one and then execute. You should have a solution to all the impacted resources before execution. 
 
 ![Change directory option on Subscription](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16032024/change-directory-option-on-subscription.jpg)
@@ -84,19 +98,19 @@ Below Microsoft article outlines few of the resources which gets impacted but th
 
 I’ve seen customers create a dummy subscription and then deploy the type of resource which they wanted to test and then click on change directory to see if resources work or it fails.
 
-#### **Approach 2 (Recreate)**:
+#### 3b. **Approach 2 (Recreate)**:
 This option is used when a customer wants to have control over the downtime. As in the previous approach you’ll need to assess and sometime create resources in dummy subscription still many a times there is less assurity and things goes wrong during migration, troubleshooting is needed during move. Hence to avoid such circumstances you can parallely re-create resources in target subscription which is binded to the target Azure AD tenant and then failover like how you do a DR. With good possibility of doing a failback.
 
-#### **Approach 3(ASR)**:
+#### 3c. **Approach 3(ASR)**:
 This approach is less adopted because of many of us are unaware of this method, can only be used when we’ve large number of VM workloads. ASR can be used to replicate between two different tenant. Considering source subscription as Physical server deployments and deploying appliance in the VNET and then pushing agents to VMs hosted in Entity B’s subscription. You can replicate VMs to Customer A’s subscription. This isn’t same as ASR for Azure to Azure scenario but a workaround.
 
-### Move Subscription from CSP to EA:
+### 4. Move Subscription from CSP to EA:
 *(type:TechnicalMigration)* MS Support can’t move subscriptions in the backend, usually CSP subscription resides in different tenant which your CSP partner would have created and as tenant change is not possible in CSP hence the only option is to move resources by re-creating them or use ASR Approach 3.
 
-### Move PAYG subscription to EA:
+### 5. Move PAYG subscription to EA:
 *(type:NonTechnicalMigration)* PAYG subscriptions where customer has purchased through credit card. This subscription can be pulled in the EA billing in the backend without any downtime. Though if you want to change the tenant then you’ll have to follow steps mentioned in previous section.
 
-### Move MCA-Enterprise subscription to EA:
+### 6. Move MCA-Enterprise subscription to EA:
 *(type:NonTechnicalMigration)*
 This is uncommon approach as MCA is the future.
 But you can move from MCA-Enterprise to EA enrolment by raising request with the MS Governance team. To connect with MS Governance team you'll need to reach out to your Account team. You’ll need to provide justification to governance support team and then they can execute this move. This is entirely backend move without any downtime.
