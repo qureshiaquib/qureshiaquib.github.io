@@ -2,7 +2,7 @@
 title: "Exploring Different Types of Azure Migrate Assessments"
 date: 2024-7-21 12:00:00 +500
 categories: [tech-blog]
-tags: []
+tags: [Azure Migrate]
 description: "Discover different types of Azure Migrate assessments. Learn how to utilize Azure Migrate for effective discovery, assessment and migration of various workloads"
 ---
 
@@ -19,7 +19,7 @@ Image of it is shown below. Text based description is also copied so that you ca
 **Description**: The Azure Migrate appliance, once configured in on-premises environments or other clouds (AWS, GCP), will discover VMs. After discovery is complete, an assessment can be created, providing output on the supportability and cost of running VMs on Azure.\
 **Destination Service Name on Azure**: Azure VM\
 **Does Azure Migrate support Migration to Destination Service?**: Yes\
-**Link**: [Azure VM Discovery](https://learn.microsoft.com/en-us/azure/migrate/vmware/tutorial-discover-vmware?context=%2Fazure%2Fmigrate%2Fcontext%2Fvmware-context), [Hyper-V Discovery](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-hyper-v), [Physical Discovery](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-physical)
+**Link**: [VMWare VM Discovery](https://learn.microsoft.com/en-us/azure/migrate/vmware/tutorial-discover-vmware?context=%2Fazure%2Fmigrate%2Fcontext%2Fvmware-context), [Hyper-V Discovery](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-hyper-v), [Physical Discovery](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-physical)
 
 -----------------------------------------------------------------------------------------------------
 **Assessment Type**: Azure SQL Discovery\
