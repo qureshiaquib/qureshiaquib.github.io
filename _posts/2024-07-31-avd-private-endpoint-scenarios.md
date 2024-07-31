@@ -6,19 +6,20 @@ tags: [Azure Virtual Desktop Private Endpoint]
 description: "This blog covers configuring private endpoints for Azure Virtual Desktop, detailing scenarios and considerations for using public and private access"
 ---
 
-* **Scenario**: As Azure Virtual Desktop can be used across multiple teams in an organization and when you’re configuring AVD in a banking environment or large enterprise, there can be multiple scenarios you’ve one team working remotely and need public access to AVD and another team connected from the head office and they should only be connected privately over ExpressRoute.
+* **Scenario**: As Azure Virtual Desktop can be used across multiple teams in an organization and when you’re configuring AVD in a banking environment or large enterprise, there can be multiple scenarios you’ve one team working remotely and need public internet to connect to AVD and another team connected from the head office and they should only be connected to AVD privately over ExpressRoute.
 
 * **Solution**: Just like other managed services, private endpoint is also supported for AVD environments.
-But this can be tricky at times, as mentioned in the above scenario. It’s not only the host pool in your subscription where you’ll need to enable Private Endpoints but at the same time you’ll need to enable it for the managed components. The managed components are management plane for AVD (Broker, Gateway, Web, diagnostics, Feed) which first takes the traffic and then connection to host pool is established. Private Endpoints need to be configured for those components which don’t reside in your subscription and are managed by Microsoft.
+But this can be tricky at times, as mentioned in the above scenario. It’s not only the host pool in your subscription for which you’ll need to enable Private Endpoints but at the same time you’ll need to enable it for the managed components. The managed components are management plane for AVD (Broker, Gateway, Web, diagnostics, Feed) which first takes the traffic and then connection to host pool is established. Private Endpoints need to be configured for those components which don’t reside in your subscription and are managed by Microsoft.
 
 This blog covers different Private Endpoint scenarios in Azure Virtual Desktop Environment. Multiple scenario arises when you have multiple AVD usage in a single environment/organization by different team. I’ll also cover basic Private Endpoint scenario as well.
 
 Before we proceed with the scenarios. Let me briefly cover different types of private endpoints are there in AVD environments.
 
-![Table showing different types of Private Endpoints in AVD](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31072024/avd-privateendpoints-table.jpg)
+![Table showing different types of Private Endpoints in AVD](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31072024/avd-privateendpoints-table.jpg){: w="400" h="800" }
 
 
-Out of the three Private Endpoints, initial feed discovery (Global) PE is created only once for the entire organization. So please don’t create multiple endpoints for initial feed discovery; we’ll only have three records and it’ll keep on updating the DNS records with the new PE which you create. If you have multiple workspaces, then you’ll have to just create the initial feed discovery private endpoint once for your organization, rest of your workspace can live without Initial feed discovery. More related to global PE will be covered in scenario below.
+Out of the three Private Endpoints, initial feed discovery (Global) PE is created only once for the entire organization. So please don’t create multiple endpoints for initial feed discovery for every AVD workspace you deploy; we’ll only have three records and it’ll keep on updating the DNS records with the new PE which you create.\
+If you have multiple workspaces, then you’ll have to just create the initial feed discovery private endpoint once for your organization, rest of your workspace can live without Initial feed discovery. More related to global PE will be covered in scenario below.
 
 ## Scenario 1: Private Endpoint for Workspace and Host Pool
 This scenario applies to a single AVD use case in the organization. As the heading suggests, we’ll have to create private endpoints for the workspace and for host pools. This will ensure entire AVD traffic stays private. Traffic to host pools will take ExpressRoute or VPN S2S IPsec tunnel. including traffic that goes to management components of AVD
