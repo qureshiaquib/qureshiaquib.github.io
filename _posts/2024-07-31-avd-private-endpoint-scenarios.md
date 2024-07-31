@@ -67,7 +67,7 @@ Similarly, from host pool, as this is a reverse connect solution hence you’ll 
 ![Table showing FQDN to be whitelisted from host pool to internet](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31072024/hostpool-whitelist.jpg)
 
 
-Special thanks for [Shabbir Ahmed](https://www.linkedin.com/in/shabbir550/) for helping in the Architecture preparation.
+Special thanks to [Shabbir Ahmed](https://www.linkedin.com/in/shabbir550/) for helping in the Architecture preparation.
 
 I hope above scenarios help you demystify the private endpoint scenarios with AVD.
 
