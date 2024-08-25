@@ -22,7 +22,7 @@ You can take ownership of the name server by hosting the name server yourself. A
 Yeah, that is true 100% SLA as Public DNS zone is a global service.
 If you want to know the name server of any domain, you can use nslookup to find the name server records.
 
-![Find name server records using nslookup tool](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24082024/nameserver.jpg)
+![Find name server records using nslookup tool](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24082024/nameserver.jpg){: w="400" h="800" }
 
 Name server for Azure Public DNS zone looks like below. This is just an example. You’ll get your name server record for your domain when you create the DNS Zone.
 
@@ -35,7 +35,7 @@ ns4-04.azure-dns.info.
 
 Microsoft.com and azure.com is also hosted on Azure Public DNS Zone.
 
-![name server record for Azure and Microsoft](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24082024/nameserver-azure-microsoft.jpg)
+![name server record for Azure and Microsoft](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24082024/nameserver-azure-microsoft.jpg){: w="400" h="800" }
 
 
 Once you create a Public DNS Zone, it looks like below. You can see the four name server record which is provided to you. You’ll need to use that as name server record and feed that to your DNS registrar. Once you change your name server from the default DNS registrar's NS record to Azure's NS records, the records present in your Azure Public DNS Zone would become authoritative and live.
