@@ -13,7 +13,7 @@ You’ll find the differences between Premium SSD and Premium SSD v2 here.
 
 One of the differences is we can change the IOPS, throughput and size of the disk independently. This is not possible in Premium SSD.  Below screenshot from MS learn document provides clarity of how IOPS and throughput can be increased and in what proportion.
 
-![Table showing IOPS and Throughput increment methology](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/image-showing-iops-throughput-of-premiumssdv2.jpg)
+![Table showing IOPS and Throughput increment methology](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/image-showing-iops-throughput-of-premiumssdv2.jpg){: w="600" h="1100" }
 
 ## Cost Savings:
 One of the biggest advantages of Premium SSD v2 is that it is cheaper than Premium SSD.
@@ -21,16 +21,16 @@ Let’s find out how much cost you’ll save?
 Assuming you need 1 TB disk for your Database or Production VM.
 Below cost is of Premium SSD 1 TB P30 Disk. This provides 5000 IOPS and 200 MB/s Throughput.
 
-![Azure pricing calculator showing price of premium SSD](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premium-ssd.jpg){: w="200" h="600" }
+![Azure pricing calculator showing price of premium SSD](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premium-ssd.jpg){: w="600" h="1100" }
 
 Comparing the same price with Premium SSD v2, also adding 2000 IOPS and 75 MB/s Throughput
 
-![Azure pricing calculator showing price of premium SSD v2 with custom IOPS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premiumssdv2.jpg){: w="200" h="600" }
+![Azure pricing calculator showing price of premium SSD v2 with custom IOPS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premiumssdv2.jpg){: w="600" h="1100" }
 
 The difference is $38.28 per Month
 Assuming customers don’t need that much IOPS and Throughput and can work with the default IOPS which comes free with Premium SSD v2, below is the cost.
 
-![Azure pricing calculator showing price of premium SSD v2 with default IOPS Throughput](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premiumssdv2-default.jpg){: w="200" h="600" }
+![Azure pricing calculator showing price of premium SSD v2 with default IOPS Throughput](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premiumssdv2-default.jpg){: w="600" h="1100" }
 
 The difference is $41.73 per Month.
 
@@ -78,7 +78,7 @@ scroll down to find whether you have a zonal VM or regional VM. The new feature 
 
 The migration screen will open up.
 
-![Zone selection when changing the VM from regional to zonal](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/zone-selection-move-vm-to-another-zone.jpg)
+![Zone selection when changing the VM from regional to zonal](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/zone-selection-move-vm-to-another-zone.jpg){: w="600" h="1100" }
 
 Now in this stage, the system assigned managed identity gets created and assigned to subscription.
 
