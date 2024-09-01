@@ -21,16 +21,16 @@ Let’s find out how much cost you’ll save?
 Assuming you need 1 TB disk for your Database or Production VM.
 Below cost is of Premium SSD 1 TB P30 Disk. This provides 5000 IOPS and 200 MB/s Throughput.
 
-![Azure pricing calculator showing price of premium SSD](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premium-ssd.jpg){: w="400" h="800" }
+![Azure pricing calculator showing price of premium SSD](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premium-ssd.jpg){: w="200" h="600" }
 
 Comparing the same price with Premium SSD v2, also adding 2000 IOPS and 75 MB/s Throughput
 
-![Azure pricing calculator showing price of premium SSD v2 with custom IOPS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premiumssdv2.jpg){: w="400" h="800" }
+![Azure pricing calculator showing price of premium SSD v2 with custom IOPS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premiumssdv2.jpg){: w="200" h="600" }
 
 The difference is $38.28 per Month
 Assuming customers don’t need that much IOPS and Throughput and can work with the default IOPS which comes free with Premium SSD v2, below is the cost.
 
-![Azure pricing calculator showing price of premium SSD v2 with default IOPS Throughput](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premiumssdv2-default.jpg){: w="400" h="800" }
+![Azure pricing calculator showing price of premium SSD v2 with default IOPS Throughput](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30082024/price-of-premiumssdv2-default.jpg){: w="200" h="600" }
 
 The difference is $41.73 per Month.
 
