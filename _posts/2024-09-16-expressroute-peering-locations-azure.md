@@ -3,7 +3,7 @@ title: "Exploring ExpressRoute Peering Locations for Azure"
 date: 2024-09-16 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Express Route Peering Locations]
-description: "Explore the role of ExpressRoute peering locations in optimizing on-premises to Azure connectivity, covering private connectivity scenarios and circuit configurations"
+description: "Explore the role of ExpressRoute peering locations in optimizing on-premises to Azure connectivity, covering private connectivity scenarios"
 ---
 
 This blog talks about Express Route peering location and what importance it plays in connectivity when you connect from on-premises to Azure. I'll be covering majorly Express Route private connectivity scenarios.
@@ -16,7 +16,7 @@ This is also known as Meet Me location.
 ![Azure Architecture diagram showing Express Route peering location and Azure region](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16092024/architecture-of-express-route.jpg)
 _Download [architecture](https://github.com/qureshiaquib/qureshiaquib.github.io/raw/main/assets/16092024/visio.vsdx) diagram_
 
-![Screenshot of Expres Route circuit location and peering location](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16092024/expressroute-peering-location.jpg)
+![Screenshot of Expres Route circuit location and peering location](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/16092024/expressroute-peering-location.jpg){: w="600" h="1100" }
 
 While creating circuit, circuit location is where your ExpressRoute gateway (ExR GW) and all your regional Azure services resides.
 
