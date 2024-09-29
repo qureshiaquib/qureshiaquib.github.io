@@ -94,6 +94,7 @@ This service hosts thousands of customers, and the high availability and resilie
 
 As you can see from above examples Cloud services requires scaling and resilience which can easily be provided by Kubernetes. Microsoft Engineering team is utilizing containers and serving their customers instead of just hosting it on a VM directly.
 
+There are many Microsoft services that use containers in the backend. Do you know of any others? Please comment and share your knowledge!
 I hope this blog helps you view these services from a new perspective.
 
 Happy Learning!
