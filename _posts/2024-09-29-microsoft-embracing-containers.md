@@ -29,6 +29,9 @@ The link below provides more information about AKS enabled by Arc.
 
 [https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-overview](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-overview)
 
+
+![Picture of Azure Stack HCI components](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/29092024/azure-stack-hci-solution.png)
+
 Once AKS is deployed on Azure Stack HCI, there are lots of cloud services which can be deployed on-premises as this AKS is arc enabled and as part of Arc services these can be deployed on-premises. Also if you’ve Kubernetes deployed on-premises or any cloud and once you connect cluster to Azure Arc then similar services mentioned below can be deployed on any cloud.
 
 So Kubernetes becomes underline service where cloud services are deployed as PODs/containers.
