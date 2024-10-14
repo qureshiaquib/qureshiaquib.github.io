@@ -63,7 +63,7 @@ This is just an example of showing how many alerts are present as part of AMBA f
 
 ![Alerts configured for public IP Address](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/publicip-address-metrics.jpg)
 
-Down below on each metrics you can see Deploy, ARM, Bicep and Policy button.
+Down below on each metrics you can see Deploy, ARM, Bicep and Policy button. This will be available for most of the metris on AMBA portal.
 
 ![AMBA portal showing Deploy button and Policy button](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alert-deployment-types.jpg)
 
@@ -75,7 +75,7 @@ Let's start by creating Azure Policy.
 
 ![Azure portal showing how to create Azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/azure-policy-creation-screen.jpg)
 
-Creating policy definition.
+Creating policy definition.Paste the policy code which was copied from AMBA portal.
 
 ![Policy creation blade](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/azure-policy-creation-screen2.jpg)
 
