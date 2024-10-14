@@ -34,9 +34,9 @@ The ALZ accelerator allows you to deploy an Azure Landing Zone in a simpler way.
 
 [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-accelerators](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-accelerators)
 
-![Azure portal showing Azure landing zone accelerator and Monitor and Alerts included while deploying ALZ](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alz-accelerator.jpg)
+![Azure portal showing Azure landing zone accelerator and Monitor and Alerts included while deploying ALZ](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alz-accelerator-portal-showing-amba-integration.jpg)
 
-![AMBA configuration for specific services while using Azure Landing zone accelerator](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alz-accelerator-2.jpg)
+![AMBA configuration for specific services while using Azure Landing zone accelerator](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alz-accelerator-portal-showing-specific-services.jpg)
 
 ## Deploy independently without Azure Landing Zone:
 AMBA can be deployed independently as well in brownfield or greenfield scenarios. whether the landing zone has already been deployed or not. As this is based on Azure Policy, the initiatives are assigned on the management group. It is always recommended that you follow the subscription and management group design as mentioned in the Azure landing zone document however if you do not follow the hierarchy then you can create a dummy management group and AMBA policies will be assigned there. It is mentioned in detail in below document.
@@ -45,9 +45,9 @@ AMBA can be deployed independently as well in brownfield or greenfield scenarios
 
 [https://azure.github.io/azure-monitor-baseline-alerts/patterns/alz/deploy/Deploy-via-Azure-Portal-UI/](https://azure.github.io/azure-monitor-baseline-alerts/patterns/alz/deploy/Deploy-via-Azure-Portal-UI/)
 
-![Link to deploy AMBA through azure portal](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/amba-deployment.jpg)
+![Link to deploy AMBA through azure portal](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/amba-deployment-through-azure-portal.jpg)
 
-![Azure portal screen showing AMBA deployment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/amba-deployment-azure-portal.jpg)
+![Azure portal screen showing AMBA deployment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/amba-deployment-on-azure-portal.jpg)
 
 ## Use resource centric Azure Policy for Alerts:
 This method is different from standard AMBA usage. AMBA is a collection of initiatives and policies.
@@ -57,7 +57,7 @@ Policies target specific resource types. On AMBA portal you can browse specific 
 
 Browse through network category and we'll select Public IP address for which we'll create azure policy.
 
-![Browing through the network resource category](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/resource-view-of-amba2.jpg)
+![Browsing through the network resource category](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/selecting-network-on-amba-portal.jpg)
 
 This is just an example of showing how many alerts are present as part of AMBA for which Policy code can be re-used.
 
@@ -65,7 +65,7 @@ This is just an example of showing how many alerts are present as part of AMBA f
 
 Down below on each metrics you can see Deploy, ARM, Bicep and Policy button.
 
-![AMBA portal showing Deploy button and Policy button](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/resource-view-of-amba3.jpg)
+![AMBA portal showing Deploy button and Policy button](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alert-deployment-types.jpg)
 
 we'll make use of Azure Policy.
 
@@ -73,35 +73,35 @@ we'll make use of Azure Policy.
 
 Let's start by creating Azure Policy.
 
-![Azure portal showing how to create Azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-creation1.jpg)
+![Azure portal showing how to create Azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/azure-policy-creation-screen.jpg)
 
 Creating policy definition.
 
-![Policy creation blade](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-creation2.jpg)
+![Policy creation blade](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/azure-policy-creation-screen2.jpg)
 
 Currently i saw one error, while performing copy paste i saw double bracket in the policy code which needs to be replaced with single brackets. Otherwise you'll see error while you create policy definition.
 
-![Replace brackets with single blakcets in Azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-creation3.jpg)
+![Replace brackets with single blakcets in Azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/replace-bracket-with-single-bracket.jpg)
 
 Once definition is successfully created you'll start by assigning the policy. without assignment, policy won't take affect.
 
-![Assigning policy after successful creation of policy definition](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-assignment.jpg)
+![Assigning policy after successful creation of policy definition](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/portal-showing-policy-assignment.jpg)
 
 Select revelant details, select subscription or management group where you want to apply the Policy.
 
-![Azure portal showing assigning azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-assignment2.jpg)
+![Azure portal showing assigning azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/portal-showing-policy-assignment2.jpg)
 
 "Uncheck only show parameters that need inputs or review" and modify any metrics parameters. This will be input to your alert.
 
-![Parameters for Azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-assignment3.jpg)
+![Parameters for Azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/parameter-for-azure-policy.jpg)
 
 Remediation task need to be created for any resources which were created before the policy, if unchecked then only new resources will be monitored as part of policy.
 
-![Enable remediation task when assigning policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-assignment4.jpg)
+![Enable remediation task when assigning policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/create-remediation-task.jpg)
 
 Review and create the assignment.
 
-![review and creation of azure policy assignment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-assignment5.jpg)
+![review and creation of azure policy assignment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/create-azure-policy.jpg)
 
 ## Exclude resources from being monitored:
 As mentioned in the policy definition any resources which has specific tags with the name 'MonitorDisable' and the value 'true’. The alert will be in disabled state. 
@@ -113,23 +113,23 @@ When an azure policy is created, any new resource will be monitored but for moni
 
 Opening the assignment and reviewing the remediation task shows currently it is running.
 
-![Remediation task created in azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/policy-assignment7.jpg)
+![Remediation task created in azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/remediation-task-in-progress.jpg)
 
 Once all the resources are remediated, that means alerts are created for those resources then it'll be mark as completed.
 
-![Remediation task completed](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/remediation1.jpg)
+![Remediation task completed](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/remediation-task-completed.jpg)
 
 Also in each resource group wherever the alerts are created you can find this in the activity logs. which shows the DINE policy in affect.
 
-![Policy template deploying alerts shown in activity logs](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/remediation2.jpg)
+![Policy template deploying alerts shown in activity logs](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/activity-logs-showing-policy-dine-effect.jpg)
 
 ## Sample Alerts:
 
 Below example shows some sample alerts
 
-![Alerts created via azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alerts-created.jpg)
+![Alerts created via azure policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alerts-created-by-policy.jpg)
 
-![Azure alerts overview](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/alerts-created2.jpg)
+![Azure alerts overview](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/overview-of-alerts-created.jpg)
 
 I hope this blog helps you create Azure Policy and implement Alerts at scale.
 
