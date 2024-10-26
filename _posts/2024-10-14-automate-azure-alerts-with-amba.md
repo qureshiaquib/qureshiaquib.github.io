@@ -10,7 +10,7 @@ description: "Learn how Azure Monitor Baseline Alert (AMBA) automates alert crea
 
 * **Solution**: Azure Monitor Baseline Alert (AMBA) streamlines the creation of Azure Alerts through Azure Policy. By utilizing an Azure Policy Initiative, multiple policies within the initiative are deployed as policy definitions. These policies automatically generate alerts for any newly deployed resources. This resolves the issue of having to repeatedly create alerts manually. Many of us know Azure Policy creation is not a simple task on a wider scale. AMBA simplifies this by providing you with a templated approach.
 
-If you’ve tried AMBA and don’t want to deploy it for some reason, then this blog also covers how you can use Azure Policy for creating individual alerts which are available as part of AMBA. That means you can pick and choose specific alert and deploy Policy only for specific use case which you want and not all the alerts which are part of AMBA.
+    If you’ve tried AMBA and don’t want to deploy it for some reason, then this blog also covers how you can use Azure Policy for creating individual alerts which are available as part of AMBA. That means you can pick and choose specific alert and deploy Policy only for specific use case which you want and not all the alerts which are part of AMBA.
 
 ## Multi resource alerts:
 One of the easiest approach is to create single alerts which covers multple resource automatically. for example a resource targetting resource group or subscription will be targetted to any new VMs which gets created underneath it.
