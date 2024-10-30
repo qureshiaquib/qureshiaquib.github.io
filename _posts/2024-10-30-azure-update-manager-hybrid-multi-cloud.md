@@ -70,6 +70,8 @@ I’m providing below links to go through for their respective distributions and
 ![Azure architecture diagram showing network architecture for arc connectivity](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31102024/arc-network-architecture.jpg)
 
 ![Azure architecture diagram showing network architecture for azure update manager](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31102024/azure-update-manager-architecture.jpg)
+_Download [visio file](https://github.com/qureshiaquib/qureshiaquib.github.io/raw/main/assets/31102024/aum-architecture.vsdx) of this architecture_
+
 
 ## Cost of Azure Update Manager:
 Let’s discuss the cost of the service; AUM is a cloud service. There is no appliance and you don’t have to spend on the appliance high availability etc. It’s all built into the service and you don’t have to take care of all that.
