@@ -1,9 +1,9 @@
 ---
-title: "Azure Public DNS Zone & App Service Domains: Key Insights"
+title: "How to Purchase a Domain from Azure and Configure Public DNS"
 date: 2024-08-24 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure DNS Zone]
-description: "Explore Azure Public DNS Zone and App Service Domains, crucial for admins during datacenter exit, mergers, deployments. Learn about DNS management and hosting."
+description: "Learn how to purchase domain from Azure and configure public DNS name server, explore Azure Public DNS Zone and App Service Domains service"
 ---
 
 Today, in this blog, we’ll discuss the Public Domain and name server topics. One of the crucial topics for Administrators and Architects. Also, this is one of the key topics during Datacenter exit scenarios or during demergers and acquisitions.
