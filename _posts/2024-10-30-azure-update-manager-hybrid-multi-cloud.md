@@ -53,6 +53,7 @@ If your linux servers are hosted on-premises then you’ll need to use local pri
 
 ### Linux on Cloud:
 If your Linux servers are hosted on Azure, GCP, or AWS. Especially vendors like RedHat and SUSE and if you’ve purchased the licenses from Market place or deployed it from the marketplace image then these vendors provides public cloud update infrastructure locally to that region through which servers can download latest updates. It will be a public connection outside your VNET or VPC but within the same region.
+
 I’m providing below links to go through for their respective distributions and how they provide update infrastructure.
 
 [https://www.suse.com/c/accessing-suse-updates-in-aws-when-do-you-need-a-private-repository/](https://www.suse.com/c/accessing-suse-updates-in-aws-when-do-you-need-a-private-repository/)
@@ -67,7 +68,12 @@ I’m providing below links to go through for their respective distributions and
 
 [https://access.redhat.com/products/red-hat-update-infrastructure](https://access.redhat.com/products/red-hat-update-infrastructure)
 
+Below Architecture shows Azure Arc connectivity with Public endpoints and with Azure Private endpoints.
+It'll also show where to place the Private Endpoints.
+
 ![Azure architecture diagram showing network architecture for arc connectivity](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31102024/arc-network-architecture.jpg)
+
+Below architecture shows placement of WSUS and Linux Repo servers. It shows the multi-cloud setup.
 
 ![Azure architecture diagram showing network architecture for azure update manager](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31102024/azure-update-manager-architecture.jpg)
 _Download [visio file](https://github.com/qureshiaquib/qureshiaquib.github.io/raw/main/assets/31102024/aum-architecture.vsdx) of this architecture_
