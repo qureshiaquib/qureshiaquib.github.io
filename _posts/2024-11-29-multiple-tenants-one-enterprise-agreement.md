@@ -32,7 +32,7 @@ First browse through portal.azure.com and search for Entra ID (Formerly Azure Ac
 
 After clicking on manage tenant it’ll open below window where you’ll see all the directories you’ve access too.
 
-![Entra tenant list](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/29112024/entratenantlist.jpg)
+![Entra tenant list](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/29112024/entra-tenant-list.jpg)
 
 select Entra ID and not B2C.
 
