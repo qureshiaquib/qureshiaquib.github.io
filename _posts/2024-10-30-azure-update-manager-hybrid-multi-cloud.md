@@ -84,11 +84,15 @@ Let’s discuss the cost of the service; AUM is a cloud service. There is no app
 AUM for Azure Servers is free of cost. You can start leveraging AUM right away.
 AUM is free when you’ve servers hosted on Azure Stack HCI on-premises.
 It is chargeable for servers hosted on-premises. It is charged 5$ per server per month.
- AUM for Arc-Enabled servers is free under two conditions.
+ AUM for Arc-Enabled servers is free under three conditions.
 1.	If you’ve enabled Extended security updates via Arc
 2.	If you’ve Defender for Servers Plan 2.
+3.  Windows Server Management enabled by Azure Arc offers customers with Windows Server licenses that have active Software Assurances or Windows Server licenses that are active subscription licenses can get AUM for free.
+
 More details about above scenarios in link below.
 [https://learn.microsoft.com/en-us/azure/update-manager/update-manager-faq#are-there-scenarios-in-which-arc-enabled-server-isnt-charged-for-azure-update-manager](https://learn.microsoft.com/en-us/azure/update-manager/update-manager-faq#are-there-scenarios-in-which-arc-enabled-server-isnt-charged-for-azure-update-manager)
+
+[https://techcommunity.microsoft.com/blog/azurearcblog/announcing-general-availability-windows-server-management-enabled-by-azure-arc/4303854](https://techcommunity.microsoft.com/blog/azurearcblog/announcing-general-availability-windows-server-management-enabled-by-azure-arc/4303854)
 
 I hope this blog helps you deploying AUM faster and help you follow right architecture pattern.
 
