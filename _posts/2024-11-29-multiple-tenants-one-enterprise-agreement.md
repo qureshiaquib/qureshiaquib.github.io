@@ -60,6 +60,9 @@ Click on accounts and it’ll open all the Enrollment accounts.
 
 ![List of all the billing accounts in enterprise enrollment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/29112024/billing-accounts.jpg)
 
+please note: You'll need to change the authorization level of your enterprise agreement to Work or School cross tenant, before you execute below step.
+[https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration#view-and-manage-enrollment-policies](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration#view-and-manage-enrollment-policies)
+
 Click on add and specify the account owner email. This is your entra user id which is present in your newly created entra tenant.
 
 ![screen showing how to add enrollment account](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/29112024/add-enrollment-account.jpg)
@@ -67,6 +70,8 @@ Click on add and specify the account owner email. This is your entra user id whi
 Now you have two enrollment account with two different Entra Tenant. whenever you create subscriptions under Enrollment account it’ll be attached to the new entra tenant.
 
 Enterprise Agreement will be retired soon, and customers will transition to MCA. I'll soon write a blog around how same can be achieved in MCA. And yes I've seen the same is possible in MCA-E.
+
+Special thanks to [Darshit Shah](https://www.linkedin.com/in/darushah/) for validating the content.
 
 I hope this blog will help you in designing the proper Enterprise Agreement and it's tenant association during a spin-off.
 
