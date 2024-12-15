@@ -79,39 +79,59 @@ There are two main types of AVS sizing which can be accomplished with Azure Migr
 ### Appliance Based
 Let’s talk about the first option, this is very similar to the process used when the target was an Azure VM. i.e installing Azure Migrate appliance, adding vCenter server details and let it collect performance history of VMs. The only change would be here is, instead of creating Azure VM based assessment report you’ll have to select AVS assessment and then provide the parameters for sizing. In this you can do performance based assessment which will check vCPU, Memory performance of VMs and then provide you with recommendations of AVS Node. If you want as-is then it can also do that and provide you with AVS node count based on current vCPU and Memory of VMs.
 
+Assuming you've discovered all the servers using azure migrate based appliance, we'll jump into how to create the assessment. 
+
 ![Azure migrate screen creating assessment with appliance based method](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/azure-migrate-avs-assessment-appliance-based.jpg)
+
+Selecting AVS assessment.
 
 ![Selecting AVS while creating azure migrate assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/azure-migrate-avs-assessment-appliance-based-step2.jpg)
 
+Making sure discovery source is selected as Azure Migrate Appliance.
+
 ![Selection of appliance in AVS assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/avs-assessment-selecting-appliance.jpg)
 
+Making sure you've selected the right set of parameters as your output will be based on these selections.
 ![Editing avs assessment parameters](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/parameters-avs-assessment-azure-migrate.jpg)
 
+Select the servers for assessment.
+
 ![Creating assessment of azure migrate](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/create-avs-assessment-azure-migrate.jpg)
+
+This is the output of the report once AVS assessment is created. This will show the node count required and also the storage.
 
 ![Report of the AVS assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/final-output-avs-assessment.jpg)
 
 ### Import Based
 This is as-is sizing based on the RVTools import method. There is no manual calculations which are required for storage and Node. You’ll need rvtool tools export data which you need to import in Azure Migrate project and it’ll do computation to provide AVS node sizing and storage required. Though this is through azure Migrate however there is no appliance installation required in this method. Currently this is in preview.
 
+Before creating assessment, you'll need to import the RVtools so that all these servers will show under discovered servers.
 ![Importing servers in azure migrate using rvtools](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/azure-migrate-avs-import-assessment.jpg)
 
+Selecting the preview option of RVTools
 ![Selecting the preview functionality of rvtools in azure migrate](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/selecting-rvtools-option.jpg)
 
+You can find the discovered servers is populated with rvtools data.
 ![Discovered servers in azure migrate](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/discovered-servers.jpg)
 
+Now you'll once again create assessment, but this time the selections would be the Imported servers instead of Azure Migrate appliance.
 ![Creating avs assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/avs-assessment-import-based.jpg)
 
 ![Selecting AVS assessment import based](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/selections-for-avs-assessment.jpg)
 
+Selecting the servers.
 ![Selecting servers and create avs assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/assessment-creation-azure-migrate.jpg)
 
+Creating the assessment.
 ![Create AVS assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/final-screen-avs.jpg)
 
+Now the output of the assessment screen shows the AVS assessment count as 1.
 ![Selecting AVS assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/assessment-selection.jpg)
 
+This screen will show the total number of assessment which were created.
 ![View total avs assessment report](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/view-avs-assessment.jpg)
 
+Once you open the assessment, it'll show the overall size of AVS nodes required along with storage.
 ![Final output of avs import based assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/final-report-avs-assessment-rvtools.jpg)
 
 
@@ -124,7 +144,7 @@ In this section, let’s do sample AVS sizing through azure pricing calculator. 
 
 [https://azure.com/e/e39866f1330f4aa1b7b84e582940fb88](https://azure.com/e/e39866f1330f4aa1b7b84e582940fb88)
 
-I hope this blog help you in AVS node assessment and quickly start the Network discussion and overall migration plan.
+I hope this blog help you in AVS node assessment. Once this is done you can quickly start the Network discussion and overall migration plan.
 
 Happy Learning!
 
