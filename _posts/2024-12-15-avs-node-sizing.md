@@ -51,7 +51,7 @@ we get RAW storage from AVS nodes, and usable space will depend upon multiple fa
 5. Space efficiency ratio (1.50 – on average, however it depends upon your data which is getting stored and how much space efficiency you get. It can increase as well)
 If you want to know more about storage and consideration in AVS then you can refer my previous blog around this topic.
 
-[https://www.azuredoctor.com/posts/Demystifying-Storage-types-in-AVS/](https://www.azuredoctor.com/posts/Demystifying-Storage-types-in-AVS/)
+[https://www.azuredoctor.com/posts/Demystifying-Storage-types-in-AVS/](https://www.azuredoctor.com/posts/Demystifying-Storage-types-in-AVS/){: w="600" h="1100" }
 
 Because of the above-mentioned factors your usable space would differ. For quick calculation purposes I’ve captured the RAID sizing below for AV36P which provides us with the most usable storage. If you want to increase FTT from 2 to 3 then the usable storage would be less but will provide higher resiliency. Based on the SLA of AVS, if you have 6 or more nodes, you’ll need to opt for a minimum of FTT 2.
 
