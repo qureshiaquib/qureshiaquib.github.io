@@ -61,6 +61,7 @@ Click on accounts and it’ll open all the Enrollment accounts.
 ![List of all the billing accounts in enterprise enrollment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/29112024/billing-accounts.jpg)
 
 please note: You'll need to change the authorization level of your enterprise agreement to Work or School cross tenant, before you execute below step.
+
 [https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration#view-and-manage-enrollment-policies](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration#view-and-manage-enrollment-policies)
 
 Click on add and specify the account owner email. This is your entra user id which is present in your newly created entra tenant.

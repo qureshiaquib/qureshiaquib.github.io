@@ -81,7 +81,7 @@ Let’s talk about the first option, this is very similar to the process used wh
 
 Assuming you've discovered all the servers using azure migrate based appliance, we'll jump into how to create the assessment. 
 
-![Azure migrate screen creating assessment with appliance based method](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/azure-migrate-avs-assessment-appliance-based.jpg)
+![Azure migrate screen creating assessment with appliance based method](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/azure-migrate-avs-assessment-appliance-based.jpg){: w="600" h="1100" }
 
 Selecting AVS assessment.
 
@@ -135,7 +135,7 @@ Once you open the assessment, it'll show the overall size of AVS nodes required 
 ![Final output of avs import based assessment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/final-report-avs-assessment-rvtools.jpg)
 
 
-## How to find cost from Azure Pricing Calculator
+## Calculate AVS cost using Azure Pricing Calculator
 In this section, let’s do sample AVS sizing through azure pricing calculator. We’re not adding any networking component like Express Route Gateway, Azure Route server or Firewall in this, hoping landing zone is configured and ready and we’re just estimating what would be the AVS cost itself. 
 
 ![Azure pricing calculator avs](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/azure-pricing-calculator-avs-sizing.jpg)
