@@ -27,7 +27,7 @@ Let’s start with as-is sizing with Manual Method, and to capture vCPU, Memory 
 Most VMware admins would know how to export a VMware cluster via RVTools, if not then you can download the tool from website [https://www.robware.net/home](https://www.robware.net/home)
 You’ll find multiple tabs, including 'vminfo,' which contains the necessary details. Sum up the relevant numbers from this tab.
 
-rvtools-vminfo.jpg
+![Table showing rvtools export data](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/rvtools-vminfo.jpg)
 
 * CPUs: this shows the vCPU associated with the VMs
 * Memory: This will contain the memory allocated.
@@ -38,7 +38,7 @@ rvtools-vminfo.jpg
 Once we get the total vCPU, Memory and Storage-In-use we’ll need to compare this with what Azure nodes can provide. Let’s take an example. 3 Nodes of AVS nodes (Minimum) will provide below size. Based on your CPU and memory requirements, you’ll need to size your deployment accordingly.
 Storage consideration is slightly different, and we’ll dive deeper into how to calculate usable space from your nodes in the next section. However, you have to mainly consider vCPU and Memory while sizing the nodes the reason being you can expand the storage with help of remote storage option like Azure NetApp files, or Azure Elastic SAN. In this scenario you don’t have to expand the node count just to fit your storage needs.
 
-![Table showing 3 AV36p nodes and it's specifications](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/av36p-node-size.jpg)
+![Table showing 3 AV36p nodes and it's specifications](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/av36p-node-size.jpg){: w="600" h="1100" }
 
 Now based on the rvtools size you can get the total vCPU, Memory and storage you need and then size the number of AVS nodes according to your requirement.
 
@@ -81,7 +81,7 @@ Let’s talk about the first option, this is very similar to the process used wh
 
 Assuming you've discovered all the servers using azure migrate based appliance, we'll jump into how to create the assessment. 
 
-![Azure migrate screen creating assessment with appliance based method](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/azure-migrate-avs-assessment-appliance-based.jpg){: w="600" h="1100" }
+![Azure migrate screen creating assessment with appliance based method](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15122024/azure-migrate-avs-assessment-appliance-based.jpg)
 
 Selecting AVS assessment.
 
