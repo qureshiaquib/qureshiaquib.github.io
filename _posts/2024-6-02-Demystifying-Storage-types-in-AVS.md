@@ -29,6 +29,7 @@ To calculate the usable storage you can get from your AVS host, you can use the 
 The example is of AV36P. which has 2 Disk groups with 3 capacity disk each of 3.2 TB.
 
 ![Finding usable storage of VSAN](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/usable-storage-vsan.jpg){: w="400" h="1000" }
+
 ![Selecting RAID configuring for vSAN usable storage](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/raid-config-vsan-storage.jpg){: w="400" h="1000" }
 
 
