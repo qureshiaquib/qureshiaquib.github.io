@@ -19,11 +19,11 @@ Let us get started, Azure Elastic SAN (ESAN) was introduced in Oct 2022. ESAN pr
 
 How Elastic SAN calculates IOPS and Storage - you create ESAN and based on the Base unit you get the total IOPS and throughput with increment of 1TiB. Base unit of 1 TiB provides 5000 IOPS and 200MBps throughput. If you just want cheaper storage, then you can add an additional Capacity Unit which does not provide IOPS/Throughput but only additional storage.
 
-One important aspect of Elastic SAN is, whenever you create an Elastic SAN, entire IOPS and throughput of ESAN are shared amongst multiple volumes. For example, if you create 20 TiB of ESAN, you will get 100,000 IOPS and 4000 MBps throughput in total. If you create two volumes of 200Gb each, it can scale up to 80K IOPS and 1280 MBps throughput individually. However, it’ll share the total IOPS and throughput provided by the parent Base unit of Elastic SAN. If one VM gets 60K IOPS and at the same time if the second VM requires 50K IOPS then the second VM will only get 40K IOPS because max limit for ESAN of 20TiB is 100K IOPS.
+One important aspect of Elastic SAN is, whenever you create an Elastic SAN, entire IOPS and throughput of ESAN are shared amongst multiple volumes. For example, if you create 20 TiB of ESAN, you will get 100,000 IOPS and 4000 MBps throughput in total. If you create two volumes of 200Gb each, it can scale up to 80K IOPS and 1280 MBps throughput individually. However, it’ll share the total IOPS and throughput provided by the parent Base unit of Elastic SAN. If one VM gets 60K IOPS and at the same time if the second VM requires 50K IOPS then the second VM will only get 40K IOPS because max limit for ESAN of 20TiB is 100K IOPS.\
 Minimum volume required to get max 80K IOPS is 106GiB and to get max 1280GB/s we need minimum 21 GiB.
 
-Now, you can combine your storage requirements for multiple applications and put that in single Elastic SAN. You get cost and consolidated storage advantages.
-One thing you’ll need to keep in mind, you can’t put all critical prod applications which requires IOPS and throughput at same time in single ESAN. Hence you need to spread evenly across multiple ESAN instances. This is because of the IOPS/Throughput if all the apps require at the same time then ESAN would need to be either scaled to that limit or else ESAN will start throttling. 
+Now, you can combine your storage requirements for multiple applications and put that in single Elastic SAN. You get cost and consolidated storage advantages.\
+One thing you’ll need to keep in mind, you can’t put all critical prod applications which requires IOPS and throughput at same time in single ESAN. Hence you need to spread evenly across multiple ESAN instances. This is because of the IOPS/Throughput if all the apps require at the same time then ESAN would need to be either scaled to that limit or else ESAN will start throttling.\
 You can have 200 Volume groups, and one volume group can have up to 1000 volumes. So, you can have a large set of applications clubbed in single ESAN.
 
 ## ESAN volume data travels over network
@@ -87,10 +87,11 @@ This doesn’t happen when you deploy ANF with AVS,as ANF gets deployed in a VNE
 As Elastic SAN is just 2 years old service, many enhancements are still in roadmap. Before you consider deploying ESAN for your workload you’ll need to keep below considerations in mind.
 1. If you replicate your VM to another region via Azure Site recovery, ESAN volumes attached to a VM are unsupported.
 2. Backup of ESAN Volume via Azure Backup is currently not GA. Not available in public preview as of now.
-3. Backup is available via volume snapshots which is in preview, this is ESAN functionality. 
-3. SAP on Azure VM is currently unsupported with ESAN, it is only supported with Azure Managed disk and ANF.
-4. You can take snapshots of normal disk and then create ESAN volume from that. This is in preview and it can be used to move to ESAN volume.
-5. If you use Azure Migrate for assessment and sizing your DC migration, the tool currently only supports managed disk as a target for assessment as well as for migration.\
+3. Backup is available via volume snapshots which is in preview, this is ESAN functionality.
+These backup and DR capabilities can be achieved via third party if you use backup tools via Azure Marketplace supported appliances.
+4. SAP on Azure VM is currently unsupported with ESAN, it is only supported with Azure Managed disk and ANF.
+5. You can take snapshots of normal disk and then create ESAN volume from that. This is in preview and it can be used to move to ESAN volume.
+6. If you use Azure Migrate for assessment and sizing your DC migration, the tool currently only supports managed disk as a target for assessment as well as for migration.\
 [https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots?tabs=azure-portal#create-a-volume-from-a-managed-disk-snapshot](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots?tabs=azure-portal#create-a-volume-from-a-managed-disk-snapshot)
 
 I hope the above comparisons and descriptions help you validate whether ESAN is a better fit for your deployment and can achieve cost savings.
