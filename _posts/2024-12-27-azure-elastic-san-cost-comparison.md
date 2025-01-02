@@ -24,7 +24,8 @@ Minimum volume required to get max 80K IOPS is 106GiB and to get max 1280GB/s we
 
 Now, you can combine your storage requirements for multiple applications and put that in single Elastic SAN. You get cost and consolidated storage advantages.\
 One thing you’ll need to keep in mind, you can’t put all critical prod applications which requires IOPS and throughput at same time in single ESAN. Hence you need to spread evenly across multiple ESAN instances. This is because of the IOPS/Throughput if all the apps require at the same time then ESAN would need to be either scaled to that limit or else ESAN will start throttling.\
-You can have 200 Volume groups, and one volume group can have up to 1000 volumes. So, you can have a large set of applications clubbed in single ESAN.
+Total of 20,000 volumes are supported.
+So, you can have a large set of applications clubbed in single ESAN.
 
 ## ESAN volume data travels over network
 As an Azure Admin, you may already know every VM has got disk and network throttling limit assigned to it. Lower the VM SKU, lower the limit. If you attach a 4TB Premium SSD disk to a VM with size D4s_v5, even though disk IOPS is 7500 IOPS, you’ll not be able to use this much IOPS. Because VM itself supports max of 6400 IOPS. You’ll need to change your VM size and choose higher SKU even though you don’t require higher CPU and Memory.
@@ -91,8 +92,12 @@ As Elastic SAN is just 2 years old service, many enhancements are still in roadm
 These backup and DR capabilities can be achieved via third party if you use backup tools via Azure Marketplace supported appliances.
 4. SAP on Azure VM is currently unsupported with ESAN, it is only supported with Azure Managed disk and ANF.
 5. You can take snapshots of normal disk and then create ESAN volume from that. This is in preview and it can be used to move to ESAN volume.
-6. If you use Azure Migrate for assessment and sizing your DC migration, the tool currently only supports managed disk as a target for assessment as well as for migration.\
 [https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots?tabs=azure-portal#create-a-volume-from-a-managed-disk-snapshot](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots?tabs=azure-portal#create-a-volume-from-a-managed-disk-snapshot)
+
+6. If you use Azure Migrate for assessment and sizing your DC migration, the tool currently only supports managed disk as a target for assessment as well as for migration.\
+However you can use Storage Migration Program and with help of Cirrus Data Solutions you can migrate your data to Elastic SAN storage. This entire migration cost is free for customer.
+[https://techcommunity.microsoft.com/blog/azurestorageblog/block-migrations-added-to-azure-storage-migration-program/3838385](https://techcommunity.microsoft.com/blog/azurestorageblog/block-migrations-added-to-azure-storage-migration-program/3838385)
+
 
 I hope the above comparisons and descriptions help you validate whether ESAN is a better fit for your deployment and can achieve cost savings.
 
