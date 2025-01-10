@@ -35,8 +35,10 @@ I’ll provide an example below where if you had faced above problem of going to
 
 ![ESAN data traverse via network path hence VM SKU throttling never happens](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27122024/esan-over-network-price.jpg){: w="1100" h="600" }
 
-Let’s now compare how ESAN is placed when compared to disk storage. Also we’ll only consider one disk of 4TiB as of now. When considering ESAN when you deploy Base Unit which is typically combination of larger storage size you’ll get much higher throughput which any of your volume can use. This isn’t possible in single disk as it is attached to only one VM and the IOPS can’t be shared with other VMs.\
-please note: we’ve not considered the preview functionality of of performance plus which provides higher IOPS and Throughput.
+Let’s now compare how ESAN is placed when compared to disk storage. Also we’ll only consider one disk of 4TiB as of now. When considering ESAN when you deploy Base Unit which is typically combination of larger storage size you’ll get much higher throughput which any of your VM can use in smaller chunks. This isn’t possible in single disk as it is attached to only one VM and the IOPS can’t be shared with other VMs if IOPS/Throughput are unused by that VM.\
+please note: 
+The price of Azure services is subject to change, so please check the current pricing before deploying Elastic SAN.\
+we’ve not considered the preview functionality of of performance plus which provides higher IOPS and Throughput.
 More info in below link.
 
 [https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-performance?tabs=azure-powershell](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-performance?tabs=azure-powershell)
@@ -56,6 +58,8 @@ Still with such performance increase you can save cost of around 29.28$ Per Mont
 
 ![Table showing cost comparisons of ESAN vs Standard SSD](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27122024/standardssd-vs-esan.jpg){: w="1100" h="600" }
 
+In a few regions, you might find that the cost of Elastic SAN is slightly higher than Standard SSD when considering a 4 TiB example. However, when you combine your storage, IOPS, and throughput needs, Elastic SAN remains competitive. It offers additional IOPS and throughput benefits that can be shared across multiple VMs. Moreover, Elastic SAN doesn't restrict you to specific disk sizes like Standard SSD does. For example, if you have a 3 TB requirement, you'll need to choose a 4 TB disk with Standard SSD.
+
 ## ESAN vs Premium SSD v2
 While going through above examples of Premium v1 disk you might wonder why we don’t compare it with premium SSD v2 which provides much better performance and cost is cheaper than the Premium SSD v1 disk. So here you go. With Base price of Premium SSD v2 you get 3000 IOPS and 125 MB/s throughput. When you compare this with our ESAN you get 1 Base Unit of ESAN and 3 TiB of Capacity Unit, you can save around 70.90$ Per month
 There are certain considerations in this scenario
@@ -65,6 +69,8 @@ However Premium SSDv2 requires VMs to be in zone.
 3. Though ESAN has to be deployed in a specific zone, VMs can be connected to it from any of the zone within region. It is preferred to have VMs and ESAN in the same zone so that you get better performance.
 
 ![Table showing cost comparisons of ESAN vs Premium SSD v2](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/27122024/premiumssdv2-vs-esan.jpg){: w="1100" h="600" }
+
+In the Central India region, the cost of Elastic SAN might be slightly higher than Premium SSD v2 when considering a 4 TiB example. However, when you combine your storage, IOPS, and throughput needs, Elastic SAN remains competitive. It provides additional IOPS and throughput benefits, which can be shared across multiple VMs.
 
 ## AVS Scenario : ESAN vs ANF standard
 ESAN is a block storage, attached to VMs via iSCSI protocol. ANF is a NAS which can be available via NFS or SMB protocol.\
