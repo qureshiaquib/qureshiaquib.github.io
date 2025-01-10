@@ -24,13 +24,13 @@ Through the UI, you cannot create a snapshot of a disk across tenants. However, 
 2.	Create a Managed Disk: Use the snapshot in the target tenant to create a managed disk.
 3.	Create a Virtual Machine: Build a VM in the target tenant using the managed disk.
 
-![Process diagram of VM migration from one tenant to another](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/1012025/disksnapshot-process.jpg)
+![Process diagram of VM migration from one tenant to another](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10012025/disksnapshot-process.jpg)
 
 ##	ARM – Token information
 
 Let’s discuss how this process is achieved. Currently, no PowerShell command supports creating snapshots across tenants. However, REST API calls provide a solution. These calls allow authentication to the primary tenant and include the option to use an auxiliary token from another tenant. This auxiliary token is passed as an auxiliary header in the same REST call. Additionally, multiple auxiliary headers can be included if needed.
 
-![REST API header details which contains primary and auxiliary token](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/1012025/rest-header-details.jpg)
+![REST API header details which contains primary and auxiliary token](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10012025/rest-header-details.jpg)
 
 [https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/authenticate-multi-tenant](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/authenticate-multi-tenant)
 
@@ -67,7 +67,7 @@ So let’s find out minimum role required to execute this step.
     Disk snapshot contributor: This role is required so that you can create disks from the snapshots.\
     VM Contributor: to create VM from the disk.
 
-![Azure custom RBAC for disk copy across Azure AD tenant](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/1012025/custom-role.jpg)
+![Azure custom RBAC for disk copy across Azure AD tenant](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/10012025/custom-role.jpg)
 
 
 ## Step by Step approach
