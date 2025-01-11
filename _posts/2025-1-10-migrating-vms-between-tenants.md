@@ -145,12 +145,22 @@ $disksnapresponse = Invoke-RestMethod -Uri `
 -Method Put -Headers $headers -Body $diskforsnapbody -ContentType "application/json"
 
 ```
+Using above script you'll only get snapshot in the target tenant/subscription.
+After this process you'll need to perform below two tasks in target subscription.
+1. Create disk from snapshot
+2. create VM from existing disks
+
+I've not covered these two task in this blog because these are well known and you should be able to perform these easily.
+please find below link for both the tasks.
+[https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-snapshot](https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-snapshot)
+
+[https://learn.microsoft.com/en-us/azure/virtual-machines/attach-os-disk?tabs=powershell](https://learn.microsoft.com/en-us/azure/virtual-machines/attach-os-disk?tabs=powershell)
 
 I've observed that one method for disk copying involves using Storage Explorer. By adding both tenant accounts in a single Storage Explorer session, we can perform the copy-paste operation for the disks. However, it's important to note that this action is actually a copy operation. You can monitor the progress on the status screen at the bottom, where you'll see that each disk takes some time to complete, based on its size.
 
 I hope you found this useful and through this your migration becomes smoother in less time.
 
-Special thanks to Aleem Mohammed & Robert Larson for their collaboration and for helping bring this solution to the community.
+Special thanks to [Aleem Mohammed](https://www.linkedin.com/in/aleemmr/) & [Robert Larson](https://www.linkedin.com/in/larsonrobert/) for their collaboration and for helping bring this solution to the community.
 
 Happy Learning!
 
