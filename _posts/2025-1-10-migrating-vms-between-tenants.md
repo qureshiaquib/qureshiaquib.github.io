@@ -151,7 +151,7 @@ After this process you'll need to perform below two tasks in target subscription
 2. create VM from existing disks
 
 I've not covered these two task in this blog because these are well known and you should be able to perform these easily.
-please find below link for both the tasks.
+please find below link for both the tasks.\
 [https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-snapshot](https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-snapshot)
 
 [https://learn.microsoft.com/en-us/azure/virtual-machines/attach-os-disk?tabs=powershell](https://learn.microsoft.com/en-us/azure/virtual-machines/attach-os-disk?tabs=powershell)
