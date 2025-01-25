@@ -65,7 +65,7 @@ Specify the Entra Tenant ID, don’t click on provisioning, as that is meant for
 Once you’ve associated your tenant, you can invite the user to directly manage the Billing Account, or you can specifically assign the user role on the Billing Profile.
 Based on the permission required you can specify the permission (1) and select the tenant name (2), if you’ve more than one tenant you can select the specific tenant and then specify the user (3)
 
-![Assign new user permission from new Entra tenant to MCA Billing profile](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/25012025/assign-permission-on-billing-profile.jpg)
+![Assign new user permission from new Entra tenant to MCA Billing profile](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/25012025/assign-permission-on-billing-profile-v1.jpg)
 
 Once you’ve provided the permissions, Administrator can create subscription and it’ll be automatically be mapped to the tenant of the user, i.e new tenant. At the same time present in the same MCA billing and enjoy the benefits/discounts.
 
