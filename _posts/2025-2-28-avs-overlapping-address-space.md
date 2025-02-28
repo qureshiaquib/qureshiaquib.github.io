@@ -3,7 +3,7 @@ title: "Handling Overlapping Address Spaces in AVS Without HCX"
 date: 2025-2-28 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure VMware solution HCX]
-description: "Learn how to handle overlapping address spaces in Azure VMware Solution (AVS) using transit hub design, NVA, for seamless connectivity"
+description: "Learn how to handle overlapping address spaces in Azure VMware Solution. using transit hub design and NVA. we'll have conflicting IP address on-prem & azure"
 ---
 
 * **Scenario**:
