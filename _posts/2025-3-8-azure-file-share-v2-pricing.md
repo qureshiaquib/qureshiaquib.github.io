@@ -34,10 +34,10 @@ transaction-optimized tiers was a difficult decision for customers.
 The new Provisioned v2 model simplifies both of these challenges. Customers no longer have to worry about transaction counts, and tier selection (hot, cool, etc.) is no longer necessary.
 
 * **Advantages**:
-* Price Predictability: Since there is no transaction count involved, costs are more controlled through IOPS and throughput selection, which customers can manage. They can set the IOPS/Throughput on particular file share and also monitor the usage via Azure Monitor. If particular file share is not used much then they can reduce it.
-Similar to Disk IOPS burst, Microsoft allows IOPS/Throughput bursting if credits are available. 
-* Lower Cost: Since there are no cool, hot, or transaction-optimized tiers the base cost of the file storage itself is low. Customers now don’t need to worry about which tier to select. They just have to move the data to file share and enjoy the low cost storage. 
-* The price difference between the PayG tier and the Provisioned v2 tier can be as much as 50%, making it a significantly more cost-effective option.
+    * Price Predictability: Since there is no transaction count involved, costs are more controlled through IOPS and throughput selection, which customers can manage. They can set the IOPS/Throughput on particular file share and also monitor the usage via Azure Monitor. If particular file share is not used much then they can reduce it.
+    Similar to Disk IOPS burst, Microsoft allows IOPS/Throughput bursting if credits are available. 
+    * Lower Cost: Since there are no cool, hot, or transaction-optimized tiers the base cost of the file storage itself is low. Customers now don’t need to worry about which tier to select. They just have to move the data to file share and enjoy the low cost storage. 
+    * The price difference between the PayG tier and the Provisioned v2 tier can be as much as 50%, making it a significantly more cost-effective option.
 
 * **Things to be aware about**:\
 Since this is a new tier that recently became GA, there are a few considerations to be aware of.
