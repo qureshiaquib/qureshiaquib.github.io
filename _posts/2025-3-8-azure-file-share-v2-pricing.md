@@ -47,6 +47,8 @@ Since this is a new tier that recently became GA, there are a few considerations
 
 The new Azure File Share provisioned v2 is GA.
 
+Steps to create Azure File Share with provisioned v2 tier.
+
 ![Storage account creation for azure file share provisioned v2](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/08032025/file-share-creation.jpg)
 
 ![File share creation step](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/08032025/file-share-creation-step2.jpg)
