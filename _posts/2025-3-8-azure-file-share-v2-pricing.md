@@ -37,6 +37,7 @@ The new Provisioned v2 model simplifies both of these challenges. Customers no l
 * Price Predictability: Since there is no transaction count involved, costs are more controlled through IOPS and throughput selection, which customers can manage. They can set the IOPS/Throughput on particular file share and also monitor the usage via Azure Monitor. If particular file share is not used much then they can reduce it.
 Similar to Disk IOPS burst, Microsoft allows IOPS/Throughput bursting if credits are available. 
 * Lower Cost: Since there are no cool, hot, or transaction-optimized tiers the base cost of the file storage itself is low. Customers now don’t need to worry about which tier to select. They just have to move the data to file share and enjoy the low cost storage. 
+* The price difference between the PayG tier and the Provisioned v2 tier can be as much as 50%, making it a significantly more cost-effective option.
 
 * **Things to be aware about**:\
 Since this is a new tier that recently became GA, there are a few considerations to be aware of.
@@ -56,7 +57,7 @@ The new Azure File Share provisioned v2 is GA.
 Azure File sync is used to sync file share from on-premises to Azure. You can enable cloud tiering, which ensures that the on-premises file server has free space by tiering older, unused files to Azure Files. File metadata remains on-premises, and whenever a user clicks on a file, the data is downloaded and presented to them. Along with that it provides File server DR option.
 While Azure File Sync has been available for a while, you can now use it with the Provisioned v2 File Share to achieve a low-cost backup and DR solution.
 
-![Architecture showing Azure File Sync](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/08032025/file-sync-architecture.jpg)
+![Architecture showing Azure File Sync](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/08032025/file-sync-architecture.jpg)_architecture diagram from azure architecture centre_
 
 ## Backup Types: 
 The reason I mention Azure File Sync is that you can use Azure Backup to back up on-premises file shares once they are synced to Azure File Share. So basically, you don’t have to take on-premise backup and let azure backup continue to take incremental backup on Azure. It meets both off-site backup purpose along with that DR of your file share.
@@ -70,7 +71,10 @@ The reason I mention Azure File Sync is that you can use Azure Backup to back up
     currently it is in roadmap and soon will be available. In order to get Item level recovery functionality when you consider backup, make sure you keep snapshot for longer period of time. Assume you often do recovery for accidental deletion and users come to you after 2 weeks then you keep snapshot for 14 days. As you can do item level recovery for snapshot based backup this can come to you for rescue while still opting for vault backup.
     * Currently vault backup support max file share size upto 10TB. very soon you should be able to back larger share.
 
+Below diagram shows the snapshot setting which you can modify.
 ![Snapshot in the vault backup policy](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/08032025/backup-policy.jpg)
+
+Below architecture diagram shows about the Azure Backup, File Share and Azure File Sync.
 
 ![Architecture showing backup of Azure Files](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/08032025/backup-of-azure-file-share.jpg)
 
