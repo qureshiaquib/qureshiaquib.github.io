@@ -46,7 +46,7 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
 ```
 For auto renewal of certificate, we’ll need to enable IIS Rebind.
 
-![Auto rebind in IIS server](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/auto-rebind-in-iis-server.jpg)
+![Auto rebind in IIS server](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30112023/auto-rebind-iis-server.jpg)
 
 This is how Arc VM Extension looks like when it’s enabled.
 
@@ -74,7 +74,7 @@ Cert Rebind in IIS
 
 Happy Learning!
 
->Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
+>Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
 {: .prompt-tip }
