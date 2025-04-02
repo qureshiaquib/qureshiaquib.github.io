@@ -137,9 +137,9 @@ Once user logon and hit your capacity threshold then you’ll start seeing VMs g
 
 >Please note:
 As these VMs are created on fly, you’ll need to have RBAC permissions at the subscription level assigned to AVD service principal, not on the RG because the autoscale policy won’t get triggered.
-Below RBAC roles are necessary to be assigned to AVD service principal.
+Below RBAC roles are necessary to be assigned to AVD service principal.\
 Desktop Virtualization Power On Off Contributor\
-Desktop Virtualization Virtual Machine Contributor 
+Desktop Virtualization Virtual Machine Contributor
 {: .prompt-tip }
 
 Also if you notice the activity logs, you’ll see service principal of AVD creating the VMs
