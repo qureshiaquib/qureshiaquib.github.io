@@ -18,11 +18,12 @@ We’ll focus only on Entra Private Access, which lets you connect to private re
 ## Pre-Requisite
 There are certain pre-requisites that need to be followed.
 
-* License: Microsoft Entra ID P1
-* License: Microsoft Entra Suite or Standalone Entra Private Access
-* RBAC: Global Secure Access Administrator and Application Administrator
+* License: Microsoft Entra ID P1 should be assigned to the admin who's configuring the private access.
+* License: Microsoft Entra Suite or Standalone Entra Private Access for all the end clients.
+* RBAC: Global Secure Access Administrator and Application Administrator assigned to the user who's configuring Entra Private Access.
 * Connector Server: A windows server which has internet outbound connectivity. This server connects to Entra    Private Access services and proxies the connections to resources that are connected via private endpoints. All connections pass through this server.
-* A Windows 10 client to test connectivity to the server or some Azure private endpoint services. This client must be Entra ID joined or Hybrid joined.
+* A Windows 10/11 client to test connectivity to the server or some Azure private endpoint services.
+This client must be Entra ID joined or Hybrid joined.
 
 ## License
 Assign relevant license to the user:
@@ -35,21 +36,23 @@ Enable Private Access Profile under traffic forwarding.
 
 ## Private Access Connector Installation
 
-Download the private access connector [click here](https://download.msappproxy.net/subscription/d3c8b69d-6bf7-42be-a529-3fe9c2e70c90/connector/download){: w="600" h="1100" }
+Download the private access connector [click here](https://download.msappproxy.net/subscription/d3c8b69d-6bf7-42be-a529-3fe9c2e70c90/connector/download)
 
 ![Download private access connector](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/download-private-access-connector.jpg){: w="600" h="1100" }
 
-Install it on the windows server. There can be many connector appliances based on the application you're publishing via Entra private access.
+Install it on the windows server. There can be many connector appliances based on how much application you're planning to publish through Entra private access.
 
-![Installing Private Access Connector](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/private-access-connector-installation.jpg)
+![Installing Private Access Connector](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/private-access-connector-installation.jpg){: w="600" h="1100" }
 
 Once installation is completed you can validate the connector by checking on the Entra portal.
+You can create connector group and based on the purpose group the connector. Here we just have one connector appliance.
 
 ![Validate private access connector status](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/validate-private-access-connector.jpg)
 
 ## Enterprise Application creation
 
-For all the applications you want users to access, you'll need to either create applications or add their IPs to Quick Access. Quick access app is kind of default setting for all the users who connect via private access. However it is always better for better management and segregation you create applications. Here, the application we're referring to is an Enterprise Application, which you may be familiar if you're managing Entra ID.
+For all the applications you want users to access, you'll need to either create applications or add their IPs to Quick Access.
+Quick access app is kind of default app for all the users who connect via private access. However it is always better for management and segregation you create apps. Here, the application we're referring to is an Enterprise Application, which you may be familiar if you're managing Entra ID.
 
 ![Enterprise application creation](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/enterprise-application.jpg)
 
@@ -61,11 +64,13 @@ Specify the IP address of the server or application and the required port number
 
 ## Installation of GSA Client
 
-[https://entra.microsoft.com/#view/Microsoft_Azure_Network_Access/Clients.ReactView](https://entra.microsoft.com/#view/Microsoft_Azure_Network_Access/Clients.ReactView){: w="600" h="1100" }
+[https://entra.microsoft.com/#view/Microsoft_Azure_Network_Access/Clients.ReactView](https://entra.microsoft.com/#view/Microsoft_Azure_Network_Access/Clients.ReactView)
+
 Download the client from the above link and install it on the endpoint. You can also use Intune to push the agent for automated deployment.
+
 For this test, we'll proceed with manual installation.
 
-![Install GSA client](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/install-gsa-client.jpg)
+![Install GSA client](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/install-gsa-client.jpg){: w="600" h="1100" }
 
 We’ll have to assign this application to the user so that the Private Access rules for this application are associated with this user.
 
@@ -92,17 +97,17 @@ You can also check whether the traffic is being sent via the GSA client through 
 
 ![Validate traffic getting tunneled](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/validate-traffic-getting-tunneled.jpg)
 
-I’ve done similar testing to connect to Azure SQL Database from the client/endpoint securely.
+I’ve done similar testing to connect to Azure SQL Database from the client/endpoint securely. Azure SQL Database is exposed only via private endpoint.
 
-Create an application for Azure SQL DB server
+Create an application for Azure SQL DB server.
 
 ![Create new application for Azure SQL Database](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/create-application-private-access.jpg)
 
-Specify the FQDN and port
+Specify the FQDN and port.
 
 ![Specify network setting for Azure SQL DB to connect via private access](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/sql-db-port-for-private-access.jpg)
 
-Make sure you’ve disabled public connectivity of database
+Make sure you’ve disabled public connectivity for your Azure SQL DB.
 
 ![Ensure public access on Azure SQL DB is disabled](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/public-access-disable-azure-sql-db.jpg)
 
