@@ -35,9 +35,9 @@ Enable Private Access Profile under traffic forwarding.
 
 ## Private Access Connector Installation
 
-Download the private access connector [click here](https://download.msappproxy.net/subscription/d3c8b69d-6bf7-42be-a529-3fe9c2e70c90/connector/download)
+Download the private access connector [click here](https://download.msappproxy.net/subscription/d3c8b69d-6bf7-42be-a529-3fe9c2e70c90/connector/download){: w="600" h="1100" }
 
-![Download private access connector](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/download-private-access-connector.jpg)
+![Download private access connector](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/download-private-access-connector.jpg){: w="600" h="1100" }
 
 Install it on the windows server. There can be many connector appliances based on the application you're publishing via Entra private access.
 
@@ -61,7 +61,7 @@ Specify the IP address of the server or application and the required port number
 
 ## Installation of GSA Client
 
-[https://entra.microsoft.com/#view/Microsoft_Azure_Network_Access/Clients.ReactView](https://entra.microsoft.com/#view/Microsoft_Azure_Network_Access/Clients.ReactView)
+[https://entra.microsoft.com/#view/Microsoft_Azure_Network_Access/Clients.ReactView](https://entra.microsoft.com/#view/Microsoft_Azure_Network_Access/Clients.ReactView){: w="600" h="1100" }
 Download the client from the above link and install it on the endpoint. You can also use Intune to push the agent for automated deployment.
 For this test, we'll proceed with manual installation.
 
@@ -82,7 +82,7 @@ Rest of the connection which doesn't matches the application network segment wou
 
 Now let’s goto the setting of client and see the traffic.
 
-![Advance diagnostics of GSA client](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/diagnostic-gsa-client.jpg)
+![Advance diagnostics of GSA client](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/diagnostic-gsa-client.jpg){: w="600" h="1100" }
 
 ![Traffic validation](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/traffic-validation-gsa.jpg)
 
