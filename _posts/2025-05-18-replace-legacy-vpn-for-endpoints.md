@@ -1,5 +1,5 @@
 ---
-title: "Replace legacy VPN within an hour for your endpoints"
+title: "Entra Private Access: Replace legacy VPN within an hour"
 date: 2025-5-18 12:00:00 +500
 categories: [tech-blog]
 tags: [Entra Private Access]
