@@ -3,6 +3,7 @@ title: "Sharing PaaS instance across customer tenants on Azure"
 date: 2024-3-23 12:00:00 +500
 categories: [tech-blog]
 tags: [Azure Private Endpoint]
+pin: true
 description: "Learn how to securely share Azure PaaS services across tenants using private endpoints. Discover benefits like region flexibility and cross-tenant connectivity"
 ---
 I’ve come across a scenario where one of my customer using Azure SQL DB wanted to share their Database with other customer who was also hosted on Azure. They were struggling to establish site-to-site connectivity so that Customer B could access Customer A’s network, enabling them to connect to the Azure SQL DB via the site-to-site tunnel. Though this can be achieved, there are better ways to connect to Azure SQL DB, or any PaaS instance for that matter, with another customer who is using Azure. This can also be used by customers who have multiple Azure AD tenants.

@@ -3,7 +3,6 @@ title: "Simplify certificate management of IIS server with Azure Arc"
 date: 2023-11-22 12:00:00 -500
 categories: [tech-blog]
 tags: [Azure Arc]
-pin: true
 description: "learn how to automatically install and update certificate without giving admins access to certificates and store it in azure keyvault with Azure Arc"
 ---
 
