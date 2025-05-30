@@ -74,9 +74,8 @@ That’s all, now you’ll need to find out the sender email. Which is default D
 ![Find the sender email used by email communication service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/find-sender-email-ecs.jpg)
 ![Step2 of finding sender smtp address](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/find-sender-smtp-address.jpg)
 
-> Note: As you can see in the screenshot Add button is greyed out.
-You can add custom sender email by sending couple of emails from the default email address and then raising support case.
-support engineer can help you change the tier to higher which will allow you to add more custom email address.
+> You can add custom sender usernames, click the link to see how to achieve this.
+[Multiple sender address](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/add-multiple-senders?pivots=platform-azp#create-multiple-sender-usernames)
 {: .prompt-tip }
 
 You’ll need credentials to authenticate to the service. 

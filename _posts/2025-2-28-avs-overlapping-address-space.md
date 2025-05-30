@@ -13,12 +13,19 @@ Due to these challenges, rehosting the application on a newer version of the OS 
 
 * **Solution**:
 One of the preferred solutions on Azure is to use Azure VMware Solution. AVS also supports Layer 2 stretch capability, which means port groups from on-premises VMware can be stretched to Azure VMware solution using HCX network extension appliance. However, customer’s environment was legacy and they had network address space of /16 CIDR which is a huge broadcast domain. Due to this, they couldn’t use the L2 stretch capability in the past. There was bandwidth congestion, high latency observed during L2 stretch implementation previously.
-Hence customer preferred configuring /32 routes within the OS/VM/Server on DC side so that it reache its gateway, which has a /32 prefix for the resources running on another site (DR).
+Hence customer preferred configuring /32 routes within the OS/VM/Server on DC side so that it reach its gateway, which has a /32 prefix for the resources running on another site (DR).
 The challenge was: how do we achieve this on AVS? And at the same time VMs hosted on AVS should be reachable from VMs hosted on-premises with overlapping address space and a non-overlapping address space hosted on spoke Azure VNET.
 
 * **Before we proceed, there are a few considerations**:
 1.  The solution is to carefully implement transit hub design of AVS mentioned [here](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-network-design-considerations#transit-spoke-virtual-network-topology) and then using NVA within AVS. My recommendation is to thoroughly review the transit hub design, which forms the base, and then layer on the complexity of overlapping address space, resolving it via NVA within AVS.
 2.  We recommend using the HCX appliance, which provides L2 stretch capability, allowing you to extend your on-premises network and achieve a similar solution. This solution in the blogpost is only designed for specific need of the customer where L2 stretch doesn’t work.
+
+> Please keep in mind:
+* This architecture is not documented in any of the Microsoft AVS network design guides; therefore, you'll need to rely on your partner's capability to implement and support it during operation.
+* Microsoft does not own the network design and will not provide support for troubleshooting if it does not work.
+* As mentioned above, I recommend that you try HCX or change your IP once the VMs are migrated. These two approaches involve less complexity.
+* Additionally, this architecture consists solely of VMware and networking; you will need to test other aspects of the application as part of a holistic architecture. For example, the Application Gateway or L7 Load Balancer present in the Hub and the web server in AVS. Third-party backup and disaster recovery tools have not yet been tested with this architecture.
+{: .prompt-warning }
 
 Let’s first discuss the structure of the setup on Azure.
 
