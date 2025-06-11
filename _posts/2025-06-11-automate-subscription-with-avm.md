@@ -1,5 +1,5 @@
 ---
-title: "Automate subscription creation using AVM Lz/SubVending"
+title: "Automate subscription creation with AVM subscription vending"
 date: 2025-06-11 12:00:00 +500
 categories: [tech-blog]
 tags: [AVM]
@@ -111,6 +111,8 @@ Below screenshot shows the output of the pipeline.
 I haven’t included a pipeline with approval gates in this post, but you can configure them based on your organizational requirements.
 
 I hope you find this helpful in automating subscription creation.
+
+Special thanks to my friend [Darshit Shah](https://www.linkedin.com/in/darushah/) for helping me in EA lab.
 
 Happy learning!
 
