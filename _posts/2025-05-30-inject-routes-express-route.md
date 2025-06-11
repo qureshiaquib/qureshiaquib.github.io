@@ -39,6 +39,8 @@ Solution A, which we have discussed previously, is legacy option which we’ve b
 
 I hope the scenario helps you understand the options at hand to inject or advertise routes from Azure when using ExpressRoute or BGP VPN gateway where static routes can't be pushed.
 
+Happy learning!
+
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
