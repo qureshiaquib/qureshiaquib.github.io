@@ -97,6 +97,45 @@ We’ve created a pipeline which runs the same powershell cmdlet.
 
 ![DevOps pipeline showing bicep subvending module of AVM](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/11062025/azure-pipeline-avm.jpg)
 
+```shell
+
+parameters:
+- name: bicepFile
+  type: string
+
+trigger: none  # manual trigger
+
+stages:
+- stage: DeploySubscription
+  jobs:
+  - job: Deploy
+    pool:
+      vmImage: 'windows-latest'  # Use Windows agent for PowerShell
+    steps:
+    - checkout: self
+
+    - task: AzurePowerShell@5
+      inputs:
+        azureSubscription: 'azuredoctor-sub-vending'
+        ScriptType: 'InlineScript'
+        Inline: |
+          $bicepFile = "${{ parameters.bicepFile }}"
+          Write-Output "Deploying Bicep file: $bicepFile"
+
+          # Optional: Validate if Bicep CLI is available
+          bicep --version
+
+          $templateFile = "$(System.DefaultWorkingDirectory)/bicep/$bicepFile"
+
+          New-AzManagementGroupDeployment `
+            -Name "vendingDeployment-$bicepFile" `
+            -Location "eastus" `
+            -ManagementGroupId "EASubs" `
+            -TemplateFile $templateFile
+        azurePowerShellVersion: 'LatestVersion'
+        pwsh: true
+
+```
 
 ![Photo showing kickstarting pipeline and passing repo as param](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/11062025/run-pipeline-manually.jpg)
 
