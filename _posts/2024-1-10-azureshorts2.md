@@ -29,6 +29,8 @@ FIPS 140-2 Level 3 compliant.
 {: .prompt-tip }
 >Secrets and certificates in premium tier utilize software for storing. Only keys can be hardware protected.
 
+This blog was written in 2024, there is a latest offering Azure Cloud HSM and I have covered that topic in my latest blog [click here to learn more](https://www.azuredoctor.com/post/azure-cloud-hsm/)
+
 Happy Learning!
 
 >Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
