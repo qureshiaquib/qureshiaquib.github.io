@@ -18,7 +18,7 @@ The straightforward answer is: No! RI benefits would only be applicable to one V
 >The same principle applies to savings plans as well. However, the scope of savings plans is broader, covering any type of VMs or compute resources.
 
 
->Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
+>Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
 {: .prompt-tip }

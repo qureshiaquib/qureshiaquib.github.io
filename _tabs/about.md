@@ -19,10 +19,13 @@ In this blog I share two category of post.
 * **Azure Shorts** This is for folks who're interested in learning quick tips that can help them improve their existing azure deployments.
 
 
->Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
+>Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
 {: .prompt-tip }
 
 
 Thank you for visiting Azure Doctor. If you find a post helpful, feel free to share it with your colleagues and don’t hesitate to contribute your own insights in the comments. **Happy learning**
+
+> The content shared on this blog represents my personal views and insights. While I strive for accuracy and test the scenarios I write about, the information is provided without official support and should be used with due diligence. This blog is not affiliated with or endorsed by my employer.
+{: .prompt-info }

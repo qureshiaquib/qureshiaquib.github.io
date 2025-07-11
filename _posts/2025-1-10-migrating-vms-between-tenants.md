@@ -164,7 +164,7 @@ Special thanks to [Aleem Mohammed](https://www.linkedin.com/in/aleemmr/) & [Robe
 
 Happy Learning!
 
->Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
+>Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
 {: .prompt-tip }

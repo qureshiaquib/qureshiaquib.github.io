@@ -60,7 +60,7 @@ I hope this will help you enhance your Azure Monitoring!
 If you know more repo and community driven workbook by any person post that in the comment section :)
 
 
->Subscribe to my biweekly newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
+>Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
 {: .prompt-tip }
