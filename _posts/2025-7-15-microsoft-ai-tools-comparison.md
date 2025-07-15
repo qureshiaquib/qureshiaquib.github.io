@@ -8,8 +8,6 @@ description: "Explore and compare Microsoft’s AI tools like Copilot, Azure AI 
 
 Recently, few of my customers wanted to understand which tools they can use to build AI Agents or tools provided by Microsoft which can help them accelerate their AI journey. Also as all the applications will have some flavour of AI to make things simpler for end users, i didn't want to cover all of the Microsoft tools like Copilot in Word, PowerPoint or Copilot for Azure etc because these are just wrappers. Hence i thought of covering major tools which are offerred by Microsoft in AI space. Also I'm not planning to deep dive on these topic in very depth, these are just high level information which you can use and then later learn these tool in depth.
 
-![Video showing man putting sauce everywhere](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15072025/companies-putting-ai-everywhere.mp4)
-
 ## Azure AI foundry
 Formerly known as Azure AI Studio this is single place to find all the models which you want to deploy on Azure; it can be any model from hugging face or any open-source Model. Once model is added you can experiment with these models in the playground option. You can add Azure AI search if you’ve existing index. Or you can ground it using data present on SharePoint or the web.
 Metrics dashboard helps you in finding the output of your model. It helps you with providing charts on data like Relevance, Groundedness and Fluency.
