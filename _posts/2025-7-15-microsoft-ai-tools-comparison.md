@@ -38,7 +38,7 @@ Along with that Researcher and analyst agents are available to do deep research.
 Not all models need cloud scale. Due to compliance, you might want to run models locally. Along with that If you want to optimize cost, you might prefer running models locally.
 Power-efficient NPUs, which will continue to be released by OEMs and hence Windows AI foundry is introduced to help you in this space.
 
-![chart showing Windows ML](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15072025/windowsaifoundry.jpg)
+![chart showing Windows ML](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15072025/windowsaifoundry.jpg){: w="400" h="800" }
 
 Windows AI API and Windows AI Foundry are built on Windows ML. It is powered by ONNX runtime. 
 To get started, you can download the AI Dev Gallery from windows store. Currently it is in preview.
@@ -69,7 +69,7 @@ There are two ways to access Github Copilot Chat, one from the website another f
 
 You can have GitHub Copilot for free. With this free version you will get 50 agent mode or chat requests per month and 2,000 code completions per month.
 
-![Price of github copilot](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15072025/github-copilot-copilot-price.jpg)
+![Price of github copilot](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15072025/github-copilot-copilot-price.jpg){: w="400" h="800" }
 
 ## Teams AI library v2 & Microsoft 365 Agent SDK
 
@@ -83,7 +83,7 @@ Hence I am not covering all these SDKs or framework in separate section in this 
 ### Teams AI Library v2
 It is a framework which is teams centric, it will help you build Bots or Agents which can integrate with OpenAI or Azure OpenAI service. Bot framework SDK is an alternative method, however teams AI Library v2 provides you with single SDK to integrate with Microsoft Graph, Bot and Adaptive cards. Instead of developers figuring out multiple SDKs to integrate and depend on, you can now rely on Teams AI Library v2. Also, this preview version integrates with MCP and A2A if you have agents that interact with users or other agents.
 
-![Website showing teams AI library v2](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15072025/teams-ai-library-v2.jpg)
+![Website showing teams AI library v2](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/15072025/teams-ai-library-webpage.jpg)
 
 More info here:\
 [https://microsoft.github.io/teams-ai/welcome/](https://microsoft.github.io/teams-ai/welcome/)\
