@@ -86,7 +86,8 @@ Please keep in mind that you should start with a lower number and gradually incr
 1. If your domain was earlier associated with an old IP from a different service like M365 or a third-party, the receiving server will start associating the ACS IP and won’t throttle your requests. If you suddenly start sending millions of emails, the chances of your domain getting throttled by the recipient service are much higher.
 2. You’ll be able to manage the failure rate of emails much more easily, as you monitor the emails and then keep reducing it. 
 
-* **Bonus Tip**
+I'm thinking of providing you a **Bonus Tip**, mentioned below.
+
 ## Pricing calculator
 I also wanted to provide pricing guidance along with these tips. ACS Email is charged based on the number and size of emails you send via the service.
 
