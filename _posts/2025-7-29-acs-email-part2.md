@@ -3,7 +3,7 @@ title: "Part2: Email with Azure Communication Service Tips & Insights"
 date: 2025-7-29 01:00:00 +500
 categories: [tech-blog]
 tags: [ACS]
-description: "Discover essential setup tips and troubleshooting insights for Azure Communication Service Email service to optimize your production email workflow effectively"
+description: "Discover essential setup tips and troubleshooting insights for ACS Email communication service to optimize your production email workflow with best practices"
 ---
 
 My Part 1 blog on ACS Email [here](https://www.azuredoctor.com/posts/smtprelay-with-azure-communication-service/) and on MS TechCommunity has gained a lot of attention recently, one of the causes is throttling enforced by the Exchange Online service. I’ve got you covered with step-by-step implementation guidance in [part 1](https://www.azuredoctor.com/posts/smtprelay-with-azure-communication-service/) of the blog. Since the first blog, I’ve received a lot of questions on certain topics, which led me to create part 2 of the blog. These are some common considerations you’ll need once you start using Azure Communication Service SMTP Email for production use cases.
@@ -52,7 +52,6 @@ for step by step instructions follow below document.
 [https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/add-multiple-senders?pivots=platform-azp](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/add-multiple-senders?pivots=platform-azp)
 
 ## Logs of email
-
 Just like diagnostic logs for other Azure services, ACS provides diagnostic logs which can be configured to send to a Storage Account or Log Analytics workspace, helping you determine which emails were not delivered and bounced back.
 
 ![Screencapture of diagnostics log configuration for ACS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/29072025/diagnostics-logs-acs.jpg)
@@ -72,7 +71,6 @@ The ACS team has provided an inbuilt Email dashboard that gives excellent insigh
 ![ACS Insights dashboard which is built-in](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/29072025/acs-email-dashboard.jpg)
 
 ## Failure rate
-
 This is one of the most important factor when you use ACS, as sending multiple emails and if recipient mark that email as spam or if it doesn’t get delivered then the sender reputation and IP of ACS will be throttled and put into spam. As ACS is used by multiple customers hence this failure rate for each customer is monitored and maintained by PG and CSS team. If you reach 1% or 2% failure rate then you’ll need to work with PG and provide how you’re planning to reduce it. Failure to reduce the failure rate can cause PG to throttle your ACS instance or even stop you from sending emails.
 This is the main reason why we covered diagnostics in this blog, you’ll need to make sure you configure diagnostic logs and monitor the failure rate.
 
@@ -88,6 +86,7 @@ Please keep in mind that you should start with a lower number and gradually incr
 1. If your domain was earlier associated with an old IP from a different service like M365 or a third-party, the receiving server will start associating the ACS IP and won’t throttle your requests. If you suddenly start sending millions of emails, the chances of your domain getting throttled by the recipient service are much higher.
 2. You’ll be able to manage the failure rate of emails much more easily, as you monitor the emails and then keep reducing it. 
 
+* **Bonus Tip**
 ## Pricing calculator
 I also wanted to provide pricing guidance along with these tips. ACS Email is charged based on the number and size of emails you send via the service.
 

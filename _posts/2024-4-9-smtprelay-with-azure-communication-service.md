@@ -13,6 +13,8 @@ Though Azure Communication service supports sending emails outbound but currentl
 
 Azure Communication Service supports different types of notifications, SMTP relay in ACS got GA last month and this blog post is simple step by step instructions of how you can quickly test the service and then migrate from Sendgrid or another service you’re using to native ACS – Email communication service for better operational experience and support.
 
+Based on the insights and questions received, I've also created part 2 of this blog. [click here](https://www.azuredoctor.com/posts/acs-email-part2/) to learn more about ACS Email service.
+
 High level steps are as follows:\
 [1. Create Azure Communication Service Account](#1-create-azure-communication-service-account)\
 [2. Create Email communication service](#2-create-email-communication-service)\
@@ -91,6 +93,8 @@ Now you can use any third party application to send email via the above paramete
 ![Test email received from Azure communication service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/test-email-received-azure-communication-service.jpg)
 
 Conclusion: I trust this guide helps you in configuring SMTP relay and send emails from your custom or third party application without any change to the application/code.
+
+Check part 2 of this blog [here](https://www.azuredoctor.com/posts/acs-email-part2/)
 
 Happy Learning!
 
