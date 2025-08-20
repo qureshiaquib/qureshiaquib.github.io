@@ -3,7 +3,6 @@ title: "Enhance your Azure Observability with Azure Workbook"
 date: 2024-4-22 12:00:00 +500
 categories: [Azure Shorts]
 tags: [Azure Workbook]
-pin: true
 description: "Discover pre-built Azure workbooks for enhanced monitoring across azure services like Firewall, Defender for Cloud, and Azure Arc from public repositories"
 ---
 

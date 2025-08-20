@@ -93,14 +93,14 @@ This doesn’t happen when you deploy ANF with AVS,as ANF gets deployed in a VNE
 ## Limitations and considerations:
 As Elastic SAN is just 2 years old service, many enhancements are still in roadmap. Before you consider deploying ESAN for your workload you’ll need to keep below considerations in mind.
 1. If you replicate your VM to another region via Azure Site recovery, ESAN volumes attached to a VM are unsupported.
-2. Backup of ESAN Volume via Azure Backup is currently not GA. Not available in public preview as of now.
+2. Backup of ESAN Volume via Azure Backup is currently in public preview.
 3. Backup is available via volume snapshots which is in preview, this is ESAN functionality.
 These backup and DR capabilities can be achieved via third party if you use backup tools via Azure Marketplace supported appliances.
 4. SAP on Azure VM is currently unsupported with ESAN, it is only supported with Azure Managed disk and ANF.
 5. You can take snapshots of normal disk and then create ESAN volume from that. This is in preview and it can be used to move to ESAN volume.
 [https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots?tabs=azure-portal#create-a-volume-from-a-managed-disk-snapshot](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots?tabs=azure-portal#create-a-volume-from-a-managed-disk-snapshot)
 
-6. If you use Azure Migrate for assessment and sizing your DC migration, the tool currently only supports managed disk as a target for assessment as well as for migration.\
+6. If you use Azure Migrate for assessment and sizing your DC migration, the support for Azure Migrate is in preview.\
 However you can use Storage Migration Program and with help of Cirrus Data Solutions you can migrate your data to Elastic SAN storage. This entire migration cost is free for customer.
 [https://techcommunity.microsoft.com/blog/azurestorageblog/block-migrations-added-to-azure-storage-migration-program/3838385](https://techcommunity.microsoft.com/blog/azurestorageblog/block-migrations-added-to-azure-storage-migration-program/3838385)
 
