@@ -1,6 +1,6 @@
 ---
 title: "AKS Networking options you must know before deployment"
-date: 2025-8-17 01:00:00 +500
+date: 2025-8-20 01:00:00 +500
 categories: [tech-blog]
 tags: [AKS]
 description: "Learn how many networking options are available for AKS Cluster Node POD and application via ingress controller, this blogs talks all networking options for AKS"
