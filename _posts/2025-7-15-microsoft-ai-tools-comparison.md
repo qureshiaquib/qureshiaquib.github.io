@@ -139,7 +139,7 @@ Copilot for security home page: In this console you can interact with prompts an
 More info here:\
 [https://learn.microsoft.com/en-us/copilot/security/experiences-security-copilot](https://learn.microsoft.com/en-us/copilot/security/experiences-security-copilot)
 
-I hope you found this blog helpful and it gives you a headstart to choose correct solution.
+I hope you find this blog helpful and it gives you a headstart to choose correct solution.
 
 Happy Learning!
 

@@ -158,7 +158,7 @@ please find below link for both the tasks.\
 
 I've observed that one method for disk copying involves using Storage Explorer. By adding both tenant accounts in a single Storage Explorer session, we can perform the copy-paste operation for the disks. However, it's important to note that this action is actually a copy operation. You can monitor the progress on the status screen at the bottom, where you'll see that each disk takes some time to complete, based on its size.
 
-I hope you found this useful and through this your migration becomes smoother in less time.
+I hope you find this useful and through this your migration becomes smoother in less time.
 
 Special thanks to [Aleem Mohammed](https://www.linkedin.com/in/aleemmr/) & [Robert Larson](https://www.linkedin.com/in/larsonrobert/) for their collaboration and for helping bring this solution to the community.
 

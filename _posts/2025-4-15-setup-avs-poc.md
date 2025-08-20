@@ -80,7 +80,7 @@ please note when you perform L2 Stretch then the gateway of that VM will reside 
 
 Once the POC is completed you can delete the temp POC Hub VNET and its components, although the AVS nodes can still be reused for VM deployment and you can connect AVS to your existing HUB VNET if you’ve production HUB running on Azure.
 
-I hope you found this post helpful and that it assists you in deploying your POC environment quickly.
+I hope you find this post helpful and that it assists you in deploying your POC environment quickly.
 
 Happy learning
 

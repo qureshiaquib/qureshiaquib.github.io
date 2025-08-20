@@ -104,7 +104,7 @@ Some helpful link here:
 [https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/sender-reputation-managed-suppression-list#error-codes-for-soft-bounces](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/sender-reputation-managed-suppression-list#error-codes-for-soft-bounces)
 
 
-I hope you found this blog helpful and along with Part 1 of the blog you implement the ACS Service seamlessly.
+I hope you find this blog helpful and along with Part 1 of the blog you implement the ACS Service seamlessly.
 
 Happy Learning!
 
