@@ -19,18 +19,18 @@ This is where your AKS management plane lives, where your core services live. AP
 API server is accessible via Public IP address. You can restrict with known source IP of your client from where you're connecting to.
 As API server is hosted in Microsoft managed VNET hence it uses konnectivity tunnel to connect to your node and pod which resides in customer VNET.
 
-    ![AKS public cluster](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-public-cluster.jpg)
+    ![AKS public cluster](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-public-cluster.jpg){: w="400" h="800" }
 
 2. Private Cluster\
 This uses private link and API server is accessible via internal private IP with help of private endpoint. So there will be a private endpoint deployed along with private AKS cluster. That private endpoint will be part of customer owned VNET. You can deploy Jumpbox in the VNET and then connect to the private endpoint.
 It also uses konnectivity tunnel to connect API server with node and pod access.
 
-    ![AKS private cluster](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-private-cluster.jpg)
+    ![AKS private cluster](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-private-cluster.jpg){: w="400" h="800" }
 
 3. API Server VNET integration\
 API server is provisioned into a delegated subnet with help of a load balancer, your nodes will connect to API server by connecting to load balancer which is exposed via private IP address. This option provides client connecting to API server publicly or privately. It uses konnectivity tunnel for pod access when using overlay.
 
-    ![AKS VNET integration](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-vnet-integration.jpg)
+    ![AKS VNET integration](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-vnet-integration.jpg){: w="400" h="800" }
 
 There are two options for private connectivity to AKS cluster, first one is private cluster and second one VNET integration, if you want to understand difference between both the options you can refer below link. This gives you indepth study on how this gets deployed and also how it differs from one another.
 [https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/public-and-private-aks-clusters-demystified/3716838](https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/public-and-private-aks-clusters-demystified/3716838)
@@ -49,15 +49,15 @@ Multiple load balancer is also an option which is in preview.
 
     [https://learn.microsoft.com/en-us/azure/aks/use-multiple-standard-load-balancer](https://learn.microsoft.com/en-us/azure/aks/use-multiple-standard-load-balancer)
 
-    ![AKS outbound from azure load balancer](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/cluster-outbound-ALB.jpg)
+    ![AKS outbound from azure load balancer](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/cluster-outbound-ALB.jpg){: w="400" h="800" }
 
 2. NAT gateway: NAT gateway will be deployed and associate with subnet where nodes are deployed. This works in managed VNET as well as BYO VNET, this method helps when you're facing SNAT port exhaustion.
 
-    ![AKS egress from Azure NAT gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-egress-nat-gateway.jpg)
+    ![AKS egress from Azure NAT gateway](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-egress-nat-gateway.jpg){: w="400" h="800" }
 
 3. UDR: Typically, I’ve seen this in enterprises who want to control their outbound traffic through firewall. you can choose AzFW, vWAN, or 3P NGFW.
 
-    ![Using firewall to handle outbound traffic from AKS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-cluster-udr.jpg)
+    ![Using firewall to handle outbound traffic from AKS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/17082025/aks-cluster-udr.jpg){: w="400" h="800" }
 
 ## POD networking
 This means how your POD IP address are managed.
