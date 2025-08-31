@@ -42,7 +42,7 @@ This option is the simplest,
 
 ## Option 2
 
-![Visio diagram showing second option of afd with multiple rules](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31082025/option2-with-rule-set.jpg)
+![Visio diagram showing second option of afd with multiple rules](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31082025/option2-with-rule-set.jpg)_Download [architecture](https://github.com/qureshiaquib/qureshiaquib.github.io/raw/main/assets/31082025/afd-options-route-ruleset.vsdx) diagram_
 
 * Similar to option 1, you deploy one single AFD endpoint.
 * You can add a wildcard entry in custom domain or you can add individual host record.
@@ -96,6 +96,7 @@ Here is the sample pricing
 
 ![Screenshot showing azure pricing calculator snap of Azure front door](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/31082025/azure-pricing-calc-snap-afd.jpg)
 
+Here is the pricing calculator link for sample AFD pricing. 
 [https://azure.com/e/a0ead11a9000456eb9627ff00b148868](https://azure.com/e/a0ead11a9000456eb9627ff00b148868)
 
 I hope you find this blog helpful and it help you determine how to deploy Azure Front Door for your web application.
