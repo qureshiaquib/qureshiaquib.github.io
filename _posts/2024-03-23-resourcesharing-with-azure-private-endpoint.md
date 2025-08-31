@@ -34,6 +34,8 @@ So this exposes your own application with PLS and PE and eliminate the need of V
 
 I hope above scenario help you to design more complex architecture leveraging private endpoint capabilities.
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 

@@ -51,6 +51,7 @@ Below architecture diagram shows the traffic flow from Spoke VNET to branch and 
 ![Azure architecture diagram showing traffic flow in cisco sdwan and azure firewall](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/20112024/azure-network-flow-diagram.jpg)
 
 I hope this blog helps you deploy Cisco SDWAN in Hub and spoke model and hope it provide you clarity around the use of UDR.
+Share the blogpost if you like it.
 
 Happy Learning!
 

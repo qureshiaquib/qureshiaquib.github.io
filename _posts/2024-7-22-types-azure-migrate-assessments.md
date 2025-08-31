@@ -87,6 +87,7 @@ SAP ASCS and App servers will likely need to be recreated rather than migrated u
 **Link**: [Azure Stack HCI Migration](https://learn.microsoft.com/en-us/azure-stack/hci/migrate/migration-azure-migrate-hci-overview), [Preview Link for Azure portal - HCIMigratePPVMW](https://aka.ms/HCIMigratePPVMW)
 
 I hope the above options will help when you perform assessments and use different services other than just opting for Azure VM.
+Share the blogpost if you like it.
 
 Happy Learning!
 

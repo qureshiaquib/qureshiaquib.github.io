@@ -33,7 +33,7 @@ This is only done because both the companies are part of the single parent organ
 7.	Azure Virtual Desktop: We’ll be deploying two separate host pools, workspace and application groups for hosting VDIs. Windows Images for preparing host pools would be separate.
 8.	Storage Account: We’ll have two separate Storage accounts for hosting Azure File share. . AFS is used to store profiles in Pooled session host scenario. These file shares would be enabled with private endpoint in their respective VNETs.
 
-I hope above scenario will help when you want to configure VDI environment in a multi organization structure.
+I hope above scenario will help when you want to configure VDI environment in a multi organization structure. Share the blogpost if you like it.
 
 Happy Learning! 
 

@@ -73,6 +73,7 @@ Please Note:
 You can create a subscription with any tenant association, and then, by accessing the subscription settings, you can change the tenant of the subscription. This is another way to have a subscription billed in MCA/EA while maintaining a separate Entra tenant association. However, this method involves additional steps whenever a new subscription is created by the Admin. The method discussed in this blog will help you directly create subscription creators create it with the mapped tenant, thereby minimizing tenant change activities and reducing the likelihood of errors.
 
 I hope you will be able to make better decision of managing multiple organization during your spin-off or mergers.
+Share the blogpost if you like it.
 
 Happy Learning!
 

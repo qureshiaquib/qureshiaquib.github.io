@@ -131,7 +131,7 @@ Below example shows some sample alerts
 
 ![Azure alerts overview](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/14102024/overview-of-alerts-created.jpg)
 
-I hope this blog helps you create Azure Policy and implement Alerts at scale.
+I hope this blog helps you create Azure Policy and implement Alerts at scale. Share the blogpost if you like it.
 
 Happy Learning!
 

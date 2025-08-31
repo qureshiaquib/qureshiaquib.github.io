@@ -72,7 +72,7 @@ The Azure Route Server is also only for learning and advertising routes. It does
 
 ![Azure architecture diagram showing egress traffic through Azure firewall from VMs hosted in AVS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/26102024/azure-architecture-diagram-internet-flow.jpg)
 
-I hope this blog helps you in your AVS deployment.
+I hope this blog helps you in your AVS deployment. Share the blogpost if you like it.
 
 Happy Learning!
 

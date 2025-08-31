@@ -58,6 +58,7 @@ Though this blog is not just import and goto workbook but it provides good info 
 I hope this will help you enhance your Azure Monitoring!
 If you know more repo and community driven workbook by any person post that in the comment section :)
 
+Share the blogpost if you like it.
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.

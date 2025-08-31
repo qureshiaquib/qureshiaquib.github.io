@@ -89,7 +89,7 @@ Elastic SAN is fully integrated into the AVS blade on the Azure portal. You can 
 
 ![Connecting ESAN with AVS](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/03062024/connecting-esan-with-avs.jpg)
 
-We've covered the Storage options in AVS architecture. I hope this will help you in sizing AVS for any new opportunity.
+We've covered the Storage options in AVS architecture. I hope this will help you in sizing AVS for any new opportunity. Share the blogpost if you like it.
 
 Happy Learning!
 

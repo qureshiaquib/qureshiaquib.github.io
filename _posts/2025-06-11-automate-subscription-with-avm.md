@@ -149,7 +149,7 @@ Below screenshot shows the output of the pipeline.
 
 I haven’t included a pipeline with approval gates in this post, but you can configure them based on your organizational requirements.
 
-I hope you find this helpful in automating subscription creation.
+I hope you find this helpful in automating subscription creation.Share the blogpost if you like it.
 
 Special thanks to my friend [Darshit Shah](https://www.linkedin.com/in/darushah/) for helping me in EA lab.
 

@@ -57,7 +57,7 @@ Please note, in this blog I've mentioned hosting an additional domain controller
 In my scenario, the customer didn't want to have remote branch connectivity to Azure where the domain controller is hosted; hence, the same solution can work even if you have the domain controller hosted in Hub site and only AFS and domain-joined VMs hosted on Azure and connected to all remote branch sites.
 I've added an additional domain controller as most customers have an additional domain controller on Azure, with Azure being a different Active Directory site for them.
 
-I hope the above architecture demystifies the Azure File share with Entra ID Kerberos authentication setup.
+I hope the above architecture demystifies the Azure File share with Entra ID Kerberos authentication setup. Share the blogpost if you like it.
 
 Happy Learning!
 

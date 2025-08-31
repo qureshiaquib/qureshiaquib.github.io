@@ -94,7 +94,7 @@ $secretValue = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System
 $secretValue
 ```
 
-I hope above architecture pattern helps you in designing complex multi tenant application easily. This can also be used if you’re a SaaS provider and thinking of offering services on Azure.
+I hope above architecture pattern helps you in designing complex multi tenant application easily. This can also be used if you’re a SaaS provider and thinking of offering services on Azure. Share the blogpost if you like it.
 
 Happy Learning!
 

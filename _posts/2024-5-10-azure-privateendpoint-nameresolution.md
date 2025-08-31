@@ -55,7 +55,7 @@ Add-DnsServerDirectoryPartition -Name "On-premises Site for private endpoint"
 Register-DnsServerDirectoryPartition -Name "On-premises Site for private endpoint" -ComputerName 'ContosoDC-01
 ```
 
-I hope above options help you in choosing the right name resolution strategy for your environment.
+I hope above options help you in choosing the right name resolution strategy for your environment. Share the blogpost if you like it.
 
 Happy Learning!
 

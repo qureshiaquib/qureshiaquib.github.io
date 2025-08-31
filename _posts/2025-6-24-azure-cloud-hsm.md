@@ -35,6 +35,7 @@ What is the difference between Managed HSM and Azure Dedicated HSM compared to A
 * We should have a separate admin workstation to configure HSM than where your application is hosted. This admin workstation is where you'll configure additional user, configure roles for cloud HSM, You can shut it down and bring it on based on the requirement. Other similar best practices can be found here: [https://learn.microsoft.com/en-us/azure/cloud-hsm/secure-cloud-hsm](https://learn.microsoft.com/en-us/azure/cloud-hsm/secure-cloud-hsm)
 
 I hope both the blog helps you in making informed decisions about HSM options on Azure Cloud.
+Share the blogpost if you like it.
 
 Happy Learning!
 

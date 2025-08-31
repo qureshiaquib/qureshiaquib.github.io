@@ -73,6 +73,8 @@ Below diagram shows the traffic flow.
 I hope this blog post helps you design and adopt AVS.
 AVS can help in quick lift and shift as well as can help you in complex scenarios.
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

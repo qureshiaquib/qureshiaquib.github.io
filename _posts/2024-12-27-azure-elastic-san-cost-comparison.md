@@ -105,7 +105,7 @@ However you can use Storage Migration Program and with help of Cirrus Data Solut
 [https://techcommunity.microsoft.com/blog/azurestorageblog/block-migrations-added-to-azure-storage-migration-program/3838385](https://techcommunity.microsoft.com/blog/azurestorageblog/block-migrations-added-to-azure-storage-migration-program/3838385)
 
 
-I hope the above comparisons and descriptions help you validate whether ESAN is a better fit for your deployment and can achieve cost savings.
+I hope the above comparisons and descriptions help you validate whether ESAN is a better fit for your deployment and can achieve cost savings. Share the blogpost if you like it.
 
 Happy Learning!
 

@@ -115,7 +115,7 @@ To validate whether traffic is truly passing through the GSA client, you can ena
 
 ![Check connectivity of SSMS through diagnostics setting of GSA client](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/18052025/check-connectivity-ssms-and-diagnostic.jpg)
 
-I hope you find this blog useful and that it helps you in setting up Entra Private Access.
+I hope you find this blog useful and that it helps you in setting up Entra Private Access. Share the blogpost if you like it.
 
 Happy learning
 

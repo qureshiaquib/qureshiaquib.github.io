@@ -97,6 +97,8 @@ You as a customer can also delete delegation of service provider.
 
 Conclusion: I trust this guide helps you in configuring Azure Lighthouse and navigating the complexities of managing multi-tenant organizations from a single console.
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

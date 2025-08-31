@@ -74,7 +74,7 @@ Enterprise Agreement will be retired soon, and customers will transition to MCA.
 
 Special thanks to [Darshit Shah](https://www.linkedin.com/in/darushah/) for validating the content.
 
-I hope this blog will help you in designing the proper Enterprise Agreement and it's tenant association during a spin-off.
+I hope this blog will help you in designing the proper Enterprise Agreement and it's tenant association during a spin-off. Share the blogpost if you like it.
 
 Happy Learning!
 

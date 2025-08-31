@@ -94,7 +94,7 @@ More details about above scenarios in link below.
 
 [https://techcommunity.microsoft.com/blog/azurearcblog/announcing-general-availability-windows-server-management-enabled-by-azure-arc/4303854](https://techcommunity.microsoft.com/blog/azurearcblog/announcing-general-availability-windows-server-management-enabled-by-azure-arc/4303854)
 
-I hope this blog helps you deploying AUM faster and help you follow right architecture pattern.
+I hope this blog helps you deploying AUM faster and help you follow right architecture pattern. Share the blogpost if you like it.
 
 Happy Learning!
 

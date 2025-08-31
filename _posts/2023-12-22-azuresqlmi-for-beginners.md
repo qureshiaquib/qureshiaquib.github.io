@@ -121,7 +121,7 @@ Enabling defender for Azure SQL MI helps you with vulnerability assessment and u
 
 [https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-defender-for-sql?view=azuresql#enable-microsoft-defender-for-azure-sql-database-at-the-subscription-level-from-microsoft-defender-for-cloud](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-defender-for-sql?view=azuresql#enable-microsoft-defender-for-azure-sql-database-at-the-subscription-level-from-microsoft-defender-for-cloud)
 
-I hope this was helpful.
+I hope this was helpful.Share the blogpost if you like it.
 
 This would be my last blog of this year, will see you in 2024. Until then a very happy new year! :)
 

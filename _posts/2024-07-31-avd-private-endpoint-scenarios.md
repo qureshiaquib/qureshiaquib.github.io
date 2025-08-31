@@ -69,7 +69,7 @@ Similarly, from host pool, as this is a reverse connect solution hence you’ll 
 
 Special thanks to [Shabbir Ahmed](https://www.linkedin.com/in/shabbir550/) for helping in the Architecture preparation.
 
-I hope above scenarios help you demystify the private endpoint scenarios with AVD.
+I hope above scenarios help you demystify the private endpoint scenarios with AVD. Share the blogpost if you like it.
 
 Happy Learning!
 

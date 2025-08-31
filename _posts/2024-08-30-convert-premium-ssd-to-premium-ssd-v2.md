@@ -120,6 +120,8 @@ Once you successfully convert your VM to zonal VM. You’ll need to delete the e
 
 I hope above details will help you save cost by converting disk to Premium SSD v2 and also new method to change the VM from regional to Zonal.
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

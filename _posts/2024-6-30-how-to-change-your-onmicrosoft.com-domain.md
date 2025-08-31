@@ -84,6 +84,8 @@ This doesn't change your tenant ID so Management group hierarchy will remain the
 Similar steps can be accomplished by adding another custom domain in your Entra ID, which doesn't end with .onmicrosoft and you own that public domain. 
 But if you don’t want to do that because of other challenges then these steps will help you make relevant changes without depending on any custom domain.
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

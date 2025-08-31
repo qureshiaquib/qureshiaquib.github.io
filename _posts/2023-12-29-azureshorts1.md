@@ -19,6 +19,7 @@ Azure Edition helps you with less downtime where security patches don't require 
 Know more about this here.
 [https://techcommunity.microsoft.com/t5/windows-server-news-and-best/hotpatching-is-now-available-for-windows-server-vms-on-azure/ba-p/3875003](https://techcommunity.microsoft.com/t5/windows-server-news-and-best/hotpatching-is-now-available-for-windows-server-vms-on-azure/ba-p/3875003)
 
+Share the blogpost if you like it.
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

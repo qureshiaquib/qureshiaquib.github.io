@@ -156,6 +156,8 @@ If you want to know when autoscale will trigger you can refer below article
 
 In summary, the session host configuration and dynamic auto-scaling feature, along with the custom image template, strengthen AVD with core features for image updates and scaling. This will help administrators use AVD in cost effective way with less operational overhead.
 
+Share the blogpost if you like it.
+
 Happy learning
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

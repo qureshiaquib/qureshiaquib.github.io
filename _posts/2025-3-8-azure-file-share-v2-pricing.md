@@ -82,7 +82,7 @@ Below architecture diagram shows about the Azure Backup, File Share and Azure Fi
 
 Using Azure File Share Provisioned v2, syncing files via Azure File Sync, and backing up these synced file shares via Azure Backup can help address the BCDR challenges of your on-premises hosted file server.
 
-I hope this blog post helps you with your File Share setup.
+I hope this blog post helps you with your File Share setup. Share the blogpost if you like it.
 
 Happy Learning!
 

@@ -126,6 +126,8 @@ Here are a few useful links from fellow colleagues:
 * **Neha Tiwari**: Below link would help when you’re doing technical migration, when you’re doing technical migration with help of resource mover or move operation in resource group what all things you should keep in mind during execution is very well documented in the below blog.
 [https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/detailed-csp-to-ea-migration-guidance-and-crucial-considerations/ba-p/3919364](https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/detailed-csp-to-ea-migration-guidance-and-crucial-considerations/ba-p/3919364)
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

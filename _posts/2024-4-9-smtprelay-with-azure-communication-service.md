@@ -96,6 +96,8 @@ Conclusion: I trust this guide helps you in configuring SMTP relay and send emai
 
 Check part 2 of this blog [here](https://www.azuredoctor.com/posts/acs-email-part2/)
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

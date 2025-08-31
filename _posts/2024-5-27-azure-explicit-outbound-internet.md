@@ -58,7 +58,7 @@ Another approach to handle this situation is to create a standard load balancer 
 
 Though you cannot use a load balancer for every workload, if you have a web server in a DMZ already associated with a Standard LB, you can use an outbound rule approach.
 
-I hope the above approaches help you make informed decisions about your network architecture on Azure and make the necessary adjustments before the September 2025 deadline to avoid any disruptions.
+I hope the above approaches help you make informed decisions about your network architecture on Azure and make the necessary adjustments before the September 2025 deadline to avoid any disruptions. Share the blogpost if you like it.
 
 Happy learning!
 

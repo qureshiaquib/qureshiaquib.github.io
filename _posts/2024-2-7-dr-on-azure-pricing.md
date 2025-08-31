@@ -80,7 +80,7 @@ In the previous bandwidth section, it was for App VM replication via ASR but whe
 While you replicate VMs via ASR and do DB native replication this doesn’t make the entire solution. You may want to factor VPN Gateway from DR region or Express Route so that your branches can connect to servers. You may want to factor Firewall, Application gateway and traffic manager. traffic manager is important when you don't want DNS record to be updated. All these services shouldn’t be missed during DR pricing as this are important services which makes up your infra.
 
 These are the components that we factor during DR.
-I hope this is helpful.
+I hope this is helpful. Share the blogpost if you like it.
 
 Happy Learning!
 

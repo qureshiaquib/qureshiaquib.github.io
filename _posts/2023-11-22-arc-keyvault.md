@@ -71,6 +71,8 @@ If you’re running Azure VM similar thing can be achieved
 Cert Rebind in IIS
 [click here](https://learn.microsoft.com/en-us/iis/get-started/whats-new-in-iis-85/certificate-rebind-in-iis85)
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

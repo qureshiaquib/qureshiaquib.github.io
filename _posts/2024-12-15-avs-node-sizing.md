@@ -144,7 +144,7 @@ In this section, let’s do sample AVS sizing through azure pricing calculator. 
 
 [https://azure.com/e/e39866f1330f4aa1b7b84e582940fb88](https://azure.com/e/e39866f1330f4aa1b7b84e582940fb88)
 
-I hope this blog help you in AVS node assessment. Once this is done you can quickly start the Network discussion and overall migration plan.
+I hope this blog help you in AVS node assessment. Once this is done you can quickly start the Network discussion and overall migration plan. Share the blogpost if you like it.
 
 Happy Learning!
 

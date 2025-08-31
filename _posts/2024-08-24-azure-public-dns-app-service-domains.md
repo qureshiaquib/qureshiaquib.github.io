@@ -72,7 +72,7 @@ The name server record is automatically updated with Azure DNS from the beginnin
 ![Screenshowing DNS Zone created along with Azure App Service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24082024/app-service-domain-dns.jpg)
 
 
-I hope above explainaton will help you deploy and manage public DNS more efficiently.
+I hope above explainaton will help you deploy and manage public DNS more efficiently. Share the blogpost if you like it.
 
 Happy Learning!
 

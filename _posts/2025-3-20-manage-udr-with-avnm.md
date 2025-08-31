@@ -93,7 +93,7 @@ When you click on the UDR, you will see the routes that were created in the rout
 
 ![validate routes in UDR](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/20032025/validate-udr-routes.jpg)
 
-This blogpost is simple and no complex architecture is shown, however I hope blog helps you in implementing UDR management via AVNM and simplify your operational task.
+This blogpost is simple and no complex architecture is shown, however I hope blog helps you in implementing UDR management via AVNM and simplify your operational task. Share the blogpost if you like it.
 
 Happy Learning!
 

@@ -37,7 +37,7 @@ Solution A, which we have discussed previously, is legacy option which we’ve b
 
 ![Azure architecture diagram showing ARS connected with NVA](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30052025/inject-static-routes-ars.jpg)
 
-I hope the scenario helps you understand the options at hand to inject or advertise routes from Azure when using ExpressRoute or BGP VPN gateway where static routes can't be pushed.
+I hope the scenario helps you understand the options at hand to inject or advertise routes from Azure when using ExpressRoute or BGP VPN gateway where static routes can't be pushed. Share the blogpost if you like it.
 
 Happy learning!
 

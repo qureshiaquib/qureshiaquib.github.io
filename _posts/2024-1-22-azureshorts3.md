@@ -35,6 +35,8 @@ This is especially for premium SSD v1 type disk. As v2 IOPS can be scaled separa
 * Data Disk IOPS consumed Percentage
 * Data Disk Bandwidth Consumed Percentage
 
+Share the blogpost if you like it.
+
 Happy Learning!
 
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.

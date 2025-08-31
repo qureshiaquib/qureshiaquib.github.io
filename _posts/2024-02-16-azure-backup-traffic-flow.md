@@ -53,7 +53,7 @@ You must be aware about Service Endpoints feature. Which basically is available 
 Now story doesn't end here, there are some disadvantages associated with this. When Service endpoint is enabled allows communications for all the storage account in the same subscription or any storage account from any tenant (technically any customer). You can block rest of the storage account and only allow specific storage account to be accessible via service endpoint policies which is available with azure storage. But this is applicable for storage account that you know. As Azure backup uses Microsoft managed storage account because of the isolation and air gap hence you won’t be able to configure service endpoint policies in such scenarios. If you’re using third party backup solutions and you own the SA in your own subscription then Service Endpoint Policies can be configured.
 If you really needed protection against data exfiltration with Azure backup then using private endpoint is the only choice as of now.
 
-I hope above article was useful and will help you make backup and networking decisions in your architecture.
+I hope above article was useful and will help you make backup and networking decisions in your architecture. Share the blogpost if you like it.
 
 Happy Learning!
 

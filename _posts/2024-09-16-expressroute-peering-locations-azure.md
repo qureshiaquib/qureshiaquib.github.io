@@ -66,7 +66,7 @@ So why are we covering ExR Local in this blog? Because once an ExR Local circuit
 Below link shows peering point and associated region with it.
 [https://learn.microsoft.com/en-us/azure/expressroute/expressroute-locations-providers?tabs=asia%2Cn-q%2Ca-k#partners](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-locations-providers?tabs=asia%2Cn-q%2Ca-k#partners)
 
-I hope above scenario helps in deploying your express route more efficiently.
+I hope above scenario helps in deploying your express route more efficiently. Share the blogpost if you like it.
 
 Happy Learning!
 

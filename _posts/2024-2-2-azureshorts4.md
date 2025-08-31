@@ -26,6 +26,8 @@ there can be 200 listeners in the App GW.
 > but only 100 listeners would be assoiated with the rule and can be routing traffic at the same time.
 {: .prompt-tip }
 
+Share the blogpost if you like it.
+
 >Subscribe to my newsletter for the latest posts and summaries. Your privacy is paramount, and your email stays with us securely.
 click the link to submit your email.
 [https://forms.office.com/r/6ysKm4nkp4](https://forms.office.com/r/6ysKm4nkp4)
