@@ -13,7 +13,7 @@ Though Azure Communication service supports sending emails outbound but currentl
 
 Azure Communication Service supports different types of notifications, SMTP relay in ACS got GA last month and this blog post is simple step by step instructions of how you can quickly test the service and then migrate from Sendgrid or another service you’re using to native ACS – Email communication service for better operational experience and support.
 
-Based on the insights and questions received, I've also created part 2 of this blog. [click here](https://www.azuredoctor.com/posts/acs-email-part2/) to learn more about ACS Email service.
+Based on the insights and questions received, I've also created part 2 of this blog. [click here to learn more about ACS Email service](https://www.azuredoctor.com/posts/acs-email-part2)
 
 High level steps are as follows:\
 [1. Create Azure Communication Service Account](#1-create-azure-communication-service-account)\
@@ -77,7 +77,7 @@ That’s all, now you’ll need to find out the sender email. Which is default D
 ![Step2 of finding sender smtp address](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/find-sender-smtp-address.jpg)
 
 > You can add custom sender usernames, click the link to see how to achieve this.
-[Multiple sender address](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/add-multiple-senders?pivots=platform-azp#create-multiple-sender-usernames)
+[Multiple sender address](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/add-multiple-senders?pivots=platform-azp)
 {: .prompt-tip }
 
 You’ll need credentials to authenticate to the service. 
@@ -90,11 +90,26 @@ You’ll need credentials to authenticate to the service.
 Now you can use any third party application to send email via the above parameters. To showcase we can use powershell with the same parameters to send emails.
 
 ![Powershell cmdlets for test email](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/powershell-cmdlets-test-email.jpg)
+
+```shell
+# Azure Communication Service SMTP Relay Test Script
+
+$From = "DoNotReply@azurequreshi.com"  # Your verified domain
+$To = "recipient@outlook.com"
+$Subject = "Test Email from Azure Communication Service SMTP Relay"
+$Body = "Azure Communication Service supports SMTP relay"
+
+$Credential = Get-credential
+
+Send-MailMessage -From $From -To $To -Subject $Subject -Body $Body -smtpserver "smtp.azurecomm.net" -port 587 -Usessl -credential $Credential
+
+```
+
 ![Test email received from Azure communication service](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/09042024/test-email-received-azure-communication-service.jpg)
 
 Conclusion: I trust this guide helps you in configuring SMTP relay and send emails from your custom or third party application without any change to the application/code.
 
-Check part 2 of this blog [here](https://www.azuredoctor.com/posts/acs-email-part2/)
+[Check part 2 of this blog here](https://www.azuredoctor.com/posts/acs-email-part2)
 
 Share the blogpost if you like it.
 
