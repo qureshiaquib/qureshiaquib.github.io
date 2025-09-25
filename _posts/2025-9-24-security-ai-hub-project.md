@@ -35,10 +35,10 @@ Before we discuss all the private endpoints, let’s first look at where the ser
 As mentioned in the 4th point above, when you deploy a hub-based project, additional PaaS services will also be deployed.
 
 AI services will be created
-![AI foundry hub deployment and showing first additional service which is added](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/additional-services.jpg){: w="200" h="500" }
+![AI foundry hub deployment and showing first additional service which is added](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/additional-services.jpg){: w="1100" h="600" }
 
 Container registry, blob storage and key vault is created.
-![AI foundry hub deployment and showing couple of more additional service part of the deployment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/additional-services-storage.jpg){: w="200" h="500" }
+![AI foundry hub deployment and showing couple of more additional service part of the deployment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/additional-services-storage.jpg){: w="1100" h="600" }
 
 This screenshot shows all the services which get deployed as part of AI hub based project.
 ![Screenshot showing additional services which are deployed as part of AI hub deployment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/additional-services-deployed.jpg)
@@ -48,13 +48,13 @@ This screenshot shows all the services which get deployed as part of AI hub base
 We’ll be deploying the AI Hub service in private mode which is “Allow only approved outbound” and public connectivity will be disabled. This will ensure that you can only access the AI Foundry portal through a connected network and not publicly. Along with that any outbound connectivity needs to be explicitly allowed in the outbound rules. In the backend an Azure firewall will be deployed which will enable this functionality of allow and deny.
 
 Making sure your public connectivity is disabled for the workspace.
-![Public connectivity to AI foundry hub is disabled](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/public-disabled-ai-foundry.jpg){: w="200" h="500" }
+![Public connectivity to AI foundry hub is disabled](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/public-disabled-ai-foundry.jpg){: w="1100" h="600" }
 
 private endpoint is deployed in customer vnet and also a PE is created in managed VNET. The one with _sys is for managed VNET.
-![private endpoint deployed for ai foundry hub](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/private-endpoint-ai-foundry.jpg){: w="200" h="500" }
+![private endpoint deployed for ai foundry hub](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/private-endpoint-ai-foundry.jpg){: w="1100" h="600" }
 
 Validating the network setting of "Allow only approved outbound" is selected for workspace.
-![Workspace setting of AI foundry hub based project seleted as allow only approved outbound](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/allow-only-approved-outbound.jpg){: w="200" h="500" }
+![Workspace setting of AI foundry hub based project seleted as allow only approved outbound](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/allow-only-approved-outbound.jpg){: w="1100" h="600" }
 
 ## Private Endpoint Scenarios
 
@@ -76,7 +76,7 @@ This section is of PE which gets deployed in the managed VNET and it gets deploy
 Whenever your compute instance in the AI Foundry wants to connect to additional PaaS services securely it’ll connect to private endpoint present in the managed VNET and hence for container registry, AI services, blob and key vault individual PE are deployed in the managed VNET itself. This is created automatically as soon as managed VNET is provisioned.
 
 This image shows the _Sys private endpoint which are created automatially.
-![Image of private endpoint which gets created automatically and in inactive state](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/pe-managed-vnet.jpg){: w="200" h="500" }
+![Image of private endpoint which gets created automatically and in inactive state](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/pe-managed-vnet.jpg){: w="1100" h="600" }
 
 you’ll see this as inactive, the reason is while deploying the AI Hub, managed VNET is not deployed, it’ll only get triggered once compute instance is deployed or if you have instructed during the deployment to provision the managed VNET. This is to save the cost of Private endpoints and also the firewall resource. These PE are automatically created and you don’t have to manually create it.
 
@@ -113,19 +113,19 @@ please check below article to know more
 The services which are deployed as part of the AI Hub accepts public connections, if you have selected the option of “Approved Only outbound” that is only for AI Hub resource and not for all the additional services which are deployed as part of AI Foundry. Hence you need to ensure each individual service is not publicly exposed. Along with that you need to make sure to check the option to allow trusted Microsoft services.
 
 Making sure public connectivity to container registry is disabled.
-![Disabling public connectivity to container registry](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/container-registry-disable-public.jpg){: w="200" h="500" }
+![Disabling public connectivity to container registry](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/container-registry-disable-public.jpg){: w="1100" h="600" }
 
 Making sure public connectivity to AKV is disabled.
-![Disabling public connectivity to azure key vault](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/key-vault-disable-public.jpg){: w="200" h="500" }
+![Disabling public connectivity to azure key vault](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/key-vault-disable-public.jpg){: w="1100" h="600" }
 
 Making sure public connectiivty to blob storage is disabled.
-![Disabling public connectivity to blob storage](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/blob-storage-disable-public.jpg){: w="200" h="500" }
+![Disabling public connectivity to blob storage](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/blob-storage-disable-public.jpg){: w="1100" h="600" }
 
 ## Inactive PE
 During initial deployment if you’ve not selected to provision the managed VNET, hence you’ll see that the PEs are inactive because the VNET and firewall aren't deployed. Best approach is to select the checbox during the deployment itself.
 
 This is where you can select "provision managed vnet" during AI foundry hub project.
-![Selecting the provisioned managed vnet checkbox for managed vnet deployment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/provisioned-managed-vnet.jpg){: w="200" h="500" }
+![Selecting the provisioned managed vnet checkbox for managed vnet deployment](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/24092025/provisioned-managed-vnet.jpg){: w="1100" h="600" }
 
 You can deploy it manually after the AI Hub is provisioned through CLI.
 
