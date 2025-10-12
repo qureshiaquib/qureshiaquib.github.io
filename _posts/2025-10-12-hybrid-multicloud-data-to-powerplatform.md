@@ -41,7 +41,7 @@ It is only available for P, F, and A4 or higher (A4, A5, A6, and A7) SKUs. For F
 * One important aspect is that this is primarily used for ETL workloads and for short-lived API calls we've better approach available, which is VNET Integration method, We’ll discuss in the next section.
 * The VNET Data Gateway can be connected to a Hub VNET, allowing it to access resources outside Azure, such as on-premises or other clouds.
 
-## With VNET Injection.
+## VNET Injection.
 * In the VNET Data Gateway method, the containers - the service helps in the outbound communications are hosted in Microsoft-managed environments, while in the VNET Injection method, the containers are hosted in the customer’s VNET itself.
 * This is used by Power Apps, Power Automate cloud flows, Dynamics 365 apps, Copilot Studio, and all outbound connections from these services pass through the delegated subnet.
 * This is used for transactional scenarios and for making API calls to the supported resources listed below.
