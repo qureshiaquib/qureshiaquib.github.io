@@ -9,6 +9,9 @@ description: "Learn how to convert Premium SSD to Premium SSD v2 and transition 
 **Overview of Disk**: Azure has evolved from unmanaged disks, which were stored in storage accounts as page blobs, to ultra disks and Elastic SAN. There are multiple types of disks that can fit your needs. From Standard HDD for non-critical workload to Premium SSD Disk which will support production ready workload like SAP HANA Database. The latest type of disk is the Premium SSD v2. \
 You’ll find the differences between Premium SSD and Premium SSD v2 here.
 
+If you want to achieve this with PowerShell script you can check Part 2 of my blog here
+[https://www.azuredoctor.com/posts/automate-disk-conversion-premiumssdv2/](https://www.azuredoctor.com/posts/automate-disk-conversion-premiumssdv2/)
+
 [https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#disk-type-comparison](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#disk-type-comparison)
 
 One of the differences is we can change the IOPS, throughput and size of the disk independently. This is not possible in Premium SSD.  Below screenshot from MS learn document provides clarity of how IOPS and throughput can be increased and in what proportion.
@@ -41,10 +44,16 @@ Hold on, there are limitations with this disk which you’ll have to keep in min
 Before you convert your disk to Premium SSD v2, you should know the limitations. There are couple of them mentioned in the link below. Some of them are as follows:
 
 •	Your VM shouldn’t be regionally deployed, and it should be zonal VM.
-Premium SSD v2 can’t be attached when zone is not specified.
-You’ll need to convert your VM to zonal for this. This article will tell you how you can achieve this.
+Premium SSD v2 can’t be attached when zone is not specified during the VM creation.
 
-•	Since the VM has to be zonal, you can’t attach it to VMs that are in an Availability Set.
+• There is an update, there are few regions which doesn't support AV Zone, hence Premium SSD v2 will be supporting those regions.
+[AV Set VMs with premium SSDv2](https://learn.microsoft.com/en-us/azure/virtual-machines/use-premium-ssd-v2-with-availability-set?tabs=CLI#regional-availability)
+
+• If you've VM in Availability Set, you can check part 2 of my blog which does conversion using powershell script. [Part 2](https://www.azuredoctor.com/posts/automate-disk-conversion-premiumssdv2/)
+
+However the region which supports AV Zone, you need to convert your VM to zonal to be able to use Premium SSD v2. This article will tell you how you can achieve this.
+
+•	Since the VM has to be zonal, you can’t attach it to VMs that are in an Availability Set. Update: Exception explained above. 
 
 •	Azure Site recovery is in preview, so if your VM is in a production environment and you’ve ASR configured for DR then you’ll have to wait for this feature to go General Available.
 
