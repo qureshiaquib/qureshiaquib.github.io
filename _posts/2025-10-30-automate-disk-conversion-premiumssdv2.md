@@ -25,6 +25,8 @@ Below are the high-level steps performed in the script:.
 7. Remove the existing VM.
 8. Create a new VM in the target availability zone.
 
+>Make sure you run this in Non-Prod environment first and validate the entire process.
+{: .prompt-info }
 
 ```shell
 # Parameters - change as needed
@@ -178,6 +180,8 @@ New-AzVM -ResourceGroupName $resourceGroup -Location $vm.Location -VM $vmConfig 
 
 Write-Output "VM creation triggered. New VM: $vmName; verify inside OS that disks are present and mounted as expected."
 ```
+>Make sure once the VM is migrated and funcitoning as intended you should plan to delete existing OS and Data disks as it'll continue to incur cost.
+{: .prompt-tip }
 
 I hope this helps you automate your task. There might be minor changes required based on your environment or the specific request you’ve received. Feel free to download the script and make the necessary changes as per your environment.
 
