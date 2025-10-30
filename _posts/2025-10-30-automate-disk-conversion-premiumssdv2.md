@@ -12,7 +12,7 @@ If you haven’t gone through Part 1 of my blog, where I explained the benefits 
 Recently, a reader approached me and asked about his VMs in an availability set. The approach I mentioned in my previous blog primarily covers the new functionality of moving VMs to an availability zone, which isn’t supported for VMs in an availability set. At the same time, performing this activity in bulk is very time-consuming and requires a manual approach. He wanted to automate the entire process, which was a great idea. I believe many architects and administrators might find this helpful.
 
 You can find the PowerShell script here:
-[ConvertvmToZonalandPremiumV2Disk.ps1t](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30102025/ConvertvmToZonalandPremiumV2Disk.ps1)
+[ConvertvmToZonalandPremiumV2Disk.ps1](https://raw.githubusercontent.com/qureshiaquib/qureshiaquib.github.io/main/assets/30102025/ConvertvmToZonalandPremiumV2Disk.ps1)
 
 Below are the high-level steps performed in the script:.
 
