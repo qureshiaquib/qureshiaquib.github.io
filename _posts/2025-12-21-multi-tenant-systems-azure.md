@@ -19,19 +19,19 @@ Let’s explore this topic in a little more detail.
 ## Networking
 In this section we’ll talk about how you can spin up services and connect to it cross tenant or scale your application and at the same time leverage networking feature which is provided to you.
 
-### Azure private endpoint cross tenant
+### Azure Private Endpoint Cross Tenant
 When you’re deploying any PaaS service on Azure, you can deploy its Private Endpoint in its own subscription and same tenant or cross tenant. So, in scenarios where you deploy service in a separate subscription meant for customers, you can script the deployment to create Private endpoint in your Main subscription which resides in your own tenant so that you can also access services for management and maintenance of it.
 You can find more details on this in the blog post below.
 
 [https://www.azuredoctor.com/posts/resourcesharing-with-azure-private-endpoint/](https://www.azuredoctor.com/posts/resourcesharing-with-azure-private-endpoint/)
 
-### Azure private link service Direct connect
+### Azure Private Link Service Direct Connect
 This is a newly introduced service that is currently in preview. If you don’t have a PaaS service but a IaaS based service and you wanted to expose it via private link service you have to deploy your VM behind a standard load balancer and then create PLS. then a PE can be created pointing to a PLS. However, the limitation was that the service had to be behind a Standard Load Balancer. Now, that limitation has been removed, you can host any private Ip address behind the PLS Direct connect. It can be the IP address which is hosted on-premises.
 learn more about this from below link
 
 [https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect?tabs=powershell%2Cpowershell-pe%2Cverify-powershell%2Ccleanup-powershell](https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect?tabs=powershell%2Cpowershell-pe%2Cverify-powershell%2Ccleanup-powershell)
 
-### Azure Front door:
+### Azure Front Door
 When you’re building a SaaS app or a multi-tenant service, hosting it publicly can be tricky. AFD helps you publish your application over internet. However, the major question would be how many routes, origin groups and domains need to be in place if you’ve 100s of website links. Below blogpost written earlier provides you guidance around the scale of the deployment. Learn more from the blogpost below.
 
 [https://www.azuredoctor.com/posts/multiple-sites-azure-frontdoor/](https://www.azuredoctor.com/posts/multiple-sites-azure-frontdoor/) 
@@ -39,19 +39,19 @@ When you’re building a SaaS app or a multi-tenant service, hosting it publicly
 ## Identity and Tenant
 Identity is one of the core factors which decides how your application will be deployed and where it’ll be deployed. Since the Azure Entra tenant is where all your subscriptions are tied together. So, finding methods that enable cross-tenant authentication without sharing secrets and authorizing the services present in your customer tenants can be useful to you.
 
-### Service principal in cross tenant configuration
+### Service Principal in Cross Tenant configuration
 When you’re deploying services in your customer tenant and you wanted to authenticate to their Database or some service you can’t just ask them to create a service principal and share the secrets so that you can authenticate. Although this is one of the easiest approaches, it is riskier and does not scale well. If we create a service principal on a master tenant and then share the same with other tenants and if your customer has just assigned the same service principal with RBAC of your choice. This approach simplifies things, as you can reuse the app registration you’ve already created and the secret creation is controlled by you. Your customer would have just assigned the RBAC which you needed and no secret generation etc must be done by them. It’s seamless.
 The same is explained in below blogpost.
 
 [https://www.azuredoctor.com/posts/how-to-share-service-principals-across-entra-tenant/](https://www.azuredoctor.com/posts/how-to-share-service-principals-across-entra-tenant/)
 
-### workload identity federation
+### Workload Identity Federation
 In the above scenario, you are still relying on a service principal and secrets are still generated. Do you need a secret-less method to achieve authentication and also authorization? Why don’t you explore Workload identity federation option. Currently, you can’t use WIF between two different Entra ID tenants. But who knows it’ll be true in future. But the same can be achieved if you’ve an application which is cross cloud for example GCP and Azure and you want to access buckets or services from either of the clouds. This can easily be achieved using WIF.
 have a look at the step-by-step configuration mentioned in below blogpost.
 
 [https://www.azuredoctor.com/posts/azure-gcp-workload-identity/](https://www.azuredoctor.com/posts/azure-gcp-workload-identity/)
 
-### Azure light house
+### Azure Light House
 When you’re operating in a multi-tenant environment on Azure. You would want to easily manage the resources from single console. Azure light house is exactly what you need. Little confused how to do this step by step? I’ve a walkthrough of it created long back which can help you configure it for free. You don’t have to switch the portal to manage resources across tenants. Use Azure Lighthouse.
 
 [https://www.azuredoctor.com/posts/lighthouse-stepbystep/](https://www.azuredoctor.com/posts/lighthouse-stepbystep/)
@@ -67,7 +67,7 @@ You can learn more about it here
 
 [https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/overview](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/overview)
 
-### Azure Subscription vending
+### Azure Subscription Vending
 When you’re deploying multiple instances of your application in your tenant but deploying it in multiple subscriptions so that your cost are segregated you would want to scale the deployment and keep it automated. What best can you get thinking about automation, Azure DevOps pipeline. Azure team has written subscription vending module which you can make use of and then spin up subscriptions. If you want to learn how to do this step by step please check below blog post.
 
 [https://www.azuredoctor.com/posts/automate-subscription-with-avm/](https://www.azuredoctor.com/posts/automate-subscription-with-avm/)
