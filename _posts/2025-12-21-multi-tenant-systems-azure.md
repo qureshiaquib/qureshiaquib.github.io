@@ -76,7 +76,7 @@ What I’ve covered is simple service which you see in a single tenant environme
 
 [https://learn.microsoft.com/en-us/azure/architecture/guide/saas-multitenant-solution-architecture/](https://learn.microsoft.com/en-us/azure/architecture/guide/saas-multitenant-solution-architecture/)
 
-This year was special as I've reached 50k milestones for this blog post. I hope whatever i had written is helpful to you. Wish you a very Happy Christmas and a Very Happy New Year in advance and a joyful vacation.
+This year was special as I've reached 50k milestones for this blog. I hope whatever i had written is helpful to you. Wish you a very Happy Christmas and a Very Happy New Year in advance and a joyful vacation.
 
 Happy Learning!
 
